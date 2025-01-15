@@ -1,0 +1,2758 @@
+{
+    "data": [
+        {
+            "stop_id": "",
+            "headsign": "L\u00fcbeck ZOB/Hauptbahnhof",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736458860,
+            "realtime": 1736458860,
+            "line": {
+                "name": "8710",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "AK"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Blankenseer Dorfplatz",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736458860,
+            "realtime": 1736458980,
+            "line": {
+                "name": "6",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Grillenweg",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736458860,
+            "realtime": 1736458980,
+            "line": {
+                "name": "9",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Sereetz",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736459220,
+            "realtime": 1736459220,
+            "line": {
+                "name": "1",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "ZOB/Hauptbahnhof",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736459220,
+            "realtime": 1736459220,
+            "line": {
+                "name": "8",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Dorothea-Erxleben-Stra\u00dfe",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736460660,
+            "realtime": 1736460660,
+            "line": {
+                "name": "1",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Bornkamp",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736460660,
+            "realtime": 1736460660,
+            "line": {
+                "name": "8",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Hamburger Stra\u00dfe",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736461020,
+            "realtime": 1736461020,
+            "line": {
+                "name": "6",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Bad Schwartau ZOB",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736461080,
+            "realtime": 1736461080,
+            "line": {
+                "name": "9",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Gr\u00f6nauer Baum",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736462460,
+            "realtime": 1736462460,
+            "line": {
+                "name": "6",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Grillenweg",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736462460,
+            "realtime": 1736462460,
+            "line": {
+                "name": "9",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Sereetz",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736462820,
+            "realtime": 1736462820,
+            "line": {
+                "name": "1",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Dorothea-Erxleben-Stra\u00dfe",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736464260,
+            "realtime": 1736464260,
+            "line": {
+                "name": "1",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Stephensonstra\u00dfe",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736464260,
+            "realtime": 1736464260,
+            "line": {
+                "name": "8",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Bad Schwartau ZOB",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736464620,
+            "realtime": 1736464620,
+            "line": {
+                "name": "1",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Hamburger Stra\u00dfe",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736464620,
+            "realtime": 1736464620,
+            "line": {
+                "name": "6",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Dorothea-Erxleben-Stra\u00dfe",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736466060,
+            "realtime": 1736466060,
+            "line": {
+                "name": "1",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Blankenseer Dorfplatz",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736466060,
+            "realtime": 1736466060,
+            "line": {
+                "name": "6",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Bad Schwartau ZOB",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736478360,
+            "realtime": 1736478360,
+            "line": {
+                "name": "6",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "UKSH West",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736479740,
+            "realtime": 1736479740,
+            "line": {
+                "name": "9",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Blankenseer Dorfplatz",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736479740,
+            "realtime": 1736479740,
+            "line": {
+                "name": "6",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Bad Schwartau ZOB",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736480160,
+            "realtime": 1736480160,
+            "line": {
+                "name": "1",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Stockelsdorf",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736480160,
+            "realtime": 1736480160,
+            "line": {
+                "name": "6",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Dorothea-Erxleben-Stra\u00dfe",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736481540,
+            "realtime": 1736481540,
+            "line": {
+                "name": "1",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Blankenseer Dorfplatz",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736481540,
+            "realtime": 1736481540,
+            "line": {
+                "name": "6",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "UKSH West",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736481540,
+            "realtime": 1736481540,
+            "line": {
+                "name": "9",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Heiweg",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736481780,
+            "realtime": 1736481780,
+            "line": {
+                "name": "4",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Bad Schwartau ZOB",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736481960,
+            "realtime": 1736481960,
+            "line": {
+                "name": "1",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "L\u00fcbeck ZOB/Hauptbahnhof",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736482500,
+            "realtime": 1736482500,
+            "line": {
+                "name": "8710",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "AK"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "M\u00f6lln",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736482860,
+            "realtime": 1736482860,
+            "line": {
+                "name": "8710",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "AK"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Niels-Bohr-Ring",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736482860,
+            "realtime": 1736482860,
+            "line": {
+                "name": "6",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Dorothea-Erxleben-Stra\u00dfe",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736483340,
+            "realtime": 1736483340,
+            "line": {
+                "name": "1",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Blankenseer Dorfplatz",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736483340,
+            "realtime": 1736483340,
+            "line": {
+                "name": "6",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Grillenweg",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736483340,
+            "realtime": 1736483340,
+            "line": {
+                "name": "9",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "ZOB/Hauptbahnhof",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736483580,
+            "realtime": 1736483580,
+            "line": {
+                "name": "8",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Bad Schwartau ZOB",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736483760,
+            "realtime": 1736483760,
+            "line": {
+                "name": "1",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Bad Schwartau ZOB",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736483760,
+            "realtime": 1736483760,
+            "line": {
+                "name": "9",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Gro\u00df Gr\u00f6nau",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736484360,
+            "realtime": 1736484360,
+            "line": {
+                "name": "4",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Sereetz",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736485080,
+            "realtime": 1736485080,
+            "line": {
+                "name": "1",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Dorothea-Erxleben-Stra\u00dfe",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736485140,
+            "realtime": 1736485140,
+            "line": {
+                "name": "1",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Blankenseer Dorfplatz",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736485140,
+            "realtime": 1736485140,
+            "line": {
+                "name": "6",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Bornkamp",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736485140,
+            "realtime": 1736485140,
+            "line": {
+                "name": "8",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Hamburger Stra\u00dfe",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736485380,
+            "realtime": 1736485380,
+            "line": {
+                "name": "6",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Grillenweg",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736486100,
+            "realtime": 1736486100,
+            "line": {
+                "name": "9",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Bad Schwartau ZOB",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736486280,
+            "realtime": 1736486280,
+            "line": {
+                "name": "9",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "M\u00f6lln",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736486460,
+            "realtime": 1736486460,
+            "line": {
+                "name": "8710",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "AK"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Heiweg",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736486580,
+            "realtime": 1736486580,
+            "line": {
+                "name": "4",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Sereetz",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736486880,
+            "realtime": 1736486880,
+            "line": {
+                "name": "1",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Blankensee/Seekamp",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736487000,
+            "realtime": 1736487000,
+            "line": {
+                "name": "6",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Hamburger Stra\u00dfe",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736487180,
+            "realtime": 1736487180,
+            "line": {
+                "name": "6",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Dorothea-Erxleben-Stra\u00dfe",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736487300,
+            "realtime": 1736487300,
+            "line": {
+                "name": "1",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "L\u00fcbeck ZOB/Hauptbahnhof",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736487540,
+            "realtime": 1736487540,
+            "line": {
+                "name": "8710",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "AK"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Gro\u00df Gr\u00f6nau",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736487600,
+            "realtime": 1736487600,
+            "line": {
+                "name": "4",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "ZOB/Hauptbahnhof",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736487780,
+            "realtime": 1736487780,
+            "line": {
+                "name": "8",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Grillenweg",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736487900,
+            "realtime": 1736487900,
+            "line": {
+                "name": "9",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Bornkamp",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736488200,
+            "realtime": 1736488200,
+            "line": {
+                "name": "8",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Heiweg",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736488380,
+            "realtime": 1736488380,
+            "line": {
+                "name": "4",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Sereetz",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736488680,
+            "realtime": 1736488680,
+            "line": {
+                "name": "1",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Blankensee/Seekamp",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736488800,
+            "realtime": 1736488800,
+            "line": {
+                "name": "6",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "L\u00fcbeck ZOB/Hauptbahnhof",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736488860,
+            "realtime": 1736488860,
+            "line": {
+                "name": "8710",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "AK"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Hamburger Stra\u00dfe",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736488980,
+            "realtime": 1736488980,
+            "line": {
+                "name": "6",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Dorothea-Erxleben-Stra\u00dfe",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736489100,
+            "realtime": 1736489100,
+            "line": {
+                "name": "1",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Gro\u00df Gr\u00f6nau",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736489400,
+            "realtime": 1736489400,
+            "line": {
+                "name": "4",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "ZOB/Hauptbahnhof",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736489580,
+            "realtime": 1736489580,
+            "line": {
+                "name": "8",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Grillenweg",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736489700,
+            "realtime": 1736489700,
+            "line": {
+                "name": "9",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Stadthalle",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736489700,
+            "realtime": 1736489700,
+            "line": {
+                "name": "8",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Bad Schwartau ZOB",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736489880,
+            "realtime": 1736489880,
+            "line": {
+                "name": "9",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Bornkamp",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736490000,
+            "realtime": 1736490000,
+            "line": {
+                "name": "8",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "M\u00f6lln",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736490060,
+            "realtime": 1736490060,
+            "line": {
+                "name": "8710",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "AK"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Heiweg",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736490180,
+            "realtime": 1736490180,
+            "line": {
+                "name": "4",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Dorothea-Erxleben-Stra\u00dfe",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736490300,
+            "realtime": 1736490300,
+            "line": {
+                "name": "1",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Stadthalle",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736490300,
+            "realtime": 1736490300,
+            "line": {
+                "name": "8",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Gustav-Radbruch-Platz",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736490420,
+            "realtime": 1736490420,
+            "line": {
+                "name": "4",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Sereetz",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736490480,
+            "realtime": 1736490480,
+            "line": {
+                "name": "1",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Blankensee/Seekamp",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736490600,
+            "realtime": 1736490600,
+            "line": {
+                "name": "6",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Hamburger Stra\u00dfe",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736490780,
+            "realtime": 1736490780,
+            "line": {
+                "name": "6",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Dorothea-Erxleben-Stra\u00dfe",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736490900,
+            "realtime": 1736490900,
+            "line": {
+                "name": "1",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Stephensonstra\u00dfe",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736491020,
+            "realtime": 1736491020,
+            "line": {
+                "name": "9",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Bad Schwartau ZOB",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736491080,
+            "realtime": 1736491080,
+            "line": {
+                "name": "1",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Gro\u00df Gr\u00f6nau",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736491200,
+            "realtime": 1736491200,
+            "line": {
+                "name": "4",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "L\u00fcbeck ZOB/Hauptbahnhof",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736491320,
+            "realtime": 1736491320,
+            "line": {
+                "name": "8710",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "AK"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "ZOB/Hauptbahnhof",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736491380,
+            "realtime": 1736491380,
+            "line": {
+                "name": "8",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Grillenweg",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736491500,
+            "realtime": 1736491500,
+            "line": {
+                "name": "9",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Stephensonstra\u00dfe",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736491680,
+            "realtime": 1736491680,
+            "line": {
+                "name": "9",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Bad Schwartau ZOB",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736491680,
+            "realtime": 1736491680,
+            "line": {
+                "name": "9",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Bornkamp",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736491800,
+            "realtime": 1736491800,
+            "line": {
+                "name": "8",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Stephensonstra\u00dfe",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736491860,
+            "realtime": 1736491860,
+            "line": {
+                "name": "9",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Heiweg",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736491980,
+            "realtime": 1736491980,
+            "line": {
+                "name": "4",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Stephensonstra\u00dfe",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736492040,
+            "realtime": 1736492040,
+            "line": {
+                "name": "9",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Dorothea-Erxleben-Stra\u00dfe",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736492100,
+            "realtime": 1736492100,
+            "line": {
+                "name": "1",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Sereetz",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736492280,
+            "realtime": 1736492280,
+            "line": {
+                "name": "1",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Blankensee/Seekamp",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736492400,
+            "realtime": 1736492400,
+            "line": {
+                "name": "6",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Hamburger Stra\u00dfe",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736492580,
+            "realtime": 1736492580,
+            "line": {
+                "name": "6",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Dorothea-Erxleben-Stra\u00dfe",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736492700,
+            "realtime": 1736492700,
+            "line": {
+                "name": "1",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Bad Schwartau ZOB",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736492880,
+            "realtime": 1736492880,
+            "line": {
+                "name": "1",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Gro\u00df Gr\u00f6nau",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736493000,
+            "realtime": 1736493000,
+            "line": {
+                "name": "4",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "ZOB/Hauptbahnhof",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736493180,
+            "realtime": 1736493180,
+            "line": {
+                "name": "8",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Grillenweg",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736493300,
+            "realtime": 1736493300,
+            "line": {
+                "name": "9",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "L\u00fcbeck ZOB/Hauptbahnhof",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736493360,
+            "realtime": 1736493360,
+            "line": {
+                "name": "8710",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "AK"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Bad Schwartau ZOB",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736493480,
+            "realtime": 1736493480,
+            "line": {
+                "name": "9",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Bornkamp",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736493600,
+            "realtime": 1736493600,
+            "line": {
+                "name": "8",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "M\u00f6lln",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736493660,
+            "realtime": 1736493660,
+            "line": {
+                "name": "8710",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "AK"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Heiweg",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736493780,
+            "realtime": 1736493780,
+            "line": {
+                "name": "4",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Dorothea-Erxleben-Stra\u00dfe",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736493900,
+            "realtime": 1736493900,
+            "line": {
+                "name": "1",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Sereetz",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736494080,
+            "realtime": 1736494080,
+            "line": {
+                "name": "1",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Blankensee/Seekamp",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736494200,
+            "realtime": 1736494200,
+            "line": {
+                "name": "6",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Hamburger Stra\u00dfe",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736494380,
+            "realtime": 1736494380,
+            "line": {
+                "name": "6",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Dorothea-Erxleben-Stra\u00dfe",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736494500,
+            "realtime": 1736494500,
+            "line": {
+                "name": "1",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Bad Schwartau ZOB",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736494680,
+            "realtime": 1736494680,
+            "line": {
+                "name": "1",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Gro\u00df Gr\u00f6nau",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736494800,
+            "realtime": 1736494800,
+            "line": {
+                "name": "4",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "L\u00fcbeck ZOB/Hauptbahnhof",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736494920,
+            "realtime": 1736494920,
+            "line": {
+                "name": "8710",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "AK"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "ZOB/Hauptbahnhof",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736494980,
+            "realtime": 1736494980,
+            "line": {
+                "name": "8",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Grillenweg",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736495100,
+            "realtime": 1736495100,
+            "line": {
+                "name": "9",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Bad Schwartau ZOB",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736495280,
+            "realtime": 1736495280,
+            "line": {
+                "name": "9",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Bornkamp",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736495400,
+            "realtime": 1736495400,
+            "line": {
+                "name": "8",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Heiweg",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736495580,
+            "realtime": 1736495580,
+            "line": {
+                "name": "4",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Dorothea-Erxleben-Stra\u00dfe",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736495700,
+            "realtime": 1736495700,
+            "line": {
+                "name": "1",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Sereetz",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736495880,
+            "realtime": 1736495880,
+            "line": {
+                "name": "1",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Blankenseer Dorfplatz",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736496000,
+            "realtime": 1736496000,
+            "line": {
+                "name": "6",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Hamburger Stra\u00dfe",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736496180,
+            "realtime": 1736496180,
+            "line": {
+                "name": "6",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Dorothea-Erxleben-Stra\u00dfe",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736496300,
+            "realtime": 1736496300,
+            "line": {
+                "name": "1",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Bad Schwartau ZOB",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736496480,
+            "realtime": 1736496480,
+            "line": {
+                "name": "1",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Gro\u00df Gr\u00f6nau",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736496600,
+            "realtime": 1736496600,
+            "line": {
+                "name": "4",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "ZOB/Hauptbahnhof",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736496780,
+            "realtime": 1736496780,
+            "line": {
+                "name": "8",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Grillenweg",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736496900,
+            "realtime": 1736496900,
+            "line": {
+                "name": "9",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Bad Schwartau ZOB",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736497080,
+            "realtime": 1736497080,
+            "line": {
+                "name": "9",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Bornkamp",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736497200,
+            "realtime": 1736497200,
+            "line": {
+                "name": "8",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "M\u00f6lln",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736497260,
+            "realtime": 1736497260,
+            "line": {
+                "name": "8710",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "AK"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Heiweg",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736497380,
+            "realtime": 1736497380,
+            "line": {
+                "name": "4",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Dorothea-Erxleben-Stra\u00dfe",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736497500,
+            "realtime": 1736497500,
+            "line": {
+                "name": "1",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Sereetz",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736497680,
+            "realtime": 1736497680,
+            "line": {
+                "name": "1",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Blankenseer Dorfplatz",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736497800,
+            "realtime": 1736497800,
+            "line": {
+                "name": "6",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Hamburger Stra\u00dfe",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736497980,
+            "realtime": 1736497980,
+            "line": {
+                "name": "6",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Dorothea-Erxleben-Stra\u00dfe",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736498100,
+            "realtime": 1736498100,
+            "line": {
+                "name": "1",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Bad Schwartau ZOB",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736498280,
+            "realtime": 1736498280,
+            "line": {
+                "name": "1",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "L\u00fcbeck ZOB/Hauptbahnhof",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736498340,
+            "realtime": 1736498340,
+            "line": {
+                "name": "8710",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "AK"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Gro\u00df Gr\u00f6nau",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736498400,
+            "realtime": 1736498400,
+            "line": {
+                "name": "4",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "ZOB/Hauptbahnhof",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736498580,
+            "realtime": 1736498580,
+            "line": {
+                "name": "8",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Grillenweg",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736498700,
+            "realtime": 1736498700,
+            "line": {
+                "name": "9",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Bad Schwartau ZOB",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736498880,
+            "realtime": 1736498880,
+            "line": {
+                "name": "9",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Bornkamp",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736499000,
+            "realtime": 1736499000,
+            "line": {
+                "name": "8",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Heiweg",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736499180,
+            "realtime": 1736499180,
+            "line": {
+                "name": "4",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Dorothea-Erxleben-Stra\u00dfe",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736499300,
+            "realtime": 1736499300,
+            "line": {
+                "name": "1",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Sereetz",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736499480,
+            "realtime": 1736499480,
+            "line": {
+                "name": "1",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Blankenseer Dorfplatz",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736499600,
+            "realtime": 1736499600,
+            "line": {
+                "name": "6",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Hamburger Stra\u00dfe",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736499780,
+            "realtime": 1736499780,
+            "line": {
+                "name": "6",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Dorothea-Erxleben-Stra\u00dfe",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736499900,
+            "realtime": 1736499900,
+            "line": {
+                "name": "1",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Bad Schwartau ZOB",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736500080,
+            "realtime": 1736500080,
+            "line": {
+                "name": "1",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Gro\u00df Gr\u00f6nau",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736500200,
+            "realtime": 1736500200,
+            "line": {
+                "name": "4",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "ZOB/Hauptbahnhof",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736500380,
+            "realtime": 1736500380,
+            "line": {
+                "name": "8",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Grillenweg",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736500500,
+            "realtime": 1736500500,
+            "line": {
+                "name": "9",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Bad Schwartau ZOB",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736500680,
+            "realtime": 1736500680,
+            "line": {
+                "name": "9",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Bornkamp",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736500800,
+            "realtime": 1736500800,
+            "line": {
+                "name": "8",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "M\u00f6lln",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736500860,
+            "realtime": 1736500860,
+            "line": {
+                "name": "8710",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "AK"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Heiweg",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736500980,
+            "realtime": 1736500980,
+            "line": {
+                "name": "4",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Dorothea-Erxleben-Stra\u00dfe",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736501100,
+            "realtime": 1736501100,
+            "line": {
+                "name": "1",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Sereetz",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736501280,
+            "realtime": 1736501280,
+            "line": {
+                "name": "1",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Blankenseer Dorfplatz",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736501400,
+            "realtime": 1736501400,
+            "line": {
+                "name": "6",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Hamburger Stra\u00dfe",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736501580,
+            "realtime": 1736501580,
+            "line": {
+                "name": "6",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Dorothea-Erxleben-Stra\u00dfe",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736501700,
+            "realtime": 1736501700,
+            "line": {
+                "name": "1",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "Bad Schwartau ZOB",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736501880,
+            "realtime": 1736501880,
+            "line": {
+                "name": "1",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "SVL"
+            },
+            "cancelled": false
+        },
+        {
+            "stop_id": "",
+            "headsign": "L\u00fcbeck ZOB/Hauptbahnhof",
+            "platform": "",
+            "patform_type": "",
+            "time": 1736501940,
+            "realtime": 1736501940,
+            "line": {
+                "name": "8710",
+                "type": "Bus",
+                "bg_color": "#FF7800",
+                "fg_color": "#FFFFFF",
+                "product_icon": "/images/jpapi_hafas/bus.svg",
+                "operator": "AK"
+            },
+            "cancelled": false
+        }
+    ]
+}

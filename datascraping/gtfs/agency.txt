@@ -1,0 +1,347 @@
+agency_id,agency_name,agency_url,agency_timezone,agency_lang
+1,NEW Viersen,https://www.bahn.de,Europe/Berlin,de
+10,Stadtwerke München,https://www.bahn.de,Europe/Berlin,de
+100,Süd-Thüringen-Bahn,https://www.bahn.de,Europe/Berlin,de
+101,Stadtverkehr Hof (Saale),https://www.bahn.de,Europe/Berlin,de
+102,Essener Verkehrs AG,https://www.bahn.de,Europe/Berlin,de
+103,DB Regio AG Mitte Region Südwest,https://www.bahn.de,Europe/Berlin,de
+104,Zellertal Reisen,https://www.bahn.de,Europe/Berlin,de
+105,Verkehrsverbund Stuttgart,https://www.bahn.de,Europe/Berlin,de
+106,Verkehrsbetriebe Schleswig-Flensburg,https://www.bahn.de,Europe/Berlin,de
+107,SW GI-direkt,https://www.bahn.de,Europe/Berlin,de
+108,Vetter GmbH,https://www.bahn.de,Europe/Berlin,de
+109,Verkehrsgemeinschaft Westmecklenburg,https://www.bahn.de,Europe/Berlin,de
+11,VGM/VRL,https://www.bahn.de,Europe/Berlin,de
+110,Werrabus,https://www.moveas.de,Europe/Berlin,de
+111,AVV Handeingabe,https://www.bahn.de,Europe/Berlin,de
+112,Bahnen der Stadt Monheim,https://www.bahn.de,Europe/Berlin,de
+113,RMV,https://www.bahn.de,Europe/Berlin,de
+114,Ingolstadt,https://www.bahn.de,Europe/Berlin,de
+115,stadtbus Ravensburg Weingarten,http://www.stadtbus-rv-wgt.de/,Europe/Berlin,de
+116,Stadtwerke Schweinfurt,https://www.bahn.de,Europe/Berlin,de
+117,ESWE direkt,https://www.bahn.de,Europe/Berlin,de
+118,Regionalbus Ostbayern,https://www.bahn.de,Europe/Berlin,de
+119,prignitzbus,https://www.bahn.de,Europe/Berlin,de
+12,Stadtverkehr Weiden (Opf),https://www.bahn.de,Europe/Berlin,de
+120,stendalbus,https://www.bahn.de,Europe/Berlin,de
+121,Stadtwerke Neuss GmbH,https://www.bahn.de,Europe/Berlin,de
+122,Verkehrsverbund Rhein-Mosel,https://www.bahn.de,Europe/Berlin,de
+123,Martin Regionalbus Pressig,https://www.bahn.de,Europe/Berlin,de
+124,Verkehrsverbund Warnow,https://www.bahn.de,Europe/Berlin,de
+125,Landkreis Landshut,https://www.bahn.de,Europe/Berlin,de
+126,Regionalbus Leipzig GmbH,https://www.bahn.de,Europe/Berlin,de
+127,Verkehrsgemeinschaft Vogtland,https://www.bahn.de,Europe/Berlin,de
+128,Städtische Nahverkehrsgesellschaft mbH Suhl/Zella-Mehlis,https://www.sngonline.de,Europe/Berlin,de
+129,VIAS GmbH,https://www.bahn.de,Europe/Berlin,de
+13,Augsburger Verkehrsgesellschaft,https://www.bahn.de,Europe/Berlin,de
+130,VSN-Direkt,https://www.bahn.de,Europe/Berlin,de
+131,ABELLIO Rail Mitteldeutschland GmbH,https://www.bahn.de,Europe/Berlin,de
+132,Andressen Reisen,https://www.bahn.de,Europe/Berlin,de
+133,Wilhelm Giese Omnibusbetrieb,https://www.bahn.de,Europe/Berlin,de
+134,-,https://www.bahn.de,Europe/Berlin,de
+135,Rurtalbus,http://www.dkb-dn.de,Europe/Berlin,de
+136,Vogel-Omnibus,https://www.bahn.de,Europe/Berlin,de
+137,Stadt Wetzlar direkt,https://www.bahn.de,Europe/Berlin,de
+138,Regionalverkehre Start Deutschland GmbH,https://www.bahn.de,Europe/Berlin,de
+139,Stade,https://www.bahn.de,Europe/Berlin,de
+14,Regionalbus Braunschweig,https://www.bahn.de,Europe/Berlin,de
+140,SH-Kuschick,https://www.bahn.de,Europe/Berlin,de
+141,Mobilitätszentrale Elbe-Weser,https://www.bahn.de,Europe/Berlin,de
+142,Lyst-Reisen Stefan Lyding KG,https://www.bahn.de,Europe/Berlin,de
+143,Verkehrsverbund Rhein-Neckar,https://www.bahn.de,Europe/Berlin,de
+144,Ebenbeck Reisen Straubing,https://www.bahn.de,Europe/Berlin,de
+145,Stadtwerke Trier,https://www.bahn.de,Europe/Berlin,de
+146,Donau-Iller-Nahverkehrs-GmbH (UL+BC),https://www.bahn.de,Europe/Berlin,de
+147,VBB-Lieferungen Tabellenplaner,https://www.bahn.de,Europe/Berlin,de
+148,Stadtverkehr Bamberg,https://www.bahn.de,Europe/Berlin,de
+149,Nordhäuser Verkehrsbetrieb GmbH,https://www.bahn.de,Europe/Berlin,de
+15,Stadtverkehr Lübeck,https://www.bahn.de,Europe/Berlin,de
+150,NVV ESM AST,https://www.bahn.de,Europe/Berlin,de
+151,Jenaer Nahverkehr GmbH,https://www.stadtwerke-jena.de/nahverkehr.html,Europe/Berlin,de
+152,ZV VHT,https://www.bahn.de,Europe/Berlin,de
+153,REGIOBAHN,https://www.bahn.de,Europe/Berlin,de
+154,Augsburger Verkehrs- und Tarifverbund,https://www.bahn.de,Europe/Berlin,de
+155,Reise Fischer GmbH,https://www.bahn.de,Europe/Berlin,de
+156,DB Fernverkehr AG,https://www.bahn.de,Europe/Berlin,de
+157,S-Bahn Hamburg,https://www.bahn.de,Europe/Berlin,de
+158,DB Regio AG Baden-Württemberg,https://www.bahn.de,Europe/Berlin,de
+159,S-Bahn Hannover,https://www.bahn.de,Europe/Berlin,de
+16,HSB direkt,https://www.bahn.de,Europe/Berlin,de
+160,Stadtverkehr Fürth,https://www.bahn.de,Europe/Berlin,de
+161,Verwaltungsgesellschaft des ÖPNV Sömmerda mbH,https://www.bahn.de,Europe/Berlin,de
+162,Verkehrsgesellschaft Paderborn/Höxter,https://www.bahn.de,Europe/Berlin,de
+163,Stadtwerke Solingen GmbH,https://www.bahn.de,Europe/Berlin,de
+164,Autokraft Kiel,https://www.bahn.de,Europe/Berlin,de
+165,Stadtwerke Oberhausen AG,https://www.bahn.de,Europe/Berlin,de
+166,agilis,https://www.bahn.de,Europe/Berlin,de
+167,Dingolfing,https://www.bahn.de,Europe/Berlin,de
+168,BördeBus Verkehrsgesellschaft,https://www.bahn.de,Europe/Berlin,de
+169,SBB,https://www.bahn.de,Europe/Berlin,de
+17,Karlsruher Verkehrsverbund,https://www.bahn.de,Europe/Berlin,de
+170,VV Pforzheim Enzkreis Ost,https://www.bahn.de,Europe/Berlin,de
+171,NVV - Faisy,https://www.bahn.de,Europe/Berlin,de
+172,Edzards Reisen,https://www.bahn.de,Europe/Berlin,de
+173,Harzer Schmalspurbahn,https://www.bahn.de,Europe/Berlin,de
+174,Nordbahn Eisenbahngesellschaft,https://www.bahn.de,Europe/Berlin,de
+175,RB-Gesellschaft UHK mbH,https://www.bahn.de,Europe/Berlin,de
+176,Bodensee-Oberschwaben-Verkehrsverbund,https://www.bahn.de,Europe/Berlin,de
+177,Bremerhavenbus,https://www.bahn.de,Europe/Berlin,de
+178,ÜWAG direkt,https://www.bahn.de,Europe/Berlin,de
+179,Duisburger Verkehrsgesellschaft AG,https://www.bahn.de,Europe/Berlin,de
+18,RTV Direkt,https://www.bahn.de,Europe/Berlin,de
+180,Erfurter Verkehrsbetriebe AG,https://www.evag-erfurt.de/evag/home,Europe/Berlin,de
+181,Meininger Busbetriebs GmbH,https://www.mbb-mgn.de,Europe/Berlin,de
+182,Verkehrs- und Betriebsgesellschaft Gera mbH,https://www.gvbgera.de/,Europe/Berlin,de
+183,Regionalverkehr Alb-Bodensee,https://www.bahn.de,Europe/Berlin,de
+184,Nordsachsen Mobil,https://www.bahn.de,Europe/Berlin,de
+185,Mülheimer VerkehrsGesellschaft mbH,https://www.bahn.de,Europe/Berlin,de
+186,LVB,https://www.bahn.de,Europe/Berlin,de
+187,Landkreis Mühldorf,https://www.bahn.de,Europe/Berlin,de
+188,Verkehrsgem. Emsland-Süd,https://www.bahn.de,Europe/Berlin,de
+189,Regionalverkehr Oberbayern,https://www.bahn.de,Europe/Berlin,de
+19,Personenverkehrsgesellschaft mbH Weimarer Land,https://www.pvg.weimarerland.de/,Europe/Berlin,de
+190,Bochum-Gelsenkirchener Straßenbahnen AG,https://www.bahn.de,Europe/Berlin,de
+191,Wilmering,https://www.bahn.de,Europe/Berlin,de
+192,Verkehrsunternehmen Andreas Schröder,https://www.verkehrsunternehmen-schroeder.de/,Europe/Berlin,de
+193,Stadtverkehr Bad Kissingen,https://www.bahn.de,Europe/Berlin,de
+194,OREG direkt,https://www.bahn.de,Europe/Berlin,de
+195,Stadtwerke Wilhelmshaven,https://www.bahn.de,Europe/Berlin,de
+196,Ernst Lambürger Grenzlandreisebüro Omnibusunternehmen,https://www.bahn.de,Europe/Berlin,de
+197,Heilbronner Nahverkehr,https://www.bahn.de,Europe/Berlin,de
+198,Kieler Verkehrsgesellschaft,https://www.bahn.de,Europe/Berlin,de
+199,IV HG,https://www.bahn.de,Europe/Berlin,de
+2,OVB - Microbus,https://www.bahn.de,Europe/Berlin,de
+20,Hülsmann Ratio,https://www.bahn.de,Europe/Berlin,de
+200,Go-Ahead Verkehrsgesellschaft Deutschland GmbH,https://www.bahn.de,Europe/Berlin,de
+201,Thüringerwaldbahn und Straßenbahn Gotha GmbH,https://waldbahn-gotha.de/,Europe/Berlin,de
+202,Gute Reise Hauck,https://www.bahn.de,Europe/Berlin,de
+203,Freiburger Verkehrs AG,https://www.bahn.de,Europe/Berlin,de
+204,Regiobus Mittelsachsen GmbH,https://www.bahn.de,Europe/Berlin,de
+205,Stadtwerke Passau,https://www.bahn.de,Europe/Berlin,de
+206,MTV,https://www.bahn.de,Europe/Berlin,de
+207,MühlenkreisBus,https://www.bahn.de,Europe/Berlin,de
+208,Erlanger Stadtverkehr,https://www.bahn.de,Europe/Berlin,de
+209,Verkehrsgesellschaft mbH,https://www.stadtwerke-jena.de/nahverkehr,Europe/Berlin,de
+21,Südbadenbus,https://www.bahn.de,Europe/Berlin,de
+210,LNG LLM direkt,https://www.bahn.de,Europe/Berlin,de
+211,Landkreis Cham,https://www.bahn.de,Europe/Berlin,de
+212,Rohde Ostholstein/Flensburg/Mitte,https://www.bahn.de,Europe/Berlin,de
+213,BVR Busverkehr Rheinland GmbH,https://www.bahn.de,Europe/Berlin,de
+214,Röhler StadtBus Roth,https://www.bahn.de,Europe/Berlin,de
+215,Arriva NL,https://www.bahn.de,Europe/Berlin,de
+216,Hallesche Verkehrs-AG,https://www.bahn.de,Europe/Berlin,de
+217,Verkehrsverbund Bremen Niedersachsen,https://www.bahn.de,Europe/Berlin,de
+218,National Express,https://www.bahn.de,Europe/Berlin,de
+219,Meyering Reisen,https://www.bahn.de,Europe/Berlin,de
+22,Stadtwerke Emden,https://www.bahn.de,Europe/Berlin,de
+220,Erfurter Bahn,https://www.bahn.de,Europe/Berlin,de
+221,KVG Salzland,https://www.bahn.de,Europe/Berlin,de
+222,metronom,https://www.bahn.de,Europe/Berlin,de
+223,Hanseatische Eisenbahn GmbH,https://www.bahn.de,Europe/Berlin,de
+224,Verkehrsmanagement Elbe-Elster,https://www.bahn.de,Europe/Berlin,de
+225,Neckar-Donau,https://www.bahn.de,Europe/Berlin,de
+226,Landkreis Landsberg (Lech),https://www.bahn.de,Europe/Berlin,de
+227,Verkehrsverbund Oberelbe,https://www.bahn.de,Europe/Berlin,de
+228,Stadtbahn Karlsruhe SEV,https://www.bahn.de,Europe/Berlin,de
+229,Märkische VG,https://www.bahn.de,Europe/Berlin,de
+23,DADINA,https://www.bahn.de,Europe/Berlin,de
+230,VGO,https://www.bahn.de,Europe/Berlin,de
+231,SBG SüdbadenBus GmbH,https://www.bahn.de,Europe/Berlin,de
+232,Oberhavel Verkehrsgesellschaft,https://www.bahn.de,Europe/Berlin,de
+233,Omnipart,https://www.bahn.de,Europe/Berlin,de
+234,Nationalparkreisen Pfeffer,https://www.bahn.de,Europe/Berlin,de
+235,Verkehrsgesell. Teltow-Fläming,https://www.bahn.de,Europe/Berlin,de
+236,Stadtwirtschaft Weimar GmbH,https://sw-weimar.de/,Europe/Berlin,de
+237,Verkehrsbetrieb Potsdam GmbH,https://www.bahn.de,Europe/Berlin,de
+238,alex - Die Länderbahn GmbH DLB,https://www.bahn.de,Europe/Berlin,de
+239,Wenzl Freizeit & Touristik,https://www.bahn.de,Europe/Berlin,de
+24,VIAS Rail GmbH,https://www.bahn.de,Europe/Berlin,de
+240,GmbH,https://www.bahn.de,Europe/Berlin,de
+241,Alois Pfeffer e.K.,https://www.bahn.de,Europe/Berlin,de
+242,LK Schaumburg,https://www.bahn.de,Europe/Berlin,de
+243,Flixbus,https://www.bahn.de,Europe/Berlin,de
+244,Regionalverkehr Allgäu,https://www.bahn.de,Europe/Berlin,de
+245,Völklinger Verkehrsbetriebe GmbH,https://www.bahn.de,Europe/Berlin,de
+246,Landkreis Freudenstadt,https://www.bahn.de,Europe/Berlin,de
+247,Tarifverbund Ortenau GmbH,https://www.bahn.de,Europe/Berlin,de
+248,Sylter Verkehrsgesellschaft,https://www.bahn.de,Europe/Berlin,de
+249,Verkehrsgesellschaft Südharz mbH,https://www.bahn.de,Europe/Berlin,de
+25,Großraumverkehr Hannover,https://www.bahn.de,Europe/Berlin,de
+250,Karl Beck GmbH & Co. KG,https://www.bahn.de,Europe/Berlin,de
+251,KVG OF - Faisy BAIM,https://www.bahn.de,Europe/Berlin,de
+252,Taxi Renner Eschenbach,https://www.bahn.de,Europe/Berlin,de
+253,IGDB - RNV MRB direkt,https://www.bahn.de,Europe/Berlin,de
+254,Regensburger Verkehrsverbund,https://www.bahn.de,Europe/Berlin,de
+255,Hildesheim,https://www.bahn.de,Europe/Berlin,de
+256,Verkehrsbetriebe Kreis Plön,https://www.bahn.de,Europe/Berlin,de
+257,Heiner Geis GmbH,https://www.bahn.de,Europe/Berlin,de
+258,Gesellschaft zur Förderung des ÖPNV Landkreis,https://www.bahn.de,Europe/Berlin,de
+259,DB RegioNetz Verkehrs GmbH Westfrankenbahn,https://www.bahn.de,Europe/Berlin,de
+26,Havelbus Verkehrsgesellschaft mb,https://www.bahn.de,Europe/Berlin,de
+260,Heilbronner Nahverkehrsverbund,https://www.bahn.de,Europe/Berlin,de
+261,Cottbusverkehr,https://www.bahn.de,Europe/Berlin,de
+262,Aachener Straßenbahn,http://www.aseag.de,Europe/Berlin,de
+263,Bustouristik GmbH,https://www.bahn.de,Europe/Berlin,de
+264,Gerdes Reisen,https://www.bahn.de,Europe/Berlin,de
+265,Sieghart Reisen GmbH & Co KG,https://www.bahn.de,Europe/Berlin,de
+266,Salza-Tours König OHG,https://www.bahn.de,Europe/Berlin,de
+267,Regionalverkehr Spreewald,https://www.bahn.de,Europe/Berlin,de
+268,DB Regio Bus Region Mitte,https://www.bahn.de,Europe/Berlin,de
+269,Ehard Touristik GmbH Schwabach,https://www.bahn.de,Europe/Berlin,de
+27,Landkreis Freyung-Grafenau,https://www.bahn.de,Europe/Berlin,de
+270,Ostwestfalen-Lippe,https://www.bahn.de,Europe/Berlin,de
+271,Dortmunder Stadtwerke DSW,https://www.bahn.de,Europe/Berlin,de
+272,RBS Regionalbus Stuttgart GmbH,https://www.bahn.de,Europe/Berlin,de
+273,Münchner Verkehrs- und Tarifverbund,https://www.bahn.de,Europe/Berlin,de
+274,Hülsmann VGE-Süd,https://www.bahn.de,Europe/Berlin,de
+275,Stadtverkehr Schwandorf,https://www.bahn.de,Europe/Berlin,de
+276,Weser-Ems-Bus,https://www.weser-ems-bus.de/weseremsbus,Europe/Berlin,de
+277,Schmetterling Reisen,https://www.bahn.de,Europe/Berlin,de
+278,Bayerische Regiobahn,https://www.bahn.de,Europe/Berlin,de
+279,Stadwerke Remscheid GmbH,https://www.bahn.de,Europe/Berlin,de
+28,Magdeburger Verkehrsbetriebe AG,https://www.bahn.de,Europe/Berlin,de
+280,SW Ou,https://www.bahn.de,Europe/Berlin,de
+281,SW MR - Microbus (NEU),https://www.bahn.de,Europe/Berlin,de
+282,Tuttlinger Verkehrsverbund,https://www.bahn.de,Europe/Berlin,de
+283,Touristische Bahnen (diverse),https://www.bahn.de,Europe/Berlin,de
+284,DB Regio Mitte,https://www.bahn.de,Europe/Berlin,de
+285,Kraus Reisen Gmbh,https://www.bahn.de,Europe/Berlin,de
+286,Bus GmbH,https://www.bahn.de,Europe/Berlin,de
+287,PVG Salzwedel,https://www.bahn.de,Europe/Berlin,de
+288,NordWestBahn,https://www.bahn.de,Europe/Berlin,de
+289,Stadtwerke Landshut,https://www.bahn.de,Europe/Berlin,de
+29,Landkreis Neuburg-Schrobenhausen,https://www.bahn.de,Europe/Berlin,de
+290,Reisedienst von Rahden,https://www.bahn.de,Europe/Berlin,de
+291,Rombs Touristik GmbH & Co,https://www.bahn.de,Europe/Berlin,de
+292,Stadtbus Kulmbach GmbH,https://www.bahn.de,Europe/Berlin,de
+293,Stroh Bus-Verkehrs GmbH,https://www.bahn.de,Europe/Berlin,de
+294,Unbekannt,https://www.bahn.de,Europe/Berlin,de
+295,traffiQ,https://www.bahn.de,Europe/Berlin,de
+296,RATIO-Soft Bruns/ABV,https://www.bahn.de,Europe/Berlin,de
+297,Meridian,https://www.bahn.de,Europe/Berlin,de
+298,Rhein-Mosel-Bus Ahrweiler,https://www.bahn.de,Europe/Berlin,de
+299,Ostprignitz-Ruppiner-Personennahverkehrsgesellschaft,https://www.bahn.de,Europe/Berlin,de
+3,Verkehr und Wasser Oldenburg,https://www.bahn.de,Europe/Berlin,de
+30,Berliner Verkehrsbetriebe,https://www.bahn.de,Europe/Berlin,de
+300,Verkehrsgemeinschaft Müritz-Oderhaff,https://www.bahn.de,Europe/Berlin,de
+301,Landkreis Calw,https://www.bahn.de,Europe/Berlin,de
+302,Verkehrsbetriebe des Landreises Leer,https://www.bahn.de,Europe/Berlin,de
+303,Verkehrsbetriebe Brandenburg,https://www.bahn.de,Europe/Berlin,de
+304,Verkehrsgemeinschaft Osnabrück,https://www.bahn.de,Europe/Berlin,de
+305,Verkehrsgemeinschaft Westfalen-Süd,https://www.bahn.de,Europe/Berlin,de
+306,Regionalbusverkehr Südwest,https://www.bahn.de,Europe/Berlin,de
+307,SWEG RVF-Gebiet,https://www.bahn.de,Europe/Berlin,de
+308,Ansbacher Bäder und Verkehrs GmbH,https://www.bahn.de,Europe/Berlin,de
+309,Verkehrsgemeinschaft Landkreis Gotha GbR,https://www.nvg-gotha.info/,Europe/Berlin,de
+31,Personen- und Reiseverkehrs GmbH Greiz,https://www.bahn.de,Europe/Berlin,de
+310,Grafschaft Bentheim,https://www.bahn.de,Europe/Berlin,de
+311,Nahreisezug,https://www.bahn.de,Europe/Berlin,de
+312,Harzer Verkehrsbetriebe GmbH,https://www.bahn.de,Europe/Berlin,de
+313,Bremer Straßenbahn AG,http://www.bsag.de,Europe/Berlin,de
+314,Burlein und Sohn GmbH & Co. KG,https://www.bahn.de,Europe/Berlin,de
+315,Kuschick (VBN),https://www.bahn.de,Europe/Berlin,de
+316,Verkehrsverbund Pforzheim-Enzkreis,https://www.bahn.de,Europe/Berlin,de
+317,Landkreis Rottal (Pfarrkirchen),https://www.bahn.de,Europe/Berlin,de
+318,ZVON Oberlausitz-Niederschlesien,https://www.bahn.de,Europe/Berlin,de
+319,DB RegioNetz Verkehrs GmbH Südostbayernbahn,https://www.bahn.de,Europe/Berlin,de
+32,Omnibusunternehmen Christian Gloss,https://www.bahn.de,Europe/Berlin,de
+320,mobus,https://www.mo-bus.de,Europe/Berlin,de
+321,Wyker Dampfschiffs-Reederei Föhr-Amrum GmbH,https://www.bahn.de,Europe/Berlin,de
+322,Stadtverkehr Bayreuth,https://www.bahn.de,Europe/Berlin,de
+323,Stadtbus Pfaffenhofen,https://www.bahn.de,Europe/Berlin,de
+324,VerkehrsAG Nürnberg,https://www.bahn.de,Europe/Berlin,de
+325,Arendt Busbetrieb,https://www.bahn.de,Europe/Berlin,de
+326,SW RÜ,https://www.bahn.de,Europe/Berlin,de
+327,LK Emsland,https://www.bahn.de,Europe/Berlin,de
+328,Vonau,https://www.bahn.de,Europe/Berlin,de
+329,Ostalbmobil (Aalen+Gmünd+Ellwangen),https://www.bahn.de,Europe/Berlin,de
+33,Straßenverkehr Frankfurt Oder,https://www.bahn.de,Europe/Berlin,de
+330,Vineta,https://www.bahn.de,Europe/Berlin,de
+331,Halberstädter Verkehrs-GmbH,https://www.bahn.de,Europe/Berlin,de
+332,Saarbahn GmbH,https://www.bahn.de,Europe/Berlin,de
+333,Regionale Verkehrsbetriebe Schaffhausen,https://www.bahn.de,Europe/Berlin,de
+334,Verkehrsgemeinschaft Schwäbisch Hall,https://www.bahn.de,Europe/Berlin,de
+335,Ilchmann Tours GmbH,https://www.bahn.de,Europe/Berlin,de
+336,S Bahn Berlin GmbH,https://www.bahn.de,Europe/Berlin,de
+337,Lüchow-Schmarsauer Eisenbahn,https://www.bahn.de,Europe/Berlin,de
+338,LNVG-GG,https://www.bahn.de,Europe/Berlin,de
+339,Merseburg Querfurt,https://www.bahn.de,Europe/Berlin,de
+34,Fähren,https://www.bahn.de,Europe/Berlin,de
+340,Hagener Straßenbahn AG,https://www.bahn.de,Europe/Berlin,de
+341,Uckermärkische VG,https://www.bahn.de,Europe/Berlin,de
+342,O.K. Reisen - Kleinhenz GmbH,https://www.bahn.de,Europe/Berlin,de
+343,Aktiv Bus Flensburg,https://www.bahn.de,Europe/Berlin,de
+344,Verkehrsverbund Hegau Bodensee,https://www.bahn.de,Europe/Berlin,de
+345,Südwestdeutsche Verkehrs-AG,https://www.bahn.de,Europe/Berlin,de
+346,BusClassic / Weiglein,https://www.bahn.de,Europe/Berlin,de
+35,Omnibusverkehr Franken,https://www.bahn.de,Europe/Berlin,de
+36,Dafinger GmbH Omnibusunternehmen,https://www.bahn.de,Europe/Berlin,de
+37,MittelSachsen,https://www.bahn.de,Europe/Berlin,de
+38,Tarifverb Region Braunschweig,https://www.bahn.de,Europe/Berlin,de
+39,Fahrplaneditor,https://www.bahn.de,Europe/Berlin,de
+4,WSW mobil GmbH,https://www.bahn.de,Europe/Berlin,de
+40,JANßen Omnibusbetrieb,https://www.bahn.de,Europe/Berlin,de
+41,LK Hameln-Pyrmont,https://www.bahn.de,Europe/Berlin,de
+42,Omnibusverkehr GmbH Ilmenau,https://www.iov-ilmenau.de,Europe/Berlin,de
+43,PVG Burgenlandkreis,https://www.bahn.de,Europe/Berlin,de
+44,NJL,https://www.bahn.de,Europe/Berlin,de
+45,Nichtbundeseigene Eisenbahnen,https://www.bahn.de,Europe/Berlin,de
+46,Gesellschaft zur Förderung des ÖPNV Regensburg,https://www.bahn.de,Europe/Berlin,de
+47,Verkehrsgesellschaft Nordvorpommern,https://www.bahn.de,Europe/Berlin,de
+48,DB Regio AG Mitte Region Hessen,https://www.bahn.de,Europe/Berlin,de
+49,KVG MKK direkt,https://www.bahn.de,Europe/Berlin,de
+5,Hamburger Verkehrsverbund,https://www.bahn.de,Europe/Berlin,de
+50,Hessische Landesbahn,https://www.bahn.de,Europe/Berlin,de
+51,THÜSACneu,https://www.bahn.de,Europe/Berlin,de
+52,HEAG,https://www.bahn.de,Europe/Berlin,de
+53,Göttinger Verkehrsbetriebe,https://www.bahn.de,Europe/Berlin,de
+54,Grasmann-Reisen GmbH,https://www.bahn.de,Europe/Berlin,de
+55,SNCF,https://www.bahn.de,Europe/Berlin,de
+56,Mitteldeutsche Regiobahn,https://www.bahn.de,Europe/Berlin,de
+57,NEW mobil und aktiv Mönchengladbach GmbH,https://www.bahn.de,Europe/Berlin,de
+58,Saar-Mobil GmbH,https://www.bahn.de,Europe/Berlin,de
+59,Norddeutsche Eisenbahn Gesellschaft,https://www.bahn.de,Europe/Berlin,de
+6,DB RegioBus Bayern,https://www.bahn.de,Europe/Berlin,de
+60,RheinRuhrBahn,https://www.bahn.de,Europe/Berlin,de
+61,Omnibus-Service Mellrichstadt,https://www.bahn.de,Europe/Berlin,de
+62,"Omnibus Verkehrs Gesellschaft mbH Sonneberg/Thür,",https://www.bahn.de,Europe/Berlin,de
+63,NEB Niederbarnimer Eisenbahn,https://www.bahn.de,Europe/Berlin,de
+64,Vetter Verkehrsbetriebe,https://www.bahn.de,Europe/Berlin,de
+65,WestfalenBahn,https://www.bahn.de,Europe/Berlin,de
+66,Niederrheinische Verkehrsbetriebe AG,https://www.bahn.de,Europe/Berlin,de
+67,Ostdeutsche Eisenbahn GmbH,https://www.bahn.de,Europe/Berlin,de
+68,Rheinbahn AG,https://www.bahn.de,Europe/Berlin,de
+69,DB RegioNetz Verkehrs GmbH Kurhessenbahn,https://www.bahn.de,Europe/Berlin,de
+7,ZV VLD,https://www.bahn.de,Europe/Berlin,de
+70,eurobahn,https://www.bahn.de,Europe/Berlin,de
+71,Dessauer Verkehrsgesellschaft,https://www.bahn.de,Europe/Berlin,de
+72,Kurt Geis GmbH,https://www.bahn.de,Europe/Berlin,de
+73,Barnimer Busges.,https://www.bahn.de,Europe/Berlin,de
+74,KomBus GmbH,https://www.kombus-online.eu/,Europe/Berlin,de
+75,Stadtwerke Neumünster,https://www.bahn.de,Europe/Berlin,de
+76,IGDB - VHT direkt,https://www.bahn.de,Europe/Berlin,de
+77,Vestische Straßenbahnen GmbH,https://www.bahn.de,Europe/Berlin,de
+78,Buspunkt,https://www.bahn.de,Europe/Berlin,de
+79,DB Regio AG Mitte,https://www.bahn.de,Europe/Berlin,de
+8,DB Regiobus OST,https://www.bahn.de,Europe/Berlin,de
+80,Omnibusbetrieb Saalekreis GmbH,https://www.bahn.de,Europe/Berlin,de
+81,Neunkircher Verkehrs GmbH,https://www.bahn.de,Europe/Berlin,de
+82,Straßenbahn Herne – Castrop-Rauxel GmbH,https://www.bahn.de,Europe/Berlin,de
+83,Stadtverkehr Coburg,https://www.bahn.de,Europe/Berlin,de
+84,Zarth,https://www.bahn.de,Europe/Berlin,de
+85,Stadtverkehr Aschaffenburg,https://www.bahn.de,Europe/Berlin,de
+86,oberpfalzbahn - Die Länderbahn GmbH DLB,https://www.bahn.de,Europe/Berlin,de
+87,Verkehrsunternehmen Wartburgmobil VUW gkAör,https://www.bahn.de,Europe/Berlin,de
+88,Eisenbahnen und Verkehrsbetriebe Elbe-Weser GmbH,https://www.bahn.de,Europe/Berlin,de
+89,Verkehrsverbund Großraum Nürnberg,https://www.bahn.de,Europe/Berlin,de
+9,Verkehrsgemeinschaft Untermain,https://www.bahn.de,Europe/Berlin,de
+90,vlexx,https://www.bahn.de,Europe/Berlin,de
+91,Würzburger Verkehrsverbund,https://www.bahn.de,Europe/Berlin,de
+92,vogtlandbahn - Die Länderbahn GmbH DLB,https://www.bahn.de,Europe/Berlin,de
+93,Regiobus Potsdam Mittelmark GmbH,https://www.bahn.de,Europe/Berlin,de
+94,LNG Fulda direkt,https://www.bahn.de,Europe/Berlin,de
+95,RVG Regionalverkehr Gera Land GmbH,https://www.bahn.de,Europe/Berlin,de
+96,KVG M,https://www.bahn.de,Europe/Berlin,de
+97,Kahlgrund Verkehrsgesellschaft,https://www.bahn.de,Europe/Berlin,de
+98,Verkehrsgesellschaft Ennepe-Ruhr mbH,https://www.bahn.de,Europe/Berlin,de
+99,WestVerkehr,http://www.west-verkehr.de,Europe/Berlin,de

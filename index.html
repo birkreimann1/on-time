@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>onTime</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>onTime</h1>
+  <div>
+    <label for="stationSelect">Choose a bus station:</label>
+    <select id="stationSelect" onchange="getDepartures()">
+      <option value="">--Select a Station--</option>
+    </select>
+  </div>
+
+  <div id="departureList">
+    <h2>Next Departures:</h2>
+    <ul id="departureTimes"></ul>
+  </div>
+
+  <!-- Firebase config and main app scripts -->
+  <script type="module" src="firebase-config.js"></script>  <!-- Firebase setup -->
+  <script type="module" src="app.js"></script>               <!-- Main app logic -->
+
+</body>
+</html>
