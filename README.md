@@ -2,6 +2,8 @@
 
 onTime is an app which allows users to selectively look at bus stations in Lübeck and get a score on the upcoming departures based on the historical delays of the bus lines.
 
+Website: https://ontime-e0281.web.app/
+
 ## Hackathon setup
 
 The following section explains in detail how to setup a machine to develop the app
