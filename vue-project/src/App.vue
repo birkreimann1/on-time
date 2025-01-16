@@ -1,27 +1,33 @@
-<script setup>
-</script>
-
-<!-- <template>
-  <div className="flex flex-col h-screen items-center justify-center">
-      <div className="flex flex-col gap-4 bg-black w-full p-6">
-        <div className="w-full bg-neutral-800 p-4 rounded-full text-neutral-400">Start</div>
-        <div className="w-full bg-neutral-800 p-4 rounded-full text-neutral-400">Ziel</div>
-      </div>
-      <div className="flex flex-grow justify-center items-center bg-green-700 w-full">Map</div>
-    </div>
-</template> -->
-
-
+<script setup></script>
 
 <template>
-  <div class="xyz">
-    <l-map :use-global-leaflet="false" ref="map" v-model:zoom="zoom" :center="[47.41322, -1.219482]">
-      <l-tile-layer
-        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-        layer-type="base"
-        name="OpenStreetMap"
-      ></l-tile-layer>
-    </l-map>
+  <div class="flex flex-col h-screen items-center justify-center">
+    <div class="flex flex-col gap-4 bg-black w-full p-6">
+      <input
+        class="bg-neutral-800 text-white p-2 rounded-xl"
+        v-model="message"
+        placeholder="Start"
+      />
+      <input
+        class="bg-neutral-800 text-white p-2 rounded-xl"
+        v-model="message"
+        placeholder="Ziel"
+      />
+    </div>
+    <div className="flex flex-grow w-full">
+      <l-map
+        :use-global-leaflet="false"
+        ref="map"
+        v-model:zoom="zoom"
+        :center="[53.8677, 10.68601]"
+      >
+        <l-tile-layer
+          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+          layer-type="base"
+          name="OpenStreetMap"
+        ></l-tile-layer>
+      </l-map>
+    </div>
   </div>
 </template>
 
@@ -36,14 +42,8 @@ export default {
   },
   data() {
     return {
-      zoom: 2,
+      zoom: 13,
     };
   },
 };
 </script>
-
-<style>
-.xyz {
-    height: 600px;
-    width: 800px;
-  }</style>
