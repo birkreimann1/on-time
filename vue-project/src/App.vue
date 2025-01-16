@@ -3,18 +3,10 @@
 <template>
   <div class="flex flex-col h-screen items-center justify-center">
     <div class="flex flex-col gap-4 bg-black w-full p-6">
-      <input
-        class="bg-neutral-800 text-white p-2 rounded-xl"
-        v-model="message"
-        placeholder="Start"
-      />
-      <input
-        class="bg-neutral-800 text-white p-2 rounded-xl"
-        v-model="message"
-        placeholder="Ziel"
-      />
+      <SearchBar />
     </div>
     <div className="flex flex-grow w-full">
+      <MapMarker />
       <l-map
         :use-global-leaflet="false"
         ref="map"
@@ -34,11 +26,15 @@
 <script>
 import "leaflet/dist/leaflet.css";
 import { LMap, LTileLayer } from "@vue-leaflet/vue-leaflet";
+import MapMarker from "./components/MapMarker.vue";
+import SearchBar from "./components/SearchBar.vue";
 
 export default {
   components: {
     LMap,
     LTileLayer,
+    MapMarker,
+    SearchBar,
   },
   data() {
     return {
