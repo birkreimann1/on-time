@@ -84,7 +84,7 @@ def getDataByCoords(lat, long):
 
 	# Process first location. Add a for-loop for multiple locations or weather models
 	response = responses[0]
-	print(f"Coordinates {response.Latitude()}°N {response.Longitude()}°E")
+	#print(f"Coordinates {response.Latitude()}°N {response.Longitude()}°E")
     
 	# Current values. The order of variables needs to be the same as requested.
 	current = response.Current()
