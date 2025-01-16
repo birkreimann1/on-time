@@ -1,96 +1,95 @@
 {
     "weather": {
         "clear": {
-            "_comment": "",
+            "_comment": "No clouds",
             "score": 100.0,
             "data_size": 0
         },
         "clouds": {
-            "_comment": "",
+            "_comment": "Clouds without precipitation",
             "score": 100.0,
             "data_size": 0
         },
         "rain": {
-            "_comment": "",
+            "_comment": "Rain & Showers",
             "score": 100.0,
             "data_size": 0
         },
         "snow": {
-            "_comment": "",
+            "_comment": "Snowfall",
             "score": 100.0,
             "data_size": 0
         },
         "fog": {
-            "_comment": "",
+            "_comment": "Impaired visibility",
             "score": 100.0,
             "data_size": 0
         },
         "storm": {
-            "_comment": "",
+            "_comment": "Windy",
             "score": 100.0,
             "data_size": 0
         }
     },
     "traffic": {
         "work": {
-            "_comment": "",
+            "_comment": "Traffic conditions during work hours",
             "score": 100.0,
             "data_size": 0
         },
         "offwork": {
-            "_comment": "",
+            "_comment": "Traffic conditions during off-work hours",
             "score": 100.0,
             "data_size": 0
         },
         "free": {
-            "_comment": "",
+            "_comment": "Traffic conditions on weekends and holidays",
             "score": 100.0,
             "data_size": 0
         }
     },
     "light": {
         "night": {
-            "_comment": "",
+            "_comment": "Dark lighting conditions",
             "score": 100.0,
             "data_size": 0
         },
         "day": {
-            "_comment": "",
+            "_comment": "Bright lighting conditions",
             "score": 100.0,
             "data_size": 0
         },
         "dusk": {
-            "_comment": "",
+            "_comment": "Dim lighting conditions",
             "score": 100.0,
             "data_size": 0
         }
-    }, 
+    },
     "temp": {
         "hot": {
-            "_comment": "",
+            "_comment": "Hot temperatures: < 30°C",
             "score": 100.0,
             "data_size": 0
         },
         "warm": {
-            "_comment": "",
+            "_comment": "Warm temperatures: 21°C - 30°C",
             "score": 100.0,
             "data_size": 0
         },
         "mild": {
-            "_comment": "",
+            "_comment": "Mild temperatures: 11°C - 20°C",
             "score": 100.0,
             "data_size": 0
         },
         "cool": {
-            "_comment": "",
+            "_comment": "Cool temperatures: 1°C - 10°C",
             "score": 100.0,
             "data_size": 0
         },
         "freezing": {
-            "_comment": "",
+            "_comment": "Freezing temperatures >= 0°C",
             "score": 100.0,
             "data_size": 0
-        }          
+        }
     }
-
 }
