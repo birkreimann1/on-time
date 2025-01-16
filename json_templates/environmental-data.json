@@ -29,6 +29,11 @@
             "_comment": "Windy",
             "score": 100.0,
             "data_size": 0
+        }, 
+        "thunderstorm": {
+            "_comment": "Thunderstorm",
+            "score": 100.0,
+            "data_size": 0
         }
     },
     "traffic": {
@@ -56,11 +61,6 @@
         },
         "day": {
             "_comment": "Bright lighting conditions",
-            "score": 100.0,
-            "data_size": 0
-        },
-        "dusk": {
-            "_comment": "Dim lighting conditions",
             "score": 100.0,
             "data_size": 0
         }
