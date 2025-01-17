@@ -2,8 +2,10 @@ import { createApp } from 'vue';
 import { VueFire } from "vuefire";
 import { initializeApp } from "firebase/app";
 import App from "./App.vue";
+import router from './router'
 import './style.css'
 import 'leaflet/dist/leaflet.css'
+import { getDatabase, ref as dbRef, get as dbGet } from 'firebase/database'; 
 
 export const firebaseApp = initializeApp({
     apiKey: "AIzaSyCetbmiUpRv9f1bJUB0EdYj-kiJ9tytXVI",
@@ -17,8 +19,11 @@ export const firebaseApp = initializeApp({
   });
 
 const app = createApp(App);
+const db = getDatabase(firebaseApp);
 
 // install the VueFire plugin
 app.use(VueFire, { firebaseApp });
-
+app.use(router)
 app.mount("#app");
+
+export { db };

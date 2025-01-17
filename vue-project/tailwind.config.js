@@ -5,7 +5,11 @@ export default {
     "./src/**/*.{vue,js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundColor: {
+        default: '#000000', // Set the default background color to black
+      },
+    },
   },
   plugins: [],
 }

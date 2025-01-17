@@ -1,0 +1,359 @@
+<template>
+  <div class="h-1/2">
+    <input
+      class="bg-neutral-800 text-white p-2 rounded-xl w-full'"
+      v-model="startMessage"
+      placeholder="Start"
+      @focus="focused = true"
+      @blur="focused = false"
+    />
+
+    <!-- Results Dropdown -->
+    <div
+      v-if="focused && startMessage && filteredList().length"
+      class="w-full bg-neutral-800 text-white p-2 mt-1 rounded-xl shadow-lg"
+      style="
+        max-height: 200px;
+        overflow-y: auto;
+        z-index: 1000;
+        padding-bottom: 10px;
+      "
+    >
+      <div
+        v-for="entry in filteredList()"
+        :key="entry.id"
+        class="cursor-pointer p-1.5 hover:bg-gray-700 rounded mb-2"
+        @click="handleStationClick(entry)"
+      >
+        {{ entry.station.name }}
+      </div>
+    </div>
+
+    <!-- Display Station Data -->
+    <div v-if="stationData.length > 0" class="mt-4 h-[250px] overflow-auto p-1">
+      <div class="max-h-[50%]">
+        <ul class="station-list">
+          <li
+            v-for="item in stationData"
+            :key="item.headsign"
+            class="station-item"
+          >
+            <div class="text-white">
+              <p class="font-bold">
+                {{ item.line.name }} - {{ item.headsign }}
+              </p>
+              <p v-if="item.timeLeft > 0">In {{ item.timeLeft }} min</p>
+              <p v-else>Bereits abgefahren</p>
+            </div>
+            <div
+              class="score-circle flex-grow-0"
+              :style="{
+                backgroundColor: getScoreColor(item.score),
+              }"
+            >
+              {{ item.score }}
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+import { ref, onMounted, watch } from "vue";
+import axios from "axios";
+import { getDatabase, ref as dbRef, get as dbGet } from "firebase/database";
+import stationIds from "../../../datascraping/stationData/station_ids.json";
+import { nextTick } from "vue";
+
+export default {
+  props: {
+    selectedStationId: {
+      type: [String, Number],
+      required: true,
+    },
+  },
+  computed: {
+    scoreColor() {
+      return this.getScoreColor(this.item.score);
+    },
+  },
+  methods: {
+    getScoreColor(score) {
+      if (score >= 97) {
+        return "#397d3b";
+      } else if (score >= 95) {
+        return "#d9ad1e";
+      } else if (score >= 93) {
+        return "#b3721d";
+      } else {
+        return "#8f2c25";
+      }
+    },
+  },
+  emits: ["station-click"],
+  setup(props, { emit }) {
+    const startMessage = ref("");
+    const stationData = ref([]);
+    const stationScores = ref({});
+    const stations = ref();
+
+    const fetchStations = async () => {
+      const db = getDatabase();
+      const stationsRef = dbRef(db, "stations");
+
+      try {
+        const snapshot = await dbGet(stationsRef);
+        if (snapshot.exists()) {
+          const stationsData = snapshot.val();
+          stations.value = {};
+
+          for (const id in stationsData) {
+            if (stationsData.hasOwnProperty(id)) {
+              const station = stationsData[id];
+              stations.value[id] = station;
+            }
+          }
+        } else {
+          console.log("No data available");
+        }
+      } catch (error) {
+        console.error("Error fetching data from Firebase:", error);
+      }
+    };
+
+    onMounted(() => {
+      fetchStations(); // Fetch station data when component is mounted
+    });
+
+    // Process stationData to add timeLeft and score
+    stationData.value = stationData.value.map((item) => {
+      const departureTime = item.time * 1000; // Convert to milliseconds
+      const currentTime = Date.now();
+      const timeLeft = Math.max(
+        0,
+        Math.floor((departureTime - currentTime) / 60000)
+      ); // Convert to minutes
+
+      return {
+        ...item,
+        score: generateRandomScore(), // Add random score
+        timeLeft, // Add the calculated time left in minutes
+      };
+    });
+
+    watch(
+      () => props.selectedStationId,
+      (newId) => {
+        if (newId) {
+          fetchStationData(newId);
+          startMessage.value = stationIds[newId].name;
+        }
+      }
+    );
+
+    const fetchStationData = async (id) => {
+      const url = `https://thingproxy.freeboard.io/fetch/https://netzplan.swhl.de/api/v1/stationboards/hafas/${id}?v=0&limit=10`;
+      console.log("API Request:", url);
+
+      try {
+        const response = await axios.get(url);
+
+        // Log the response to verify data structure
+        console.log("API Response:", response);
+
+        // Check if data is available before mapping
+        if (
+          !response.data ||
+          !response.data.data ||
+          response.data.data.length === 0
+        ) {
+          console.log("No data available from API");
+          return;
+        }
+
+        stationData.value = response.data.data || [];
+
+        // Now map through stationData only after data is fetched
+        stationData.value = stationData.value.map((item) => {
+          const departureTime = item.time * 1000;
+          const currentTime = Date.now();
+          const timeLeft = Math.max(
+            0,
+            Math.floor((departureTime - currentTime) / 60000)
+          );
+          const line = parseInt(item.line.name, 10);
+          const line_data = stations.value[id].lines[line];
+
+          let score = 0.0;
+          let counter = 0;
+
+          if (line_data.weather) {
+            Object.keys(line_data.weather).forEach((key) => {
+              const entry = line_data.weather[key];
+              if (entry) {
+                let weather_score = entry.score;
+                score += parseFloat(weather_score);
+                counter += 1;
+              }
+            });
+          }
+
+          if (line_data.traffic) {
+            Object.keys(line_data.traffic).forEach((key) => {
+              const entry = line_data.traffic[key]; // Access the traffic condition (e.g., clear, heavy, etc.)
+              if (entry && entry.score) {
+                // Ensure entry and its score property exist
+                let traffic_score = entry.score;
+                score += traffic_score;
+                counter += 1;
+              }
+            });
+          }
+
+          if (line_data.light) {
+            Object.keys(line_data.light).forEach((key) => {
+              const entry = line_data.light[key]; // Access the light condition (e.g., low, moderate, etc.)
+              if (entry && entry.score) {
+                // Ensure entry and its score property exist
+                let light_score = entry.score;
+                score += light_score;
+                counter += 1;
+              }
+            });
+          }
+
+          if (line_data.temp) {
+            Object.keys(line_data.temp).forEach((key) => {
+              const entry = line_data.temp[key]; // Access the temperature condition (e.g., cold, warm, etc.)
+              if (entry && entry.score) {
+                // Ensure entry and its score property exist
+                let temp_score = entry.score;
+                score += temp_score;
+                counter += 1;
+              }
+            });
+          }
+
+          score = Math.round(score / counter);
+
+          return {
+            ...item,
+            score,
+            timeLeft,
+          };
+        });
+      } catch (error) {
+        console.error("Error fetching station data:", error);
+        stationData.value = []; // Reset on error
+      }
+    };
+
+    // Filter the stations based on the user's input
+    const filteredList = () => {
+      if (!startMessage.value.trim()) {
+        return [];
+      }
+
+      // Filter the stations based on the user input
+      return Object.entries(stationIds)
+        .filter(
+          ([id, station]) =>
+            station.name
+              .toLowerCase()
+              .includes(startMessage.value.toLowerCase()) // Filter by name
+        )
+        .map(([id, station]) => ({
+          id,
+          station,
+        }));
+    };
+
+    // Handle the click event for a station from the filtered list
+    const handleStationClick = (entry) => {
+      console.log("Selected station:", entry);
+      fetchStationData(entry.id);
+      emit("station-click", entry.id);
+    };
+
+    return {
+      startMessage,
+      stationData,
+      filteredList,
+      handleStationClick,
+      fetchStationData,
+      stations,
+    };
+  },
+};
+</script>
+
+<style scoped>
+/* Optional: Add some basic styling */
+.item.error {
+  color: red;
+  font-weight: bold;
+}
+
+.score-circle {
+  width: 40px; /* Circle width */
+  height: 40px; /* Circle height */
+  border-radius: 50%; /* Make it round */
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.relative {
+  position: relative;
+  padding: 20px;
+}
+
+input {
+  width: 100%; /* Ensure input stretches to full container width */
+  max-width: 100%;
+}
+
+/* Dropdown Results */
+.absolute {
+  z-index: 10; /* Ensure the dropdown appears above other content */
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Styling individual items */
+.station-item {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Space between text and circle */
+}
+
+.divider {
+  border-top: 1px solid #444;
+  margin: 10px 0;
+}
+
+/* Optional Styling for Empty Data and Loading */
+p {
+  color: #ccc;
+}
+
+/* Additional Spacing */
+.mt-4 {
+  margin-top: 20px;
+}
+
+/* Styling Error or No Results */
+.item.error {
+  color: red;
+  font-weight: bold;
+}
+</style>

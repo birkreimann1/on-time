@@ -1,3 +1,50 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  @apply bg-black text-white;
+}
+
+/* Add margin between list items */
+.station-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .station-item {
+    padding: 12px;
+    margin-bottom: 10px; /* Space between items */
+    background-color: #2d2d2d;
+    border-radius: 8px;
+  }
+  
+  .station-info {
+    font-size: 14px;
+    color: white;
+  }
+  
+  .station-info span {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  /* Divider between each station item */
+  .divider {
+    height: 1px;
+    background-color: #444;
+    margin-top: 8px;
+  }
+  
+  /* Adjusting font size for better readability */
+  .station-item span {
+    font-size: 16px;
+  }
+  
+  /* Optional: Add some padding to the container */
+  h2 {
+    color: white;
+    margin-bottom: 16px;
+  }
+  
