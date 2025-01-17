@@ -64,7 +64,8 @@ def getStationData():
                         transit_time = int(transit["time"])
                         if (transit_time - current_time) <= scraping_interval_seconds and current_line in bus_lines:
                             delay = int(transit["realtime"]) - transit_time
-                            delay_score = createDelayScore(delay)
+                            cancelled = bool(transit["cancelled"])
+                            delay_score = createDelayScore(delay, cancelled)
                             ref_path = f"/stations/{id}/{current_line}"
                             ref = db.reference(ref_path)
                             env_data = ref.get()
@@ -105,9 +106,9 @@ def writeEnvData(id, current_line, env_data):
     light_ref = db.reference(light_ref_path)
     light_ref.set(env_data)
 
-def createDelayScore(delay):
+def createDelayScore(delay, cancelled):
     delay_score = round(100 - delay/18, 2)
-    if delay_score < 0:
+    if delay_score < 0 or cancelled:
         delay_score = 0
     return delay_score
 
