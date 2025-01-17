@@ -9,7 +9,6 @@ import stationIDs from "../../../datascraping/stationData/station_ids.json";
 // Reactive variable to hold the selected station's ID
 const selectedStationId = ref(null);
 
-// Handle the click on a station
 const handleStationClick = (stationId) => {
   selectedStationId.value = stationId;
   console.log("Station clicked:", stationId);
@@ -18,7 +17,7 @@ const handleStationClick = (stationId) => {
 
 <template>
   <div class="flex flex-col h-screen items-center justify-center">
-    <div class="flex flex-col gap-4 bg-black w-full p-6">
+    <div class="flex flex-col gap-4 bg-black w-full p-6 max-h-[50%]">
       <!-- Pass 'stationsList' and 'selectedStationId' to SearchBar and listen for 'station-click' event -->
       <SearchBar
         @station-click="handleStationClick"

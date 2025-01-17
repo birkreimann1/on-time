@@ -1,7 +1,7 @@
 <template>
-  <div class="relative">
+  <div class="h-1/2">
     <input
-      class="bg-neutral-800 text-white p-2 rounded-xl w-full"
+      class="bg-neutral-800 text-white p-2 rounded-xl w-full'"
       v-model="startMessage"
       placeholder="Start"
       @focus="focused = true"
@@ -11,13 +11,18 @@
     <!-- Results Dropdown -->
     <div
       v-if="focused && startMessage && filteredList().length"
-      class="absolute left-0 w-full bg-neutral-800 text-white p-2 mt-1 rounded-xl shadow-lg"
-      style="max-height: 200px; overflow-y: auto; z-index: 1000"
+      class="w-full bg-neutral-800 text-white p-2 mt-1 rounded-xl shadow-lg"
+      style="
+        max-height: 200px;
+        overflow-y: auto;
+        z-index: 1000;
+        padding-bottom: 10px;
+      "
     >
       <div
         v-for="entry in filteredList()"
         :key="entry.id"
-        class="cursor-pointer p-2 hover:bg-gray-700 rounded"
+        class="cursor-pointer p-1.5 hover:bg-gray-700 rounded mb-2"
         @click="handleStationClick(entry)"
       >
         {{ entry.station.name }}
@@ -25,30 +30,33 @@
     </div>
 
     <!-- Display Station Data -->
-    <div v-if="stationData.length > 0" class="mt-4">
-      <h2 class="text-white">Station Data:</h2>
-      <div class="station-list-container">
+    <div v-if="stationData.length > 0" class="mt-4 h-[250px] overflow-auto p-1">
+      <div class="max-h-[50%]">
         <ul class="station-list">
           <li
             v-for="item in stationData"
             :key="item.headsign"
             class="station-item"
           >
-            <div class="flex flex-grow text-white">
-              <span>{{ item.headsign }} - Line {{ item.line.name }} </span>
-              <span v-if="item.timeLeft > 0">
-                - {{ item.timeLeft }} min left
-              </span>
-              <span v-else> - Departed</span>
+            <div class="text-white">
+              <p class="font-bold">
+                {{ item.line.name }} - {{ item.headsign }}
+              </p>
+              <p v-if="item.timeLeft > 0">In {{ item.timeLeft }} min</p>
+              <p v-else>Bereits abgefahren</p>
             </div>
-            <div class="score-circle flex-grow-0">{{ item.score }}</div>
+            <div
+              class="score-circle flex-grow-0"
+              :style="{
+                backgroundColor: getScoreColor(item.score),
+              }"
+            >
+              {{ item.score }}
+            </div>
           </li>
         </ul>
       </div>
     </div>
-
-    <p v-else-if="stationData.length === 0">No data found for this station.</p>
-    <p v-else>Loading...</p>
   </div>
 </template>
 
@@ -57,6 +65,7 @@ import { ref, onMounted, watch } from "vue";
 import axios from "axios";
 import { getDatabase, ref as dbRef, get as dbGet } from "firebase/database";
 import stationIds from "../../../datascraping/stationData/station_ids.json";
+import { nextTick } from "vue";
 
 export default {
   props: {
@@ -65,12 +74,29 @@ export default {
       required: true,
     },
   },
-  setup(props) {
-    const startMessage = ref(""); // User input for station name
-    const stationData = ref([]); // Store station data
+  computed: {
+    scoreColor() {
+      return this.getScoreColor(this.item.score);
+    },
+  },
+  methods: {
+    getScoreColor(score) {
+      if (score >= 97) {
+        return "#397d3b";
+      } else if (score >= 95) {
+        return "#d9ad1e";
+      } else if (score >= 93) {
+        return "#b3721d";
+      } else {
+        return "#8f2c25";
+      }
+    },
+  },
+  emits: ["station-click"],
+  setup(props, { emit }) {
+    const startMessage = ref("");
+    const stationData = ref([]);
     const stationScores = ref({});
-
-    const generateRandomScore = () => Math.floor(Math.random() * 101);
     const stations = ref();
 
     const fetchStations = async () => {
@@ -129,19 +155,27 @@ export default {
 
     const fetchStationData = async (id) => {
       const url = `https://thingproxy.freeboard.io/fetch/https://netzplan.swhl.de/api/v1/stationboards/hafas/${id}?v=0&limit=10`;
+      console.log("API Request:", url);
+
       try {
         const response = await axios.get(url);
+
+        // Log the response to verify data structure
+        console.log("API Response:", response);
+
+        // Check if data is available before mapping
+        if (
+          !response.data ||
+          !response.data.data ||
+          response.data.data.length === 0
+        ) {
+          console.log("No data available from API");
+          return;
+        }
+
         stationData.value = response.data.data || [];
 
-        const station = stations.value[id];
-        const station_lines = station.lines;
-        const env_data = station.env_data;
-        const current_weather = env_data.weather;
-        const current_traffic = env_data.traffic;
-        const current_light = env_data.light;
-        const current_temp = env_data.temp;
-
-        // Process station data
+        // Now map through stationData only after data is fetched
         stationData.value = stationData.value.map((item) => {
           const departureTime = item.time * 1000;
           const currentTime = Date.now();
@@ -150,44 +184,59 @@ export default {
             Math.floor((departureTime - currentTime) / 60000)
           );
           const line = parseInt(item.line.name, 10);
-          const line_data = station_lines[line];
+          const line_data = stations.value[id].lines[line];
 
           let score = 0.0;
           let counter = 0;
 
-          current_weather.forEach((entry) => {
-            if (entry) {
-              let weather_score = line_data.weather[entry].score;
-              score += parseFloat(weather_score);
-              counter += 1;
-            }
-          });
+          if (line_data.weather) {
+            Object.keys(line_data.weather).forEach((key) => {
+              const entry = line_data.weather[key];
+              if (entry) {
+                let weather_score = entry.score;
+                score += parseFloat(weather_score);
+                counter += 1;
+              }
+            });
+          }
 
-          current_traffic.forEach((entry) => {
-            if (entry) {
-              let traffic_score = line_data.traffic[entry].score;
-              score += traffic_score;
-              counter += 1;
-            }
-          });
+          if (line_data.traffic) {
+            Object.keys(line_data.traffic).forEach((key) => {
+              const entry = line_data.traffic[key]; // Access the traffic condition (e.g., clear, heavy, etc.)
+              if (entry && entry.score) {
+                // Ensure entry and its score property exist
+                let traffic_score = entry.score;
+                score += traffic_score;
+                counter += 1;
+              }
+            });
+          }
 
-          current_light.forEach((entry) => {
-            if (entry) {
-              let light_score = line_data.light[entry].score;
-              score += light_score;
-              counter += 1;
-            }
-          });
+          if (line_data.light) {
+            Object.keys(line_data.light).forEach((key) => {
+              const entry = line_data.light[key]; // Access the light condition (e.g., low, moderate, etc.)
+              if (entry && entry.score) {
+                // Ensure entry and its score property exist
+                let light_score = entry.score;
+                score += light_score;
+                counter += 1;
+              }
+            });
+          }
 
-          current_temp.forEach((entry) => {
-            if (entry) {
-              let temp_score = line_data.temp[entry].score;
-              score += temp_score;
-              counter += 1;
-            }
-          });
+          if (line_data.temp) {
+            Object.keys(line_data.temp).forEach((key) => {
+              const entry = line_data.temp[key]; // Access the temperature condition (e.g., cold, warm, etc.)
+              if (entry && entry.score) {
+                // Ensure entry and its score property exist
+                let temp_score = entry.score;
+                score += temp_score;
+                counter += 1;
+              }
+            });
+          }
 
-          score = Math.round(score / parseFloat(counter));
+          score = Math.round(score / counter);
 
           return {
             ...item,
@@ -195,8 +244,6 @@ export default {
             timeLeft,
           };
         });
-
-        console.log("Station Data with Time Left:", stationData.value);
       } catch (error) {
         console.error("Error fetching station data:", error);
         stationData.value = []; // Reset on error
@@ -225,11 +272,9 @@ export default {
 
     // Handle the click event for a station from the filtered list
     const handleStationClick = (entry) => {
-      // No need to declare selectedStationId locally, use the prop directly
-      props.selectedStationId = entry.id; // Directly update the parent component
       console.log("Selected station:", entry);
       fetchStationData(entry.id);
-      startMessage.value = entry.station.name;
+      emit("station-click", entry.id);
     };
 
     return {
@@ -252,10 +297,9 @@ export default {
 }
 
 .score-circle {
-  width: 30px; /* Circle width */
-  height: 30px; /* Circle height */
+  width: 40px; /* Circle width */
+  height: 40px; /* Circle height */
   border-radius: 50%; /* Make it round */
-  background-color: #4caf50; /* You can change this color */
   color: white;
   display: flex;
   align-items: center;
@@ -282,13 +326,6 @@ ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
-}
-
-/* Station List Container */
-.station-list-container {
-  max-height: 300px; /* Prevent overflowing */
-  overflow-y: auto;
-  padding-right: 10px; /* Add padding on the right for scrollbar */
 }
 
 /* Styling individual items */
