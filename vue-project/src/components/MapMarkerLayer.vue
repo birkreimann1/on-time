@@ -6,15 +6,18 @@ import stationIDs from "../../../datascraping/stationData/station_ids.json";
 <template>
   <MapMarker
     v-for="(station, key) in stationIDs"
-    :key="key"
+    :id="key"
     :station="station"
+    @station-click="handleStationClick"
   />
 </template>
 
 <script>
 export default {
-  components: {
-    MapMarker,
+  methods: {
+    handleStationClick(stationId) {
+      this.$emit("station-click", stationId);
+    },
   },
 };
 </script>

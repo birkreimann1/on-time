@@ -1,16 +1,33 @@
 <script setup>
+import { ref } from "vue";
 import "leaflet/dist/leaflet.css";
 import { LMap, LTileLayer } from "@vue-leaflet/vue-leaflet";
 import MapMarkerLayer from "../components/MapMarkerLayer.vue";
 import SearchBar from "../components/SearchBar.vue";
+import stationIDs from "../../../datascraping/stationData/station_ids.json";
+
+// Reactive variable to hold the selected station's ID
+const selectedStationId = ref(null);
+
+// Handle the click on a station
+const handleStationClick = (stationId) => {
+  selectedStationId.value = stationId;
+  console.log("Station clicked:", stationId);
+};
 </script>
 
 <template>
   <div class="flex flex-col h-screen items-center justify-center">
     <div class="flex flex-col gap-4 bg-black w-full p-6">
-      <SearchBar />
+      <!-- Pass 'stationsList' and 'selectedStationId' to SearchBar and listen for 'station-click' event -->
+      <SearchBar
+        @station-click="handleStationClick"
+        :stationsList="stationIDs"
+        :selectedStationId="selectedStationId"
+      />
     </div>
     <div class="flex flex-grow w-full">
+      <!-- Leaflet Map -->
       <l-map
         :use-global-leaflet="false"
         v-model:zoom="zoom"
@@ -22,8 +39,10 @@ import SearchBar from "../components/SearchBar.vue";
           layer-type="base"
           name="OpenStreetMap"
         />
-        <!-- Add the marker here -->
-        <MapMarkerLayer />
+        <MapMarkerLayer
+          :stations="stationIDs"
+          @station-click="handleStationClick"
+        />
       </l-map>
     </div>
   </div>

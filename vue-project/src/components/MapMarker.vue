@@ -7,10 +7,17 @@ const props = defineProps({
     type: Object,
     required: true,
   },
+  id: {
+    type: String,
+    required: true,
+  },
 });
 
+const emit = defineEmits();
+
 const handleClick = () => {
-  console.log(props.station);
+  const stationId = props.id;
+  emit("station-click", stationId);
 };
 </script>
 

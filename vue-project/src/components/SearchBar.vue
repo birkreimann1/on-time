@@ -12,7 +12,7 @@
     <div
       v-if="focused && startMessage && filteredList().length"
       class="absolute left-0 w-full bg-neutral-800 text-white p-2 mt-1 rounded-xl shadow-lg"
-      style="max-height: 200px; overflow-y: auto; z-index: 10"
+      style="max-height: 200px; overflow-y: auto; z-index: 1000"
     >
       <div
         v-for="entry in filteredList()"
@@ -53,17 +53,23 @@
 </template>
 
 <script>
-import { ref, onMounted } from "vue";
+import { ref, onMounted, watch } from "vue";
 import axios from "axios";
 import { getDatabase, ref as dbRef, get as dbGet } from "firebase/database";
 import stationIds from "../../../datascraping/stationData/station_ids.json";
 
 export default {
-  setup() {
+  props: {
+    selectedStationId: {
+      type: [String, Number],
+      required: true,
+    },
+  },
+  setup(props) {
     const startMessage = ref(""); // User input for station name
     const stationData = ref([]); // Store station data
-    const selectedStationId = ref(null); // Store the selected station's ID
     const stationScores = ref({});
+
     const generateRandomScore = () => Math.floor(Math.random() * 101);
     const stations = ref();
 
@@ -75,17 +81,14 @@ export default {
         const snapshot = await dbGet(stationsRef);
         if (snapshot.exists()) {
           const stationsData = snapshot.val();
-          stations.value = {}; // Initialize stations.value as an empty object
+          stations.value = {};
 
-          // Loop through each station by its id and assign directly to stations.value
           for (const id in stationsData) {
             if (stationsData.hasOwnProperty(id)) {
               const station = stationsData[id];
-              // Directly assign the station data to the corresponding ID in the object
               stations.value[id] = station;
             }
           }
-          console.log(stations.value);
         } else {
           console.log("No data available");
         }
@@ -98,6 +101,7 @@ export default {
       fetchStations(); // Fetch station data when component is mounted
     });
 
+    // Process stationData to add timeLeft and score
     stationData.value = stationData.value.map((item) => {
       const departureTime = item.time * 1000; // Convert to milliseconds
       const currentTime = Date.now();
@@ -113,16 +117,31 @@ export default {
       };
     });
 
+    watch(
+      () => props.selectedStationId,
+      (newId) => {
+        if (newId) {
+          fetchStationData(newId);
+          startMessage.value = stationIds[newId].name;
+        }
+      }
+    );
+
     const fetchStationData = async (id) => {
       const url = `https://thingproxy.freeboard.io/fetch/https://netzplan.swhl.de/api/v1/stationboards/hafas/${id}?v=0&limit=10`;
       try {
         const response = await axios.get(url);
-        // Store the data into stationData
         stationData.value = response.data.data || [];
 
-        const station_lines = stations.value[id];
-        const score = 100;
+        const station = stations.value[id];
+        const station_lines = station.lines;
+        const env_data = station.env_data;
+        const current_weather = env_data.weather;
+        const current_traffic = env_data.traffic;
+        const current_light = env_data.light;
+        const current_temp = env_data.temp;
 
+        // Process station data
         stationData.value = stationData.value.map((item) => {
           const departureTime = item.time * 1000;
           const currentTime = Date.now();
@@ -131,33 +150,55 @@ export default {
             Math.floor((departureTime - currentTime) / 60000)
           );
           const line = parseInt(item.line.name, 10);
-          console.log(line);
+          const line_data = station_lines[line];
 
-          console.log(station_lines);
-          const size_day = parseFloat(station_lines[line].light.day.data_size);
-          const score_day = parseFloat(station_lines[line].light.day.score);
-          const size_night = parseFloat(
-            station_lines[line].light.night.data_size
-          );
-          const score_night = parseFloat(station_lines[line].light.night.score);
-          const score =
-            (size_day * score_day + size_night * score_night) /
-            (size_day + size_night);
-          console.log(size_day, score_day, size_night, score_night, score);
+          let score = 0.0;
+          let counter = 0;
+
+          current_weather.forEach((entry) => {
+            if (entry) {
+              let weather_score = line_data.weather[entry].score;
+              score += parseFloat(weather_score);
+              counter += 1;
+            }
+          });
+
+          current_traffic.forEach((entry) => {
+            if (entry) {
+              let traffic_score = line_data.traffic[entry].score;
+              score += traffic_score;
+              counter += 1;
+            }
+          });
+
+          current_light.forEach((entry) => {
+            if (entry) {
+              let light_score = line_data.light[entry].score;
+              score += light_score;
+              counter += 1;
+            }
+          });
+
+          current_temp.forEach((entry) => {
+            if (entry) {
+              let temp_score = line_data.temp[entry].score;
+              score += temp_score;
+              counter += 1;
+            }
+          });
+
+          score = Math.round(score / parseFloat(counter));
 
           return {
             ...item,
-            score: score, // Add random score
-            timeLeft, // Add the calculated time left in minutes
+            score,
+            timeLeft,
           };
         });
 
         console.log("Station Data with Time Left:", stationData.value);
       } catch (error) {
-        console.error(
-          "Error fetching station data:",
-          error.response || error.message || error
-        );
+        console.error("Error fetching station data:", error);
         stationData.value = []; // Reset on error
       }
     };
@@ -169,7 +210,7 @@ export default {
       }
 
       // Filter the stations based on the user input
-      return Object.entries(stationIds) // Convert object to [key, value] pairs
+      return Object.entries(stationIds)
         .filter(
           ([id, station]) =>
             station.name
@@ -184,7 +225,8 @@ export default {
 
     // Handle the click event for a station from the filtered list
     const handleStationClick = (entry) => {
-      selectedStationId.value = entry.id;
+      // No need to declare selectedStationId locally, use the prop directly
+      props.selectedStationId = entry.id; // Directly update the parent component
       console.log("Selected station:", entry);
       fetchStationData(entry.id);
       startMessage.value = entry.station.name;
