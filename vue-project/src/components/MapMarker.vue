@@ -1,24 +1,28 @@
-<template>
-  <div class="my-component bg-pink-600">
-    <h1>{{ title }}</h1>
-    <p>This is a simple Vue component.</p>
-    <button @click="handleClick">Click me</button>
-  </div>
-</template>
+<script setup>
+import { LCircle } from "@vue-leaflet/vue-leaflet";
+import { defineProps } from "vue";
 
-<script>
-export default {
-  name: "MyComponent", // Component name
-  props: {
-    title: {
-      type: String,
-      required: true,
-    },
+const props = defineProps({
+  station: {
+    type: Object,
+    required: true,
   },
-  methods: {
-    handleClick() {
-      alert("Button clicked!");
-    },
-  },
+});
+
+const handleClick = () => {
+  console.log(props.station);
 };
 </script>
+
+<template>
+  <l-circle
+    :lat-lng="[props.station.coords.lat, props.station.coords.long]"
+    :radius="20"
+    :options="{
+      color: '#2563eb', // Border color of the circle
+      fillOpacity: 0.2, // Opacity of the fill color
+      weight: 3, // Border width
+    }"
+    @click="handleClick"
+  />
+</template>
