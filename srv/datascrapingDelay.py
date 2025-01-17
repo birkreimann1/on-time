@@ -60,6 +60,9 @@ def getStationData():
             ref_path = f"/stations/{id}/env_data"
             ref = db.reference(ref_path)
             ref.set(current_env_data)
+            if response.text == '{"data":[]}':
+                print(f"[{station_nr}/{len(station_data)}] WARNING: Failed to extract data about station {station["name"]} at ID {id}")
+                continue
             if "data" in json_data and isinstance(json_data["data"], list):
                 for transit in json_data["data"]:
                     if "time" in transit and "realtime" in transit:
