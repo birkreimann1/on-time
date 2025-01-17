@@ -29,7 +29,7 @@
               <div
                 class="h-[120px] w-[120px] rounded-full bg-black flex justify-center items-center text-6xl"
               >
-                95
+                {{ current_score }}
               </div>
             </div>
           </div>
@@ -51,7 +51,9 @@
 
       <!-- Additional Information -->
       <div class="flex flex-col gap-12">
-        <div class="flex justify-center text-3xl font-bold">ZOB Lübeck</div>
+        <div class="flex justify-center text-3xl font-bold text-white">
+          {{ headsign }}
+        </div>
         <div class="flex justify-between items-center">
           <div class="flex gap-4">
             <input
@@ -179,6 +181,11 @@
 
 <script>
 import Dropdown from "../components/Dropdown.vue";
+import { useRoute } from "vue-router";
+import { ref, onMounted, watch } from "vue";
+import axios from "axios";
+import { getDatabase, ref as dbRef, get as dbGet } from "firebase/database";
+import stationIds from "../../../datascraping/stationData/station_ids.json";
 
 export default {
   components: {
@@ -189,10 +196,236 @@ export default {
       showPopup: false, // Controls visibility of the popup
     };
   },
+  computed: {
+    scoreColor() {
+      return this.getScoreColor(this.item.score);
+    },
+  },
   methods: {
     togglePopup() {
       this.showPopup = !this.showPopup; // Toggle popup visibility
     },
+    toggleDropdown() {
+      this.isOpen = !this.isOpen; // Toggle dropdown visibility
+    },
+    getScoreColor(score) {
+      if (score >= 97) {
+        return "#397d3b";
+      } else if (score >= 95) {
+        return "#d9ad1e";
+      } else if (score >= 93) {
+        return "#b3721d";
+      } else {
+        return "#8f2c25";
+      }
+    },
+  },
+  setup(props) {
+    const route = useRoute();
+    const startMessage = ref("");
+    const stationData = ref([]);
+    const stationScores = ref({});
+    const stations = ref();
+    const current_id = ref(null);
+    const headsign = ref("");
+    const current_score = ref(null);
+    const average_score = ref();
+
+    const fetchStations = async () => {
+      const db = getDatabase();
+      const stationsRef = dbRef(db, "stations");
+
+      try {
+        const snapshot = await dbGet(stationsRef);
+        if (snapshot.exists()) {
+          const stationsData = snapshot.val();
+          stations.value = {};
+
+          for (const id in stationsData) {
+            if (stationsData.hasOwnProperty(id)) {
+              const station = stationsData[id];
+              stations.value[id] = station;
+            }
+          }
+        } else {
+          console.log("No data available");
+        }
+      } catch (error) {
+        console.error("Error fetching data from Firebase:", error);
+      }
+    };
+
+    onMounted(() => {
+      if (route.query && route.query.id) {
+        current_id.value = route.query.id;
+        console.log("Id:", current_id.value);
+      } else {
+        console.log("No id found in route query.");
+      }
+
+      console.log("current_id:", current_id.value);
+      headsign.value = stationIds[current_id.value].name;
+
+      fetchStations();
+    });
+
+    watch(
+      () => stations.value, // Watch the value of stations directly
+      (newValue) => {
+        if (newValue && Object.keys(newValue).length > 0) {
+          console.log("Database fetched and stations are available");
+          console.log(newValue);
+
+          // Now you can safely call fetchStationData after stations are fetched
+          fetchStationData(current_id.value);
+        }
+      }
+    );
+
+    // Process stationData to add timeLeft and score
+    stationData.value = stationData.value.map((item) => {
+      const departureTime = item.time * 1000; // Convert to milliseconds
+      const currentTime = Date.now();
+      const timeLeft = Math.max(
+        0,
+        Math.floor((departureTime - currentTime) / 60000)
+      ); // Convert to minutes
+
+      return {
+        ...item,
+        score: generateRandomScore(), // Add random score
+        timeLeft, // Add the calculated time left in minutes
+      };
+    });
+
+    const fetchStationData = async (id) => {
+      const url = `https://thingproxy.freeboard.io/fetch/https://netzplan.swhl.de/api/v1/stationboards/hafas/${id}?v=0&limit=10`;
+      console.log("API Request:", url);
+
+      try {
+        const response = await axios.get(url);
+
+        // Log the response to verify data structure
+        console.log("API Response:", response);
+
+        // Check if data is available before mapping
+        if (
+          !response.data ||
+          !response.data.data ||
+          response.data.data.length === 0
+        ) {
+          console.log("No data available from API");
+          return;
+        }
+
+        stationData.value = response.data.data || [];
+
+        // Now map through stationData only after data is fetched
+        stationData.value = stationData.value.map((item) => {
+          const departureTime = item.time * 1000;
+          const currentTime = Date.now();
+          const timeLeft = Math.max(
+            0,
+            Math.floor((departureTime - currentTime) / 60000)
+          );
+          const line = parseInt(item.line.name, 10);
+          const line_data = stations.value[id].lines[line];
+
+          let score = 0.0;
+          let counter = 0;
+
+          if (line_data.weather) {
+            Object.keys(line_data.weather).forEach((key) => {
+              const entry = line_data.weather[key];
+              if (entry) {
+                let weather_score = entry.score;
+                score += parseFloat(weather_score);
+                counter += 1;
+              }
+            });
+          }
+
+          if (line_data.traffic) {
+            Object.keys(line_data.traffic).forEach((key) => {
+              const entry = line_data.traffic[key]; // Access the traffic condition (e.g., clear, heavy, etc.)
+              if (entry && entry.score) {
+                // Ensure entry and its score property exist
+                let traffic_score = entry.score;
+                score += traffic_score;
+                counter += 1;
+              }
+            });
+          }
+
+          if (line_data.light) {
+            Object.keys(line_data.light).forEach((key) => {
+              const entry = line_data.light[key]; // Access the light condition (e.g., low, moderate, etc.)
+              if (entry && entry.score) {
+                // Ensure entry and its score property exist
+                let light_score = entry.score;
+                score += light_score;
+                counter += 1;
+              }
+            });
+          }
+
+          if (line_data.temp) {
+            Object.keys(line_data.temp).forEach((key) => {
+              const entry = line_data.temp[key]; // Access the temperature condition (e.g., cold, warm, etc.)
+              if (entry && entry.score) {
+                // Ensure entry and its score property exist
+                let temp_score = entry.score;
+                score += temp_score;
+                counter += 1;
+              }
+            });
+          }
+
+          current_score.value = Math.round(score / counter);
+          console.log("test");
+
+          return {
+            ...item,
+            score,
+            timeLeft,
+          };
+        });
+      } catch (error) {
+        console.error("Error fetching station data:", error);
+        stationData.value = []; // Reset on error
+      }
+    };
+
+    // Filter the stations based on the user's input
+    const filteredList = () => {
+      if (!startMessage.value.trim()) {
+        return [];
+      }
+
+      // Filter the stations based on the user input
+      return Object.entries(stationIds)
+        .filter(
+          ([id, station]) =>
+            station.name
+              .toLowerCase()
+              .includes(startMessage.value.toLowerCase()) // Filter by name
+        )
+        .map(([id, station]) => ({
+          id,
+          station,
+        }));
+    };
+
+    return {
+      startMessage,
+      stationData,
+      filteredList,
+      fetchStationData,
+      stations,
+      current_id,
+      headsign,
+      current_score,
+    };
   },
 };
 </script>

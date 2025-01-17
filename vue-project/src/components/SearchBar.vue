@@ -29,7 +29,6 @@
       </div>
     </div>
 
-    <!-- Display Station Data -->
     <div v-if="stationData.length > 0" class="mt-4 h-[250px] overflow-auto p-1">
       <div class="max-h-[50%]">
         <ul class="station-list">
@@ -47,9 +46,8 @@
             </div>
             <div
               class="score-circle flex-grow-0"
-              :style="{
-                backgroundColor: getScoreColor(item.score),
-              }"
+              :style="{ backgroundColor: getScoreColor(item.score) }"
+              @click="handleScoreClick(item)"
             >
               {{ item.score }}
             </div>
@@ -62,10 +60,10 @@
 
 <script>
 import { ref, onMounted, watch } from "vue";
+import { useRoute, useRouter } from "vue-router";
 import axios from "axios";
 import { getDatabase, ref as dbRef, get as dbGet } from "firebase/database";
 import stationIds from "../../../datascraping/stationData/station_ids.json";
-import { nextTick } from "vue";
 
 export default {
   props: {
@@ -94,10 +92,23 @@ export default {
   },
   emits: ["station-click"],
   setup(props, { emit }) {
+    const router = useRouter();
     const startMessage = ref("");
     const stationData = ref([]);
     const stationScores = ref({});
     const stations = ref();
+
+    const handleScoreClick = (item) => {
+      console.log("Score circle clicked for item:", item);
+
+      router.push({
+        path: "/score",
+        query: {
+          key: item.id,
+          id: props.selectedStationId, // Access props directly in setup
+        },
+      });
+    };
 
     const fetchStations = async () => {
       const db = getDatabase();
@@ -284,6 +295,7 @@ export default {
       handleStationClick,
       fetchStationData,
       stations,
+      handleScoreClick,
     };
   },
 };
