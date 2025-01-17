@@ -56,6 +56,10 @@ def getStationData():
         response = checkRequestLimit(response, url)
         if response.status_code == 200:
             json_data = response.json()
+            station["env_data"] = current_env_data
+            ref_path = f"/stations/{id}/env_data"
+            ref = db.reference(ref_path)
+            ref.set(current_env_data)
             if "data" in json_data and isinstance(json_data["data"], list):
                 for transit in json_data["data"]:
                     if "time" in transit and "realtime" in transit:
@@ -65,54 +69,83 @@ def getStationData():
                         if (transit_time - current_time) <= scraping_interval_seconds and current_line in bus_lines:
                             delay = int(transit["realtime"]) - transit_time
                             cancelled = bool(transit["cancelled"])
-                            delay_score = createDelayScore(delay, cancelled)
-                            ref_path = f"/stations/{id}/{current_line}"
+                            delay_type = getDelayType(delay, cancelled)
+                            ref_path = f"/stations/{id}/lines/{current_line}"
                             ref = db.reference(ref_path)
                             env_data = ref.get()
                             if not env_data:
-                                ref_path = f"/stations/{id}"
+                                ref_path = f"/stations/{id}/lines"
                                 ref = db.reference(ref_path)
                                 current_line_data = ref.get()
-                                current_file_path = os.path.join("json_templates", "environmental-data.json")
-                                with open(current_file_path, 'r', encoding="utf-8") as file:
-                                    current_station_data = json.load(file)
-                                current_line_data.update({current_line: current_station_data})
+                                data_by_env_file_path = os.path.join("json_templates", "data_by_env.json")
+                                with open(data_by_env_file_path, 'r', encoding="utf-8") as file:
+                                    data_by_env = json.load(file)
+                                current_line_data.update({current_line: data_by_env})
                                 ref.set(current_line_data)
-                                ref_path = f"/stations/{id}/{current_line}"
+                                ref_path = f"/stations/{id}/lines/{current_line}"
                                 ref = db.reference(ref_path)
                                 env_data = ref.get()
                                 station["lines"].append(current_line)
                                 with open(file_path, "w", encoding="utf-8") as json_file:
                                     json.dump(station_data, json_file, indent=4, ensure_ascii=False)
                             for factor_name in env_data:
-                                env_data = setEnvData(env_data, delay_score, current_env_data[factor_name], factor_name)
+                                env_data = setEnvData(env_data, delay, delay_type, current_env_data[factor_name], factor_name)
                             writeEnvData(id, current_line, env_data)                           
             print(f"[{station_nr}/{len(station_data)}] Parsed station {station["name"]} at ID {id}")
         else:
             print(f"Failed to retrieve JSON. Status code: {response.status_code}")
 
-def setEnvData(env_data, delay_score, factor_data, factor_type):
+def setEnvData(env_data, delay, delay_type, factor_data, factor_type):
     for factor in factor_data:
-        factor_score = float(env_data[factor_type][factor]["score"])
-        factor_data_size = int(env_data[factor_type][factor]["data_size"])
-        new_factor_data_size = factor_data_size + 1
-        new_factor_score = str((factor_score * factor_data_size + delay_score)/new_factor_data_size)
-        env_data[factor_type][factor]["score"] = new_factor_score
-        env_data[factor_type][factor]["data_size"] = str(new_factor_data_size)
+        if(delay > 0):
+            env_data[factor_type][factor]["delay_info"][delay_type] = int(env_data[factor_type][factor]["delay_info"][delay_type]) + 1
+            delay_total = int(env_data[factor_type][factor]["delay_total"])
+            new_delay_total = delay_total + 1
+            average_delay = float(env_data[factor_type][factor]["average_delay"])
+            new_average_delay = str((average_delay * delay_total + delay)/new_delay_total)
+            env_data[factor_type][factor]["delay_total"] = str(new_delay_total)
+            env_data[factor_type][factor]["average_delay"] = str(new_average_delay)
+        delay_score = createDelayScore(env_data[factor_type][factor]["delay_info"], int(env_data[factor_type][factor]["data_size"]) + 1)
+        factor_data_size = int(env_data[factor_type][factor]["data_size"]) + 1
+        env_data[factor_type][factor]["score"] = delay_score
+        env_data[factor_type][factor]["data_size"] = str(factor_data_size)
     return env_data
 
+def getDelayType(delay, cancelled):
+    if delay == 0:
+        return "punctual"
+    elif 0 < delay < 360:
+        return "short"
+    elif 360 <= delay < 960:
+        return "medium"
+    elif 960 <= delay < 1800:
+        return "long"
+    elif 1800 <= delay:
+        return "extreme"
+    elif cancelled:
+        return "cancelled"
+
+
 def writeEnvData(id, current_line, env_data):
-    light_ref_path = f"/stations/{id}/{current_line}"
+    light_ref_path = f"/stations/{id}/lines/{current_line}"
     light_ref = db.reference(light_ref_path)
     light_ref.set(env_data)
 
-def createDelayScore(delay, cancelled):
-    delay_score = round(100 - delay/18, 2)
-    if delay_score < 0 or cancelled:
-        delay_score = 0
+def createDelayScore(delay_info, data_size):
+    delay_score = round(100 * (1 - (float(delay_info["short"]) * 0.2 + float(delay_info["medium"]) * 0.4
+                   + float(delay_info["long"]) * 0.6 + float(delay_info["extreme"]) * 0.8
+                   + float(delay_info["cancelled"]) * 1.0)/float(data_size)), 2)
     return delay_score
 
 #delay_array = np.linspace(0, 1800, 31)
 #for delay in delay_array:
 #    delay_score = createDelayScore(delay)
 #    print(delay_score)
+
+#start_time = time.time()
+#getStationData()
+#while True:
+#    if time.time() - start_time >= scraping_interval_seconds:
+#        print(time.time() - start_time)
+#        start_time = time.time()
+#        getStationData()

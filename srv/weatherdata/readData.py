@@ -46,13 +46,13 @@ def analyseTrafficTime(current_time, timezone='CET'):
             return "offwork"
 
 def analyseTemp(temp):
-    if temp < 0:
+    if temp <= 0:
         return "freezing"
-    elif 1 <= temp <= 10:
+    elif 0 < temp <= 10:
         return "cool"
-    elif 11 <= temp <= 20:
+    elif 10 < temp <= 20:
         return "mild"
-    elif 21 <= temp <= 30:
+    elif 20 < temp <= 30:
         return "warm"
     elif temp > 30:
         return "hot"
