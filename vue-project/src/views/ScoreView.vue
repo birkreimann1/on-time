@@ -1,7 +1,8 @@
 <template>
   <div class="bg-black h-screen text-white p-8">
+    <!-- Question Mark Button -->
     <div class="flex justify-end">
-      <button class="p-2 bg-neutral-800 rounded-lg">
+      <button class="p-2 bg-neutral-800 rounded-lg" @click="togglePopup">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 320 512"
@@ -15,7 +16,10 @@
         </svg>
       </button>
     </div>
+
+    <!-- Main Content -->
     <div class="flex flex-col gap-12">
+      <!-- Score Circles -->
       <div class="flex justify-center items-end">
         <div class="flex flex-col items-end text-center gap-2">
           <div class="flex justify-center w-full">
@@ -44,6 +48,8 @@
           <div class="text-center">Score im Durchschnitt</div>
         </div>
       </div>
+
+      <!-- Additional Information -->
       <div class="flex flex-col gap-12">
         <div class="flex justify-center text-3xl font-bold">ZOB Lübeck</div>
         <div class="flex justify-center items-center gap-8">
@@ -85,19 +91,61 @@
         </div>
       </div>
     </div>
+
+    <!-- Popup -->
+    <div
+      v-if="showPopup"
+      class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center"
+    >
+      <div
+        class="bg-neutral-800 text-neutral-200 p-8 rounded-lg shadow-lg w-full"
+      >
+        <div class="flex justify-between mb-4">
+          <h2 class="text-xl font-bold">Wie setzt sich der Score zusammen?</h2>
+          <div>
+            <button
+              @click="togglePopup"
+              class="p-1 bg-neutral-900 rounded-lg flex-grow-0"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 384 512"
+                class="fill-white"
+                height="32"
+                width="32"
+              >
+                <path
+                  d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <p class="font-bold text-xl">Attribute</p>
+        <ul>
+          <li>Licht</li>
+          <li>Temperatur</li>
+          <li>Verkehr</li>
+          <li>Wetter</li>
+        </ul>
+        <p class="font-bold text-xl pt-4">Berechnung</p>
+        <p>a² + b² = c²</p>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
-function numberToHexColor(value) {
-  if (value < 0 || value > 100)
-    throw new RangeError("Input must be between 0 and 100");
-
-  const red = ((100 - value) * 2.55) | 0; // Convert percentage to 0-255 range
-  const green = (value * 2.55) | 0;
-
-  return `#${red.toString(16).padStart(2, "0")}${green
-    .toString(16)
-    .padStart(2, "0")}00`;
-}
+export default {
+  data() {
+    return {
+      showPopup: false, // Controls visibility of the popup
+    };
+  },
+  methods: {
+    togglePopup() {
+      this.showPopup = !this.showPopup; // Toggle popup visibility
+    },
+  },
+};
 </script>
