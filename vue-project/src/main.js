@@ -2,6 +2,7 @@ import { createApp } from 'vue';
 import { VueFire } from "vuefire";
 import { initializeApp } from "firebase/app";
 import App from "./App.vue";
+import router from './router'
 import './style.css'
 import 'leaflet/dist/leaflet.css'
 
@@ -20,5 +21,5 @@ const app = createApp(App);
 
 // install the VueFire plugin
 app.use(VueFire, { firebaseApp });
-
+app.use(router)
 app.mount("#app");
