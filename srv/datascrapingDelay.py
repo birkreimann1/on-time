@@ -86,7 +86,7 @@ def getStationData():
                             for factor_name in env_data:
                                 env_data = setEnvData(env_data, delay_score, current_env_data[factor_name], factor_name)
                             writeEnvData(id, current_line, env_data)                           
-            print(f"Parsed station {station["name"]} at id {id}")
+            print(f"[{station_nr}/{len(station_data)}] Parsed station {station["name"]} at ID {id}")
         else:
             print(f"Failed to retrieve JSON. Status code: {response.status_code}")
 
