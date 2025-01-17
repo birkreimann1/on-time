@@ -2,7 +2,6 @@ import openmeteo_requests
 import requests_cache
 import pandas as pd
 from retry_requests import retry
-import pytz
 
 def analyseWMOCode(code):
     if code in [0, 1]:

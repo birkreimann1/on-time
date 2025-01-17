@@ -1,10 +1,7 @@
 import requests
-import datetime
 import time
 import os.path
 import json
-import re
-import numpy as np
 import firebase_admin
 from firebase_admin import credentials
 from firebase_admin import db
@@ -118,11 +115,3 @@ def createDelayScore(delay):
 #for delay in delay_array:
 #    delay_score = createDelayScore(delay)
 #    print(delay_score)
-
-start_time = time.time()
-getStationData()
-while True:
-    if time.time() - start_time >= scraping_interval_seconds:
-        print(time.time() - start_time)
-        start_time = time.time()
-        getStationData()

@@ -1,13 +1,10 @@
 import time
-from datascrapingDelay import getStationData
-
-scraping_interval_minutes = 20
-scraping_interval_seconds = 60*scraping_interval_minutes
+import datascrapingDelay as dsd
 
 start_time = time.time()
-getStationData()
+dsd.getStationData()
 while True:
-    if time.time() - start_time >= scraping_interval_seconds:
+    if time.time() - start_time >= dsd.scraping_interval_seconds:
         print(time.time() - start_time)
         start_time = time.time()
-        getStationData()
+        dsd.getStationData()
