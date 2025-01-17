@@ -69,10 +69,23 @@ def getStationData():
                             delay = int(transit["realtime"]) - transit_time
                             delay_score = createDelayScore(delay)
                             ref_path = f"/stations/{id}/{current_line}"
-                            if not ref_path:
-                                continue
                             ref = db.reference(ref_path)
                             env_data = ref.get()
+                            if not env_data:
+                                ref_path = f"/stations/{id}"
+                                ref = db.reference(ref_path)
+                                current_line_data = ref.get()
+                                current_file_path = os.path.join("json_templates", "environmental-data.json")
+                                with open(current_file_path, 'r', encoding="utf-8") as file:
+                                    current_station_data = json.load(file)
+                                current_line_data.update({current_line: current_station_data})
+                                ref.set(current_line_data)
+                                ref_path = f"/stations/{id}/{current_line}"
+                                ref = db.reference(ref_path)
+                                env_data = ref.get()
+                                station["lines"].append(current_line)
+                                with open(file_path, "w", encoding="utf-8") as json_file:
+                                    json.dump(station_data, json_file, indent=4, ensure_ascii=False)
                             for factor_name in env_data:
                                 env_data = setEnvData(env_data, delay_score, current_env_data[factor_name], factor_name)
                             writeEnvData(id, current_line, env_data)                           
