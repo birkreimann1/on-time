@@ -64,6 +64,7 @@ import { useRoute, useRouter } from "vue-router";
 import axios from "axios";
 import { getDatabase, ref as dbRef, get as dbGet } from "firebase/database";
 import stationIds from "../../../datascraping/stationData/station_ids.json";
+import { calculateScore } from "../utils/calculateLineData";
 
 export default {
   props: {
@@ -105,7 +106,9 @@ export default {
         path: "/score",
         query: {
           key: item.id,
-          id: props.selectedStationId, // Access props directly in setup
+          id: props.selectedStationId, 
+          line: item.line.name,
+          headsign: item.headsign
         },
       });
     };
@@ -196,58 +199,9 @@ export default {
           );
           const line = parseInt(item.line.name, 10);
           const line_data = stations.value[id].lines[line];
+          const env_data = stations.value[id].env_data
 
-          let score = 0.0;
-          let counter = 0;
-
-          if (line_data.weather) {
-            Object.keys(line_data.weather).forEach((key) => {
-              const entry = line_data.weather[key];
-              if (entry) {
-                let weather_score = entry.score;
-                score += parseFloat(weather_score);
-                counter += 1;
-              }
-            });
-          }
-
-          if (line_data.traffic) {
-            Object.keys(line_data.traffic).forEach((key) => {
-              const entry = line_data.traffic[key]; // Access the traffic condition (e.g., clear, heavy, etc.)
-              if (entry && entry.score) {
-                // Ensure entry and its score property exist
-                let traffic_score = entry.score;
-                score += traffic_score;
-                counter += 1;
-              }
-            });
-          }
-
-          if (line_data.light) {
-            Object.keys(line_data.light).forEach((key) => {
-              const entry = line_data.light[key]; // Access the light condition (e.g., low, moderate, etc.)
-              if (entry && entry.score) {
-                // Ensure entry and its score property exist
-                let light_score = entry.score;
-                score += light_score;
-                counter += 1;
-              }
-            });
-          }
-
-          if (line_data.temp) {
-            Object.keys(line_data.temp).forEach((key) => {
-              const entry = line_data.temp[key]; // Access the temperature condition (e.g., cold, warm, etc.)
-              if (entry && entry.score) {
-                // Ensure entry and its score property exist
-                let temp_score = entry.score;
-                score += temp_score;
-                counter += 1;
-              }
-            });
-          }
-
-          score = Math.round(score / counter);
+          let score = calculateScore(line_data, env_data);
 
           return {
             ...item,
