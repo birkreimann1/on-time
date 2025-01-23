@@ -43,7 +43,7 @@
         </div>
         <div class="flex justify-between items-center">
           <div class="flex gap-4">
-            <input type="checkbox" v-model="toggle" true-value="yes" false-value="no" class="scale-150" />
+            <input type="checkbox" v-model="toggle" class="scale-150" @click="toggleCheckbox()"/>
             <div>aktuelle Bedingungen</div>
           </div>
           <button class="p-2 bg-neutral-800 rounded-lg">
@@ -161,6 +161,18 @@ export default {
       this.env[category] = [getRawValue(selectedValue, category)];
       console.log(`Selected ${category}:`, selectedValue);
       this.scores.score = calculateScore(this.line_data, this.env);
+
+      if (JSON.stringify(this.env) === JSON.stringify(this.actual_env)) {
+        this.toggle = true;
+      } else {
+        this.toggle = false;
+      }
+    },
+    toggleCheckbox() {
+      if (!this.toggle) {
+        this.env = { ...this.actual_env };
+        this.scores.score = calculateScore(this.line_data, this.env);
+      }
     },
   },
   setup() {
@@ -231,7 +243,6 @@ export default {
             env[key] = env_data[key];
             actual_env[key] = env_data[key];
           }
-          console.log(env)
 
           toggle.value = true;
 
@@ -248,6 +259,7 @@ export default {
       scores,
       line_data,
       env,
+      actual_env,
       toggle
     };
   },

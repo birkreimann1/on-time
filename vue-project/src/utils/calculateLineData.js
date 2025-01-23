@@ -42,7 +42,6 @@ export function calculateScore(line_data, criteria = {}) {
       median = scores[middle];
     }
 
-    console.log(scores)
     return Math.round(median);
   };
 

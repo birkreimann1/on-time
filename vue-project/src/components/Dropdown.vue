@@ -104,7 +104,6 @@ export default {
       );
     },
     getTranslatedLabel(rawValue) {
-      console.log(rawValue)
       const displayValues = {
         light: {
           day: "Tag",
