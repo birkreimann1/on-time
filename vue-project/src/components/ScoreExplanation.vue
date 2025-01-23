@@ -2,9 +2,8 @@
   <div>
     <p class="font-bold text-xl pt-4">Beschreibung</p>
       <ul>
-        <p>Dieser Score ergibt sich aus einer gewichteten Inzidenz, wobei geringere Verspätungen das Ergebnis weniger stark beeinflussen als längere.</p>
-        <p>Der Score wird gemittelt über die jeweiligen Werte aller derzeit erfassten Umweltfaktoren</p>
-
+        <p>Diese Scores ergeben sich aus einer gewichteten Inzidenz, wobei geringere Verspätungen das Ergebnis weniger stark beeinflussen als längere.</p>
+        <p>Der Main Score wird darüber hinaus über die jeweiligen Werte aller derzeit erfassten Umweltfaktoren gemittelt.</p>
       </ul>
     <p class="font-bold text-xl pt-4">Berücksichtigte Umweltfaktoren</p>
       <ul>
