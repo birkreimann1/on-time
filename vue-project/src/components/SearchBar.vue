@@ -96,7 +96,6 @@ export default {
     const router = useRouter();
     const startMessage = ref("");
     const stationData = ref([]);
-    const stationScores = ref({});
     const stations = ref();
 
     const handleScoreClick = (item) => {

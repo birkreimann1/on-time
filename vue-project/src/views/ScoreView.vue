@@ -55,7 +55,7 @@
         </div>
         <div class="flex justify-center gap-4">
           <div class="flex flex-col gap-4 items-end">
-            <div>Fahrten insgesamt</div>
+            <div>Einbezogene Fahrten</div>
             <div>davon Verspätungen</div>
             <div>Durchschnittsverspätung</div>
           </div>
@@ -101,15 +101,7 @@
             </button>
           </div>
         </div>
-        <p class="font-bold text-xl">Attribute</p>
-        <ul>
-          <li>Licht</li>
-          <li>Temperatur</li>
-          <li>Verkehr</li>
-          <li>Wetter</li>
-        </ul>
-        <p class="font-bold text-xl pt-4">Berechnung</p>
-        <p>a² + b² = c²</p>
+        <ScoreExplanation/>
       </div>
     </div>
   </div>
@@ -122,10 +114,12 @@ import { ref, onMounted, watch, reactive } from "vue";
 import { getDatabase, ref as dbRef, get as dbGet } from "firebase/database";
 import { calculateScore, calculateAverageScore } from "../utils/calculateLineData";
 import { getRawValue } from "../utils/translateLabelToRaw"
+import ScoreExplanation from "../components/ScoreExplanation.vue";
 
 export default {
   components: {
     Dropdown,
+    ScoreExplanation
   },
   data() {
     return {
@@ -161,6 +155,8 @@ export default {
       this.env[category] = [getRawValue(selectedValue, category)];
       console.log(`Selected ${category}:`, selectedValue);
       this.scores.score = calculateScore(this.line_data, this.env);
+
+      console.log(this.line_data)
 
       if (JSON.stringify(this.env) === JSON.stringify(this.actual_env)) {
         this.toggle = true;
