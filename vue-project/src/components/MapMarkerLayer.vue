@@ -1,7 +1,11 @@
 <script setup>
-import { ref } from "vue";
+import { ref, watch } from "vue";
 import MapMarker from "./MapMarker.vue";
 import stationIDs from "../../../datascraping/stationData/station_ids.json";
+
+const props = defineProps({
+  station: Object,
+});
 
 const emit = defineEmits();
 const selectedStationId = ref(null);
@@ -11,6 +15,16 @@ const handleStationClick = (stationId, stationCoords) => {
   console.log(stationCoords)
   emit("station-click", stationId, stationCoords);
 };
+
+watch(
+  () => props.station,
+  (newStation) => {
+    if (newStation) {
+      selectedStationId.value = newStation.id;
+    }
+  },
+  { immediate: true }
+);
 </script>
 
 <template>

@@ -15,7 +15,7 @@ const props = defineProps({
   selected: {
     type: Boolean,
     required: true,
-  },
+  }
 });
 
 const emit = defineEmits(); // Use this to emit events
@@ -36,7 +36,7 @@ watch(
       marker_radius.value = 20; // Default size
     }
   },
-  { immediate: true }
+  { immediate: true },
 );
 
 // Emit station-click event to parent
@@ -47,12 +47,6 @@ const handleClick = () => {
 
 <template>
   <!-- Use LCircle component from vue-leaflet to render the marker -->
-  <l-circle
-    :lat-lng="[props.station.coords.lat, props.station.coords.long]"
-    :radius="marker_radius"
-    :color="markerColor"
-    :fill-opacity="0.2"
-    :weight="3"
-    @click="handleClick"
-  />
+  <l-circle :lat-lng="[props.station.coords.lat, props.station.coords.long]" :radius="marker_radius"
+    :color="markerColor" :fill-opacity="0.2" :weight="3" @click="handleClick" />
 </template>
