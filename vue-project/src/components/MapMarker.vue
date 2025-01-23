@@ -41,7 +41,7 @@ watch(
 
 // Emit station-click event to parent
 const handleClick = () => {
-  emit("station-click", props.id);
+  emit("station-click", props.id, [props.station.coords.lat, props.station.coords.long]);
 };
 </script>
 

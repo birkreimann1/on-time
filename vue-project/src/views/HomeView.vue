@@ -8,8 +8,18 @@ import stationIDs from "../../../datascraping/stationData/station_ids.json";
 
 // Reactive variable to hold the selected station's ID
 const selectedStationId = ref(null);
+const center = ref([53.8677, 10.68601])
+const zoom = ref(13)
 
-const handleStationClick = (stationId) => {
+const handleStationClick = (stationId, stationCoords) => {
+
+  center.value = stationCoords
+  if (zoom.value < 16) {
+    setTimeout(function () {
+      zoom.value = 16
+    }, 300);
+  }
+
   selectedStationId.value = stationId;
   console.log("Station clicked:", stationId);
 };
@@ -18,30 +28,17 @@ const handleStationClick = (stationId) => {
 <template>
   <div class="flex flex-col h-screen items-center justify-center">
     <div class="flex flex-col gap-4 bg-black w-full p-6 max-h-[50%]">
-      <!-- Pass 'stationsList' and 'selectedStationId' to SearchBar and listen for 'station-click' event -->
       <SearchBar
         @station-click="handleStationClick"
         :stationsList="stationIDs"
         :selectedStationId="selectedStationId"
       />
     </div>
-    <div class="flex flex-grow w-full">
-      <!-- Leaflet Map -->
-      <l-map
-        :use-global-leaflet="false"
-        v-model:zoom="zoom"
-        :center="[53.8677, 10.68601]"
-        style="height: 100%; width: 100%"
-      >
-        <l-tile-layer
-          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-          layer-type="base"
-          name="OpenStreetMap"
-        />
-        <MapMarkerLayer
-          :stations="stationIDs"
-          @station-click="handleStationClick"
-        />
+    <div class="flex flex-grow w-full max-h-[100%]">
+      <l-map ref="mapRef" :use-global-leaflet="false" v-model:zoom="zoom" :center="center"
+        style="height: 100%; width: 100%">
+        <l-tile-layer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" layer-type="base" name="OpenStreetMap" />
+        <MapMarkerLayer :stations="stationIDs" :map="mapRef" @station-click="handleStationClick" />
       </l-map>
     </div>
   </div>
@@ -54,11 +51,6 @@ export default {
     LTileLayer,
     MapMarkerLayer,
     SearchBar,
-  },
-  data() {
-    return {
-      zoom: 13,
-    };
-  },
+  }
 };
 </script>

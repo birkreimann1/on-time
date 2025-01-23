@@ -29,7 +29,6 @@
       </div>
     </div>
 
-    <!-- Display Station Data -->
     <div v-if="stationData.length > 0" class="mt-4 h-[250px] overflow-auto p-1">
       <div class="max-h-[50%]">
         <ul class="station-list">
@@ -47,9 +46,8 @@
             </div>
             <div
               class="score-circle flex-grow-0"
-              :style="{
-                backgroundColor: getScoreColor(item.score),
-              }"
+              :style="{ backgroundColor: getScoreColor(item.score) }"
+              @click="handleScoreClick(item)"
             >
               {{ item.score }}
             </div>
@@ -62,10 +60,11 @@
 
 <script>
 import { ref, onMounted, watch } from "vue";
+import { useRoute, useRouter } from "vue-router";
 import axios from "axios";
 import { getDatabase, ref as dbRef, get as dbGet } from "firebase/database";
 import stationIds from "../../../datascraping/stationData/station_ids.json";
-import { nextTick } from "vue";
+import { calculateScore } from "../utils/calculateLineData";
 
 export default {
   props: {
@@ -94,10 +93,24 @@ export default {
   },
   emits: ["station-click"],
   setup(props, { emit }) {
+    const router = useRouter();
     const startMessage = ref("");
     const stationData = ref([]);
-    const stationScores = ref({});
     const stations = ref();
+
+    const handleScoreClick = (item) => {
+      console.log("Score circle clicked for item:", item);
+
+      router.push({
+        path: "/score",
+        query: {
+          key: item.id,
+          id: props.selectedStationId, 
+          line: item.line.name,
+          headsign: item.headsign
+        },
+      });
+    };
 
     const fetchStations = async () => {
       const db = getDatabase();
@@ -185,58 +198,9 @@ export default {
           );
           const line = parseInt(item.line.name, 10);
           const line_data = stations.value[id].lines[line];
+          const env_data = stations.value[id].env_data
 
-          let score = 0.0;
-          let counter = 0;
-
-          if (line_data.weather) {
-            Object.keys(line_data.weather).forEach((key) => {
-              const entry = line_data.weather[key];
-              if (entry) {
-                let weather_score = entry.score;
-                score += parseFloat(weather_score);
-                counter += 1;
-              }
-            });
-          }
-
-          if (line_data.traffic) {
-            Object.keys(line_data.traffic).forEach((key) => {
-              const entry = line_data.traffic[key]; // Access the traffic condition (e.g., clear, heavy, etc.)
-              if (entry && entry.score) {
-                // Ensure entry and its score property exist
-                let traffic_score = entry.score;
-                score += traffic_score;
-                counter += 1;
-              }
-            });
-          }
-
-          if (line_data.light) {
-            Object.keys(line_data.light).forEach((key) => {
-              const entry = line_data.light[key]; // Access the light condition (e.g., low, moderate, etc.)
-              if (entry && entry.score) {
-                // Ensure entry and its score property exist
-                let light_score = entry.score;
-                score += light_score;
-                counter += 1;
-              }
-            });
-          }
-
-          if (line_data.temp) {
-            Object.keys(line_data.temp).forEach((key) => {
-              const entry = line_data.temp[key]; // Access the temperature condition (e.g., cold, warm, etc.)
-              if (entry && entry.score) {
-                // Ensure entry and its score property exist
-                let temp_score = entry.score;
-                score += temp_score;
-                counter += 1;
-              }
-            });
-          }
-
-          score = Math.round(score / counter);
+          let score = calculateScore(line_data, env_data);
 
           return {
             ...item,
@@ -284,6 +248,7 @@ export default {
       handleStationClick,
       fetchStationData,
       stations,
+      handleScoreClick,
     };
   },
 };
