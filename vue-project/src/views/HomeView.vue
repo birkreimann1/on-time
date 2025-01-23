@@ -10,6 +10,9 @@ import stationIDs from "../../../datascraping/stationData/station_ids.json";
 const selectedStationId = ref(null);
 const center = ref([53.8677, 10.68601])
 const zoom = ref(13)
+const selectedStation = ref();
+const searchBarHeight = ref(0);
+const searchBarRef = ref(null);
 
 const handleStationClick = (stationId, stationCoords) => {
 
@@ -23,24 +26,34 @@ const handleStationClick = (stationId, stationCoords) => {
   selectedStationId.value = stationId;
   console.log("Station clicked:", stationId);
 };
+
+const handleStationSearch = (station) => {
+  center.value = [station.station.coords.lat, station.station.coords.long]
+  if (zoom.value < 16) {
+    setTimeout(function () {
+      zoom.value = 16
+    }, 300);
+  }
+
+  selectedStation.value = station;
+  console.log("Station searched:", station);
+};
 </script>
 
 <template>
-  <div class="flex flex-col h-screen items-center justify-center">
-    <div class="flex flex-col gap-4 bg-black w-full p-6 max-h-[50%]">
-      <SearchBar
-        @station-click="handleStationClick"
-        :stationsList="stationIDs"
-        :selectedStationId="selectedStationId"
-      />
-    </div>
-    <div class="flex flex-grow w-full max-h-[100%]">
+  <div class="flex flex-col h-screen">
+    <div class="flex flex-grow w-full h-[50%]">
       <l-map ref="mapRef" :use-global-leaflet="false" v-model:zoom="zoom" :center="center"
         style="height: 100%; width: 100%">
         <l-tile-layer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" layer-type="base" name="OpenStreetMap" />
-        <MapMarkerLayer :stations="stationIDs" :map="mapRef" @station-click="handleStationClick" />
+        <MapMarkerLayer :station="selectedStation" :map="mapRef" @station-click="handleStationClick" />
       </l-map>
     </div>
+    <div class="flex flex-col bg-black w-full h-[50%]">
+      <SearchBar @station-click="handleStationSearch" :stationsList="stationIDs"
+        :selectedStationId="selectedStationId" />
+    </div>
+
   </div>
 </template>
 
