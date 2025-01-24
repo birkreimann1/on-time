@@ -57,7 +57,7 @@
       <div class="flex flex-col gap-4">
         <div class="border-t border-gray-300 w-full"></div>
         <div
-          class="flex flex-col items-center text-3xl font-bold text-white gap-1">
+          class="flex flex-col items-center text-3xl font-bold text-white gap-1 text-center">
           <div>{{ metadata.headsign }}</div>
           <div>Linie {{ metadata.line }}</div>
         </div>

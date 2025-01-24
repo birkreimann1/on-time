@@ -64,7 +64,7 @@ export default {
             enabledOnSeries: undefined,
             top: 0,
             left: 0,
-            blur: 7,
+            blur: 6,
             color: '#ff0000',
             opacity: .35
           }
@@ -90,7 +90,7 @@ export default {
         stroke: {
           show: true,
           width: 2,
-          colors: ['#999']
+          colors: ['#bbb']
         },
         xaxis: {
           categories: [
@@ -98,7 +98,7 @@ export default {
             "1-5 min",
             "6-15 min",
             "16-30 min",
-            ">30 min>",
+            ">30 min",
             "Ausfall",
           ],
           labels: {
