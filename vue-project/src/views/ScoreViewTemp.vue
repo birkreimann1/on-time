@@ -122,7 +122,7 @@
           <p>Wetter</p>
           <Dropdown
             :items="[
-              'Sonne',
+              'Klar',
               'Bedeckt',
               'Regen',
               'Nebel',

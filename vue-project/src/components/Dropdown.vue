@@ -84,17 +84,17 @@ export default {
         },
         traffic: {
           work: "Berufsverkehr",
-          offwork: "mittleres Verkehrsaufkommen",
-          free: "geringes Verkehrsaufkommen",
+          free: "Freizeitverkehr",
+          offwork: "Ruhiger Verkehr",
         },
         weather: {
+          clear: "Klar",
           clouds: "Bedeckt",
-          sun: "Sonne",
           rain: "Regen",
           fog: "Nebel",
           snow: "Schnee",
-          thunderstorm: "Gewitter",
           storm: "Sturm",
+          thunderstorm: "Gewitter",
         },
       };
 
@@ -118,17 +118,17 @@ export default {
         },
         traffic: {
           work: "Berufsverkehr",
-          offwork: "mittleres Verkehrsaufkommen",
-          free: "geringes Verkehrsaufkommen",
+          free: "Freizeitverkehr",
+          offwork: "Ruhiger Verkehr",
         },
         weather: {
+          clear: "Klar",
           clouds: "Bedeckt",
-          sun: "Sonne",
           rain: "Regen",
           fog: "Nebel",
           snow: "Schnee",
-          thunderstorm: "Gewitter",
           storm: "Sturm",
+          thunderstorm: "Gewitter",
         },
       };
 

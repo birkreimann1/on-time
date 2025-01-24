@@ -103,9 +103,12 @@ export default {
           ],
           labels: {
             show: true,
+            hideOverlappingLabels: false,
+            rotate: -45,
+            rotateAlways: true,
             style: {
               colors: ['#fff', '#fff', '#fff', '#fff', '#fff', '#fff',]
-            }
+            },
           }
         },
         yaxis: {

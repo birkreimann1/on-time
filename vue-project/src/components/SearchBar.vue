@@ -85,8 +85,8 @@ export default {
       router.push({
         path: "/score",
         query: {
-          key: item.id,
-          id: props.selectedStationId,
+          name: item.name,
+          id: item.id,
           line: item.line.name,
           headsign: item.headsign
         },
@@ -119,22 +119,6 @@ export default {
 
     onMounted(() => {
       fetchStations(); // Fetch station data when component is mounted
-    });
-
-    // Process stationData to add timeLeft and score
-    stationData.value = stationData.value.map((item) => {
-      const departureTime = item.time * 1000; // Convert to milliseconds
-      const currentTime = Date.now();
-      const timeLeft = Math.max(
-        0,
-        Math.floor((departureTime - currentTime) / 60000)
-      ); // Convert to minutes
-
-      return {
-        ...item,
-        score: generateRandomScore(), // Add random score
-        timeLeft, // Add the calculated time left in minutes
-      };
     });
 
     watch(
@@ -186,6 +170,7 @@ export default {
 
           return {
             ...item,
+            id,
             score,
             timeLeft,
           };

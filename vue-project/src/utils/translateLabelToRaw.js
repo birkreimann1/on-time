@@ -18,8 +18,8 @@ export function getRawValue(translatedLabel, category) {
         free: "geringes Verkehrsaufkommen",
       },
       weather: {
+        clear: "Klar",
         clouds: "Bedeckt",
-        sun: "Sonne",
         rain: "Regen",
         fog: "Nebel",
         snow: "Schnee",
