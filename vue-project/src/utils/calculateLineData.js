@@ -123,6 +123,39 @@ export function calculateDelays(line_data, criteria = {}) {
   };
 }
 
+export function fillChartArr(chartArr_value, line_data_value, data_sizes_value, actual_env) {
+  let current_data_punctual = (data_sizes_value.size - data_sizes_value.delays);
+          let current_data_short = (line_data_value.light[actual_env.light[0]].delay_info.short +
+                                    line_data_value.temp[actual_env.temp[0]].delay_info.short +
+                                    line_data_value.traffic[actual_env.traffic[0]].delay_info.short +
+                                    line_data_value.weather[actual_env.weather[0]].delay_info.short);
+          let current_data_medium = (line_data_value.light[actual_env.light[0]].delay_info.medium +
+                                     line_data_value.temp[actual_env.temp[0]].delay_info.medium +
+                                     line_data_value.traffic[actual_env.traffic[0]].delay_info.medium +
+                                     line_data_value.weather[actual_env.weather[0]].delay_info.medium);
+          let current_data_long = (line_data_value.light[actual_env.light[0]].delay_info.long +
+                                   line_data_value.temp[actual_env.temp[0]].delay_info.long +
+                                   line_data_value.traffic[actual_env.traffic[0]].delay_info.long +
+                                   line_data_value.weather[actual_env.weather[0]].delay_info.long);
+          let current_data_extreme = (line_data_value.light[actual_env.light[0]].delay_info.extreme +
+                                      line_data_value.temp[actual_env.temp[0]].delay_info.extreme +
+                                      line_data_value.traffic[actual_env.traffic[0]].delay_info.extreme +
+                                      line_data_value.weather[actual_env.weather[0]].delay_info.extreme);
+          let current_data_cancelled = (line_data_value.light[actual_env.light[0]].delay_info.cancelled +
+                                        line_data_value.temp[actual_env.temp[0]].delay_info.cancelled +
+                                        line_data_value.traffic[actual_env.traffic[0]].delay_info.cancelled +
+                                        line_data_value.weather[actual_env.weather[0]].delay_info.cancelled);
+          
+          chartArr_value[0] = Math.round(100 * current_data_punctual/data_sizes_value.size);
+          chartArr_value[1] = Math.round(100 * current_data_short/data_sizes_value.size);
+          chartArr_value[2] = Math.round(100 * current_data_medium/data_sizes_value.size);
+          chartArr_value[3] = Math.round(100 * current_data_long/data_sizes_value.size);
+          chartArr_value[4] = Math.round(100 * current_data_extreme/data_sizes_value.size);
+          chartArr_value[5] = Math.round(100 * current_data_cancelled/data_sizes_value.size);
+
+          return chartArr_value;
+}
+
 function formatMinutesToMinutesAndSeconds(minutesFloat) {
   const minutes = Math.floor(minutesFloat);
   const seconds = Math.round((minutesFloat - minutes) * 60);

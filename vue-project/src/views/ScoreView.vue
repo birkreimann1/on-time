@@ -57,8 +57,7 @@
       <div class="flex flex-col gap-4">
         <div class="border-t border-gray-300 w-full"></div>
         <div
-          class="flex flex-col items-center text-3xl font-bold text-white gap-1"
-        >
+          class="flex flex-col items-center text-3xl font-bold text-white gap-1">
           <div>{{ metadata.headsign }}</div>
           <div>Linie {{ metadata.line }}</div>
         </div>
@@ -88,7 +87,16 @@
 
       <div class="border-t border-gray-300 w-full"></div>
 
+      <!-- BarChart -->
+      <div class="justify-center text-center">
+        Anteil der Verspätungstypen [%]
+        <BarChart :numberArr="chartArr" />
+      <div class="border-t border-gray-300 w-full"></div>
+       </div>
+      
+
       <div class="flex flex-col gap-6">
+        
         <!-- Checkbox -->
         <div class="flex justify-between items-center">
           <div class="flex gap-4">
@@ -139,9 +147,6 @@
         </div>
       </div>
 
-      <div class="border-t border-gray-300 w-full"></div>
-
-      <BarChart :numberArr="chartArr" />
     </div>
 
     <!-- Popup -->
@@ -188,6 +193,7 @@ import {
   calculateScore,
   calculateAverageScore,
   calculateDelays,
+  fillChartArr,
 } from "../utils/calculateLineData";
 import { getRawValue } from "../utils/translateLabelToRaw";
 import ScoreExplanation from "../components/ScoreExplanation.vue";
@@ -217,11 +223,11 @@ export default {
       this.isOpen = !this.isOpen; // Toggle dropdown visibility
     },
     getScoreColor(score) {
-      if (score >= 97) {
+      if (score >= 90) {
         return "#397d3b";
-      } else if (score >= 90) {
+      } else if (score >= 75) {
         return "#d9ad1e";
-      } else if (score >= 80) {
+      } else if (score >= 50) {
         return "#b3721d";
       } else if (score >= 1) {
         return "#8f2c25";
@@ -234,8 +240,9 @@ export default {
       console.log(`Selected ${category}:`, selectedValue);
       this.scores.score = calculateScore(this.line_data, this.env);
       this.data_sizes = calculateDelays(this.line_data, this.env);
+      this.chartArr = fillChartArr(this.chartArr, this.line_data, this.data_sizes, this.env);
 
-      console.log(this.line_data);
+      //console.log(this.line_data);
 
       if (JSON.stringify(this.env) === JSON.stringify(this.actual_env)) {
         this.toggle = true;
@@ -247,6 +254,8 @@ export default {
       if (!this.toggle) {
         this.env = { ...this.actual_env };
         this.scores.score = calculateScore(this.line_data, this.env);
+        this.data_sizes = calculateDelays(this.line_data, this.env);
+        this.chartArr = fillChartArr(this.chartArr, this.line_data, this.data_sizes, this.env);
       }
     },
   },
@@ -284,7 +293,7 @@ export default {
       weather: "",
     });
     const toggle = ref(false);
-    const chartArr = ref([0, 0, 0, 1, 2, 3]);
+    let chartArr = ref([0, 0, 0, 0, 0, 0]);
 
     const fetchStations = async () => {
       const db = getDatabase();
@@ -342,21 +351,11 @@ export default {
           );
           data_sizes.value = calculateDelays(line_data.value, env);
 
-          console.log("hallo");
-          console.log(line_data);
-          console.log(line_data.value.light.day.delay_info.extreme);
-          console.log(actual_env);
-
-          chartArr = [
-            line_data.value.
-        ]
-
-          // chartArr[0] = line_data.value.light.day
-          // line_data.value.
+          chartArr = fillChartArr(chartArr.value, line_data.value, data_sizes.value, actual_env);
         }
       }
     );
-
+    
     return {
       startMessage,
       stationData,
