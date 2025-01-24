@@ -7,7 +7,7 @@ from firebase_admin import credentials
 from firebase_admin import db
 from weatherdata import readData as weather
 
-cred = credentials.Certificate('./.env/ontime-e0281-firebase-adminsdk-ytrxe-16671a0c2b.json')
+cred = credentials.Certificate('./.env/ontime-e0281-firebase-adminsdk-ytrxe-372c88d62b.json')
 
 firebase_admin.initialize_app(cred, {
     'databaseURL': 'https://ontime-e0281-default-rtdb.europe-west1.firebasedatabase.app',
@@ -20,6 +20,7 @@ bus_lines = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11",
 
 scraping_interval_minutes = 20
 scraping_interval_seconds = 60*scraping_interval_minutes
+ref_root = "/stations_new_score"
 
 def checkRequestLimit(response, url):
     if response.status_code in {429, 502, 503}:
@@ -56,12 +57,11 @@ def getStationData():
         response = checkRequestLimit(response, url)
         if response.status_code == 200:
             json_data = response.json()
-            station["env_data"] = current_env_data
-            ref_path = f"/stations/{id}/env_data"
+            ref_path = f"{ref_root}/{id}/env_data"
             ref = db.reference(ref_path)
             ref.set(current_env_data)
             if response.text == '{"data":[]}':
-                print(f"[{station_nr}/{len(station_data)}] WARNING: Failed to extract data about station {station["name"]} at ID {id}")
+                print(f'[{station_nr}/{len(station_data)}] WARNING: Failed to extract data about station {station["name"]} at ID {id}')
                 continue
             if "data" in json_data and isinstance(json_data["data"], list):
                 for transit in json_data["data"]:
@@ -73,11 +73,11 @@ def getStationData():
                             delay = int(transit["realtime"]) - transit_time
                             cancelled = bool(transit["cancelled"])
                             delay_type = getDelayType(delay, cancelled)
-                            ref_path = f"/stations/{id}/lines/{current_line}"
+                            ref_path = f"{ref_root}/{id}/lines/{current_line}"
                             ref = db.reference(ref_path)
                             env_data = ref.get()
                             if not env_data:
-                                ref_path = f"/stations/{id}/lines"
+                                ref_path = f"{ref_root}/{id}/lines"
                                 ref = db.reference(ref_path)
                                 current_line_data = ref.get()
                                 data_by_env_file_path = os.path.join("json_templates", "data_by_env.json")
@@ -85,7 +85,7 @@ def getStationData():
                                     data_by_env = json.load(file)
                                 current_line_data.update({current_line: data_by_env})
                                 ref.set(current_line_data)
-                                ref_path = f"/stations/{id}/lines/{current_line}"
+                                ref_path = f"{ref_root}/{id}/lines/{current_line}"
                                 ref = db.reference(ref_path)
                                 env_data = ref.get()
                                 station["lines"].append(current_line)
@@ -93,8 +93,8 @@ def getStationData():
                                     json.dump(station_data, json_file, indent=4, ensure_ascii=False)
                             for factor_name in env_data:
                                 env_data = setEnvData(env_data, delay, delay_type, current_env_data[factor_name], factor_name)
-                            writeEnvData(id, current_line, env_data)                           
-            print(f"[{station_nr}/{len(station_data)}] Parsed station {station["name"]} at ID {id}")
+                            writeEnvData(id, current_line, env_data)
+            print(f'[{station_nr}/{len(station_data)}] Parsed station {station["name"]} at ID {id}')
         else:
             print(f"Failed to retrieve JSON. Status code: {response.status_code}")
 
@@ -130,13 +130,13 @@ def getDelayType(delay, cancelled):
 
 
 def writeEnvData(id, current_line, env_data):
-    light_ref_path = f"/stations/{id}/lines/{current_line}"
-    light_ref = db.reference(light_ref_path)
-    light_ref.set(env_data)
+    line_ref_path = f"{ref_root}/{id}/lines/{current_line}"
+    line_ref = db.reference(line_ref_path)
+    line_ref.set(env_data)
 
 def createDelayScore(delay_info, data_size):
-    delay_score = round(100 * (1 - (float(delay_info["short"]) * 0.2 + float(delay_info["medium"]) * 0.4
-                   + float(delay_info["long"]) * 0.6 + float(delay_info["extreme"]) * 0.8
+    delay_score = round(100 * (1 - (float(delay_info["short"]) * 0.5 + float(delay_info["medium"]) * 0.6
+                   + float(delay_info["long"]) * 0.7 + float(delay_info["extreme"]) * 0.8
                    + float(delay_info["cancelled"]) * 1.0)/float(data_size)), 2)
     return delay_score
 

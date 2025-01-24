@@ -3,13 +3,14 @@ from firebase_admin import credentials
 from firebase_admin import db
 import os
 import json
+import datascrapingDelay as dsd
 
-cred = credentials.Certificate('./.env/ontime-e0281-firebase-adminsdk-ytrxe-16671a0c2b.json')
-
-firebase_admin.initialize_app(cred, {
-    'databaseURL': 'https://ontime-e0281-default-rtdb.europe-west1.firebasedatabase.app',
-    'databaseAuthVariableOverride': None
-})
+#cred = credentials.Certificate('./.env/ontime-e0281-firebase-adminsdk-ytrxe-372c88d62b.json')
+#
+#firebase_admin.initialize_app(cred, {
+#    'databaseURL': 'https://ontime-e0281-default-rtdb.europe-west1.firebasedatabase.app',
+#    'databaseAuthVariableOverride': None
+#})
 
 
 station_data = {}
@@ -36,5 +37,5 @@ for id in station_data:
         json_data["lines"][line] = data_by_env_template
     setup_json[id] = json_data
 
-ref = db.reference('/stations')
+ref = db.reference(dsd.ref_root)
 ref.set(setup_json)
