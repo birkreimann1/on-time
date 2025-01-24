@@ -62,11 +62,11 @@
           </div>
           <div class="border-l border-gray-300"></div>
           <div class="flex flex-col gap-4">
-            <div>{{ data_sizes.size || "N/A" }}</div>
-            <div>{{ data_sizes.delays || "N/A" }}</div>
-            <div>{{ data_sizes.incidence || "N/A" }} %</div>
-            <div>{{ data_sizes.average_delay || "N/A" }}</div>
-            <div>{{ data_sizes.expected_delay || "N/A" }}</div>
+            <div>{{ data_sizes.size || "0" }}</div>
+            <div>{{ data_sizes.delays || "0" }}</div>
+            <div>{{ data_sizes.incidence || "N/A" }}</div>
+            <div>{{ data_sizes.average_delay }}</div>
+            <div>{{ data_sizes.expected_delay }}</div>
           </div>
         </div>
       </div>
@@ -183,6 +183,7 @@ export default {
     },
     handleSelection(category, selectedValue) {
       this.env[category] = [getRawValue(selectedValue, category)];
+
       console.log(`Selected ${category}:`, selectedValue);
       this.scores.score = cld.calculateScore(this.line_data, this.env);
       this.data_sizes = cld.calculateDelays(this.line_data, this.env);

@@ -113,8 +113,8 @@
           <Dropdown
             :items="[
               'Berufsverkehr',
-              'mittleres Verkehrsaufkommen',
-              'geringes Verkehrsaufkommen',
+              'Freizeitverkehr',
+              'Ruhiger Verkehr',
             ]"
           />
         </div>

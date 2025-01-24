@@ -2,10 +2,12 @@
 export function getRawValue(translatedLabel, category) {
     const displayValues = {
       light: {
+        null: "Keine Auswahl",
         day: "Tag",
         night: "Nacht",
       },
       temp: {
+        null: "Keine Auswahl",
         freezing: "unter 0 °C",
         cool: "0 - 10 °C",
         mild: "10 - 20 °C",
@@ -13,11 +15,13 @@ export function getRawValue(translatedLabel, category) {
         hot: "über 30 °C",
       },
       traffic: {
+        null: "Keine Auswahl",
         work: "Berufsverkehr",
-        offwork: "mittleres Verkehrsaufkommen",
-        free: "geringes Verkehrsaufkommen",
+        free: "Freizeitverkehr",
+        offwork: "Ruhiger Verkehr",
       },
       weather: {
+        null: "Keine Auswahl",
         clear: "Klar",
         clouds: "Bedeckt",
         rain: "Regen",

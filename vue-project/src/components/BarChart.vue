@@ -122,7 +122,7 @@ export default {
         },
         fill: {
           opacity: 1,
-          colors: ['#222']
+          colors: ['#151515']
         },
         tooltip: {
           theme: 'dark',
