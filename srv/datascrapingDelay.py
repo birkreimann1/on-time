@@ -68,10 +68,10 @@ def getStationData():
                     if "time" in transit and "realtime" in transit:
                         current_line = transit["line"]["name"]
                         current_time = int(time.time())
-                        transit_time = int(transit["time"])
-                        arrival_in = transit_time - current_time
+                        transit_realtime = int(transit["realtime"])
+                        arrival_in = transit_realtime - current_time
                         if arrival_in > -60 and arrival_in <= scraping_interval_seconds and current_line in bus_lines:
-                            delay = int(transit["realtime"]) - transit_time
+                            delay = transit_realtime - int(transit["time"])
                             cancelled = bool(transit["cancelled"])
                             delay_type = getDelayType(delay, cancelled)
                             ref_path = f"{ref_root}/{id}/lines/{current_line}"
