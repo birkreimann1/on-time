@@ -52,7 +52,7 @@ def getStationData():
         coords = station["coords"]
         current_env_data = weather.getDataByCoords(float(coords["lat"]),float(coords["long"]))
 
-        url = f"https://netzplan.swhl.de/api/v1/stationboards/hafas/{id}?v=0&limit=1000"
+        url = f"https://netzplan.swhl.de/api/v1/stationboards/hafas/{id}?v=0&limit=300"
         response = requests.get(url)
         response = checkRequestLimit(response, url)
         if response.status_code == 200:
@@ -69,7 +69,8 @@ def getStationData():
                         current_line = transit["line"]["name"]
                         current_time = int(time.time())
                         transit_time = int(transit["time"])
-                        if (transit_time - current_time) <= scraping_interval_seconds and current_line in bus_lines:
+                        arrival_in = transit_time - current_time
+                        if arrival_in > -60 and arrival_in <= scraping_interval_seconds and current_line in bus_lines:
                             delay = int(transit["realtime"]) - transit_time
                             cancelled = bool(transit["cancelled"])
                             delay_type = getDelayType(delay, cancelled)
@@ -94,6 +95,8 @@ def getStationData():
                             for factor_name in env_data:
                                 env_data = setEnvData(env_data, delay, delay_type, current_env_data[factor_name], factor_name)
                             writeEnvData(id, current_line, env_data)
+                        elif arrival_in > (scraping_interval_seconds + 300):
+                            break
             print(f'[{station_nr}/{len(station_data)}] Parsed station {station["name"]} at ID {id}')
         else:
             print(f"Failed to retrieve JSON. Status code: {response.status_code}")
@@ -117,11 +120,11 @@ def setEnvData(env_data, delay, delay_type, factor_data, factor_type):
 def getDelayType(delay, cancelled):
     if delay == 0:
         return "punctual"
-    elif 0 < delay < 360:
+    elif 0 < delay < 300:
         return "short"
-    elif 360 <= delay < 960:
+    elif 300 <= delay < 900:
         return "medium"
-    elif 960 <= delay < 1800:
+    elif 900 <= delay < 1800:
         return "long"
     elif 1800 <= delay:
         return "extreme"
