@@ -13,7 +13,7 @@
 
 <script>
 export default {
-  name: "MyComponent", // Component name
+  name: "MyComponent",
   props: {
     title: {
       type: String,
