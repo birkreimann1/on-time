@@ -120,13 +120,13 @@ def setEnvData(env_data, delay, delay_type, factor_data, factor_type):
 def getDelayType(delay, cancelled):
     if delay == 0:
         return "punctual"
-    elif 0 < delay < 300:
+    elif 0 < delay <= 300:
         return "short"
-    elif 300 <= delay < 900:
+    elif 300 < delay <= 900:
         return "medium"
-    elif 900 <= delay < 1800:
+    elif 900 < delay <= 1800:
         return "long"
-    elif 1800 <= delay:
+    elif 1800 < delay:
         return "extreme"
     elif cancelled:
         return "cancelled"
