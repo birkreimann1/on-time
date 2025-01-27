@@ -243,7 +243,7 @@ export default {
 
     const fetchStations = async () => {
       const db = getDatabase();
-      const stationsRef = dbRef(db, `stations/${String(metadata.value.id)}`);
+      const stationsRef = dbRef(db, `stations_new_score/${String(metadata.value.id)}`);
 
       try {
         const snapshot = await dbGet(stationsRef);

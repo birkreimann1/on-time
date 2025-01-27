@@ -21,7 +21,7 @@
 
   <div v-if="!errorMessage" class="w-full overflow-auto bg-neutral-900 p-6 h-[80%]">
     <ul class="station-list">
-      <li v-for="item in stationData" :key="item.headsign" class="station-item cursor-pointer"
+      <li v-for="item in stationData" :key="item.id" class="station-item cursor-pointer"
         @click="handleScoreClick(item)">
         <div>
           <p class="font-bold">{{ item.line.name }} - {{ item.headsign }}</p>
@@ -58,14 +58,16 @@ export default {
   },
   methods: {
     getScoreColor(score) {
-      if (score >= 97) {
+      if (score >= 90) {
         return "#397d3b";
-      } else if (score >= 95) {
+      } else if (score >= 75) {
         return "#d9ad1e";
-      } else if (score >= 93) {
+      } else if (score >= 50) {
         return "#b3721d";
-      } else {
+      } else if (score >= 1) {
         return "#8f2c25";
+      } else {
+        return "##ffffff";
       }
     },
   },
@@ -93,7 +95,7 @@ export default {
 
     const fetchStations = async () => {
       const db = getDatabase();
-      const stationsRef = dbRef(db, "stations");
+      const stationsRef = dbRef(db, "stations_new_score");
 
       try {
         const snapshot = await dbGet(stationsRef);
@@ -141,7 +143,7 @@ export default {
       // Works on development aswell as on deployment //
       //////////////////////////////////////////////////
 
-      const url = `https://api.allorigins.win/get?charset=ISO-8859-1&url=https://netzplan.swhl.de/api/v1/stationboards/hafas/${id}?v=0&limit=10`;
+      const url = `https://api.allorigins.win/get?url=https://netzplan.swhl.de/api/v1/stationboards/hafas/${id}?v=0&limit=10`;
 
       // API request
 
@@ -183,20 +185,25 @@ export default {
         }
         stationData.value = JSON.parse(response.data.contents).data || [];
 
+        const stationLines = stationIds[id].lines
 
         // Now map through stationData only after data is fetched
-        stationData.value = stationData.value.map((item) => {
+        stationData.value = stationData.value.map((item, index) => {
           const departureTime = item.time * 1000;
           const currentTime = Date.now();
           const timeLeft = Math.max(
             0,
             Math.floor((departureTime - currentTime) / 60000)
           );
-          const line = parseInt(item.line.name, 10);
+
+          const line = item.line.name;
+          if (!stationLines.includes(line)) {
+            return null;
+          }
+
           const line_data = stations.value[id].lines[line];
           const env_data = stations.value[id].env_data;
-
-          let score = calculateScore(line_data, env_data);
+          const score = calculateScore(line_data, env_data);
 
           return {
             ...item,
@@ -204,7 +211,8 @@ export default {
             score,
             timeLeft,
           };
-        });
+
+        }).filter(item => item !== null);
       } catch (error) {
         console.error("Error fetching station data:", error);
         stationData.value = [];

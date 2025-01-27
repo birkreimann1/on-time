@@ -39,7 +39,7 @@ const handleStationSearch = (station) => {
 
 <template>
   <div class="flex flex-col h-screen">
-    <div class="flex flex-grow w-full h-[50%]">
+    <div class="flex flex-grow w-full h-[40%]">
       <l-map
         ref="mapRef"
         :use-global-leaflet="false"
@@ -59,7 +59,7 @@ const handleStationSearch = (station) => {
         />
       </l-map>
     </div>
-    <div class="flex flex-col bg-black w-full h-[50%]">
+    <div class="flex flex-col bg-black w-full h-[60%]">
       <SearchBar
         @station-click="handleStationSearch"
         :stationsList="stationIDs"
