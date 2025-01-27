@@ -1,58 +1,34 @@
 <template>
   <div class="flex pl-6 pr-6 items-center h-[20%]">
-    <input
-      class="bg-neutral-800 text-white p-2 rounded-xl w-full'"
-      v-model="startMessage"
-      placeholder="Start"
-      @focus="focused = true"
-      @blur="focused = false"
-    />
+    <input class="bg-neutral-800 text-white p-2 rounded-xl w-full'" v-model="startMessage" placeholder="Start"
+      @focus="focused = true" @blur="focused = false" />
   </div>
 
   <!-- Results Dropdown -->
   <div class="top flex">
-    <div
-      v-if="focused && startMessage && filteredList().length"
-      class="fixed w-full bg-neutral-950 text-white pl-6 pr-6 pt-2 shadow-lg max-h-[40%] overflow-auto"
-    >
-      <div
-        v-for="entry in filteredList()"
-        :key="entry.id"
-        class="cursor-pointer p-1.5 hover:bg-gray-700 rounded mb-2"
-        @click="handleStationClick(entry)"
-      >
+    <div v-if="focused && startMessage && filteredList().length"
+      class="fixed w-full bg-neutral-950 text-white pl-6 pr-6 pt-2 shadow-lg max-h-[40%] overflow-auto">
+      <div v-for="entry in filteredList()" :key="entry.id" class="cursor-pointer p-1.5 hover:bg-gray-700 rounded mb-2"
+        @click="handleStationClick(entry)">
         {{ entry.station.name }}
       </div>
     </div>
   </div>
 
-  <div
-    v-if="errorMessage"
-    class="text-red-500 flex w-full overflow-auto p-6 bg-neutral-900 h-[80%]"
-  >
+  <div v-if="errorMessage" class="text-red-500 flex w-full overflow-auto p-6 bg-neutral-900 h-[80%]">
     {{ errorMessage }}
   </div>
 
-  <div
-    v-if="!errorMessage"
-    class="w-full overflow-auto bg-neutral-900 p-6 h-[80%]"
-  >
+  <div v-if="!errorMessage" class="w-full overflow-auto bg-neutral-900 p-6 h-[80%]">
     <ul class="station-list">
-      <li
-        v-for="item in stationData"
-        :key="item.headsign"
-        class="station-item cursor-pointer"
-        @click="handleScoreClick(item)"
-      >
+      <li v-for="item in stationData" :key="item.headsign" class="station-item cursor-pointer"
+        @click="handleScoreClick(item)">
         <div>
           <p class="font-bold">{{ item.line.name }} - {{ item.headsign }}</p>
           <p v-if="item.timeLeft > 0">In {{ item.timeLeft }} min</p>
           <p v-else>Bereits abgefahren</p>
         </div>
-        <div
-          class="score-circle flex-grow-0"
-          :style="{ backgroundColor: getScoreColor(item.score) }"
-        >
+        <div class="score-circle flex-grow-0" :style="{ backgroundColor: getScoreColor(item.score) }">
           {{ item.score }}
         </div>
       </li>
@@ -154,7 +130,21 @@ export default {
     );
 
     const fetchStationData = async (id) => {
-      const url = `https://thingproxy.freeboard.io/fetch/https://netzplan.swhl.de/api/v1/stationboards/hafas/${id}?v=0&limit=10`;
+
+      ////////////////////////////////////////////////////////////
+      // Works on development bus has CORS issues on deployment //
+      ////////////////////////////////////////////////////////////
+
+      // const url = `https://thingproxy.freeboard.io/fetch/https://netzplan.swhl.de/api/v1/stationboards/hafas/${id}?v=0&limit=10`;
+
+      //////////////////////////////////////////////////
+      // Works on development aswell as on deployment //
+      //////////////////////////////////////////////////
+
+      const url = `https://api.allorigins.win/get?charset=ISO-8859-1&url=https://netzplan.swhl.de/api/v1/stationboards/hafas/${id}?v=0&limit=10`;
+
+      // API request
+
       console.log("API Request:", url);
       errorMessage.value = "";
 
@@ -164,17 +154,35 @@ export default {
         // Log the response to verify data structure
         console.log("API Response:", response);
 
+        ////////////////////////////////////////////////////////////
+        // Works on development bus has CORS issues on deployment //
+        ////////////////////////////////////////////////////////////
+
         // Check if data is available before mapping
+        // if (
+        //   !response.data ||
+        //   !response.data.data ||
+        //   response.data.data.length === 0
+        // ) {
+        //   console.log("No data available from API");
+        //   return;
+        // }
+        // stationData.value = response.data.data || [];
+
+
+        //////////////////////////////////////////////////
+        // Works on development aswell as on deployment //
+        //////////////////////////////////////////////////
+
         if (
           !response.data ||
-          !response.data.data ||
-          response.data.data.length === 0
+          !response.data.contents
         ) {
           console.log("No data available from API");
           return;
         }
+        stationData.value = JSON.parse(response.data.contents).data || [];
 
-        stationData.value = response.data.data || [];
 
         // Now map through stationData only after data is fetched
         stationData.value = stationData.value.map((item) => {
@@ -212,7 +220,7 @@ export default {
       // Filter the stations based on the user input
       return Object.entries(stationIds)
         .filter(
-          (station) =>
+          ([id, station]) =>
             station.name
               .toLowerCase()
               .includes(startMessage.value.toLowerCase()) // Filter by name
