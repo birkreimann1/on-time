@@ -115,10 +115,10 @@
     </div>
 
     <!-- Popup -->
-    <div v-if="showPopup" class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
+    <div v-if="showPopup" class="fixed inset-0 bg-black bg-opacity-50">
       <div class="bg-neutral-800 text-neutral-200 p-8 rounded-lg shadow-lg w-full">
-        <div class="flex justify-between mb-4">
-          <h2 class="text-xl font-bold">Wie setzt sich der Score zusammen?</h2>
+        <div class="flex justify-between">
+          <h2 class="text-xl font-bold">Wie setzten sich die Scores zusammen?</h2>
           <div>
             <button @click="togglePopup" class="p-1 bg-neutral-900 rounded-lg flex-grow-0">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="fill-white" height="32" width="32">
