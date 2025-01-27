@@ -175,7 +175,6 @@ export function fillChartArrNew(line_data_value, data_sizes_value, env) {
     }
   });
 
-  console.log(chartArr)
   return chartArr;
 }
 

@@ -132,7 +132,7 @@ export default {
     const fetchStationData = async (id) => {
 
       ////////////////////////////////////////////////////////////
-      // Works on development bus has CORS issues on deployment //
+      // Works on development but has CORS issues on deployment //
       ////////////////////////////////////////////////////////////
 
       // const url = `https://thingproxy.freeboard.io/fetch/https://netzplan.swhl.de/api/v1/stationboards/hafas/${id}?v=0&limit=10`;
@@ -155,7 +155,7 @@ export default {
         console.log("API Response:", response);
 
         ////////////////////////////////////////////////////////////
-        // Works on development bus has CORS issues on deployment //
+        // Works on development but has CORS issues on deployment //
         ////////////////////////////////////////////////////////////
 
         // Check if data is available before mapping

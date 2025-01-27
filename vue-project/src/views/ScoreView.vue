@@ -16,7 +16,7 @@
       <div class="flex justify-center items-end gap-10 pt-4">
         <div class="flex flex-col items-end text-center gap-2">
           <div class="flex justify-center w-full">
-            <div class="h-32 w-32 rounded-full bg-green-600 flex justify-center items-center"
+            <div class="h-32 w-32 rounded-full bg-white flex justify-center items-center"
               :style="{ backgroundColor: getScoreColor(scores.score) }">
               <div class="h-[120px] w-[120px] rounded-full bg-black flex justify-center items-center text-6xl">
                 {{ scores.score }}
@@ -28,7 +28,7 @@
           </div>
         </div>
         <div class="flex flex-col items-center gap-2">
-          <div class="h-20 w-20 rounded-full bg-yellow-500 flex justify-center items-center"
+          <div class="h-20 w-20 rounded-full bg-white flex justify-center items-center"
             :style="{ backgroundColor: getScoreColor(scores.average_score) }">
             <div class="h-[72px] w-[72px] rounded-full bg-black flex justify-center items-center text-3xl">
               {{ scores.average_score }}
