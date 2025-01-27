@@ -1,11 +1,6 @@
 <template>
   <div id="chart">
-    <apexchart
-      type="bar"
-      height="350"
-      :options="chartOptions"
-      :series="series"
-    ></apexchart>
+    <apexchart type="bar" height="350" :options="chartOptions" :series="series"></apexchart>
   </div>
 </template>
 
@@ -51,28 +46,19 @@ export default {
             enabled: true,
             speed: 800,
             animateGradually: {
-                enabled: true,
-                delay: 150
+              enabled: true,
+              delay: 150
             },
             dynamicAnimation: {
-                enabled: true,
-                speed: 350
+              enabled: true,
+              speed: 350
             }
           },
-          dropShadow: {
-            enabled: true,
-            enabledOnSeries: undefined,
-            top: 0,
-            left: 0,
-            blur: 6,
-            color: '#ff0000',
-            opacity: .35
-          }
         },
         plotOptions: {
           bar: {
             horizontal: false,
-            columnWidth: "65%",
+            columnWidth: "60%",
             borderRadius: 5,
             borderRadiusApplication: "end",
           },
@@ -81,16 +67,11 @@ export default {
           enabled: true,
           style: {
             colors: ['#fff']
-         },
+          },
         },
         grid: {
           show: false,
-          borderColor: '#777',
-        },
-        stroke: {
-          show: true,
-          width: 2,
-          colors: ['#bbb']
+          colors: ["#000"]
         },
         xaxis: {
           categories: [
@@ -106,35 +87,39 @@ export default {
             hideOverlappingLabels: false,
             rotate: -45,
             rotateAlways: true,
+            margin: 20,
             style: {
               colors: ['#fff', '#fff', '#fff', '#fff', '#fff', '#fff',]
             },
+          },
+          axisBorder: {
+            offsetY: 0.5,
           }
         },
         yaxis: {
-              labels: {
+          labels: {
             show: false,
             style: {
               colors: ['#fff', '#fff', '#fff', '#fff', '#fff', '#fff',]
             }
           }
-          
         },
         fill: {
           opacity: 1,
-          colors: ['#151515']
+          colors: ['#474747']
         },
         tooltip: {
           theme: 'dark',
           followCursor: true,
           intersect: true,
+          enabled: false,
           y: {
             formatter: function (val) {
-              return val + " %"
+              return val + " %";
             }
           }
-        }  
-      } 
+        }
+      }
     };
   },
 };

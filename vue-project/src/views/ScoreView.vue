@@ -2,6 +2,18 @@
   <div class="bg-black h-screen text-white p-8">
     <!-- Main Content -->
     <div class="flex flex-col gap-8 pb-6">
+
+      <!-- Optional Back Button
+      <div class="absolute left-8 top-8">
+        <button class="p-2 rounded-lg" @click="goBack">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="fill-white" height="32" width="32">
+            <path
+              d="M44.5 238.5L178.3 94.7c9.3-9.3 24.6-9.3 33.9 0l25.4 25.4c9.3 9.3 9.3 24.6 0 33.9L139.5 256l98.1 98.1c9.3 9.3 9.3 24.6 0 33.9l-25.4 25.4c-9.3 9.3-24.6 9.3-33.9 0L44.5 238.5c-9.3-9.3-9.3-24.6 0-33.9z" />
+          </svg>
+        </button>
+      </div>
+      -->
+
       <!-- Question Mark Button -->
       <div class="absolute flex justify-end right-8">
         <button class="p-2 bg-neutral-800 rounded-lg" @click="togglePopup">
@@ -163,10 +175,13 @@ export default {
   },
   methods: {
     togglePopup() {
-      this.showPopup = !this.showPopup; // Toggle popup visibility
+      this.showPopup = !this.showPopup;
     },
     toggleDropdown() {
-      this.isOpen = !this.isOpen; // Toggle dropdown visibility
+      this.isOpen = !this.isOpen;
+    },
+    goBack() {
+      this.$router.back();
     },
     getScoreColor(score) {
       if (score >= 90) {

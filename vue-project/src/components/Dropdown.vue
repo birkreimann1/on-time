@@ -28,7 +28,7 @@
     <!-- Dropdown Menu -->
     <div
       v-if="isOpen"
-      class="absolute mt-1 w-full bg-pink-900 text-neutral-200 shadow-lg rounded-lg z-50"
+      class="absolute mt-1 w-full bg-neutral-900 text-neutral-200 shadow-lg rounded-lg z-50"
     >
       <ul>
         <li
