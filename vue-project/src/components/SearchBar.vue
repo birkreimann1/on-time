@@ -118,7 +118,7 @@ export default {
     };
 
     onMounted(() => {
-      fetchStations(); // Fetch station data when component is mounted
+      fetchStations();
     });
 
     watch(
