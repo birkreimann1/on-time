@@ -18,7 +18,7 @@ bus_lines = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11",
              "12", "15", "16", "17", "18", "21", "24", "25", "26", "30",
              "31", "32", "33", "34", "35", "36", "38", "39", "40", "50"]
 
-scraping_interval_minutes = 20
+scraping_interval_minutes = 15
 scraping_interval_seconds = 60*scraping_interval_minutes
 ref_root = "/stations_new_score"
 
