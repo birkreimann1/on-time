@@ -210,7 +210,7 @@ import { ref, onMounted, watch, reactive } from "vue";
 import { getDatabase, ref as dbRef, get as dbGet } from "firebase/database";
 import * as cld from "../utils/calculateLineData";
 import * as translate from "../utils/stationTranslator";
-import { getRawValue } from "../utils/translateLabelToRaw";
+import { getRawValue } from "../utils/enviromentValues";
 import ScoreExplanation from "../components/ScoreExplanation.vue";
 import BarChart from "../components/BarChart.vue";
 
