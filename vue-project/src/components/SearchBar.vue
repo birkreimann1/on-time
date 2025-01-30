@@ -1,10 +1,12 @@
 <template>
+
+  <!-- Search Input -->
   <div class="flex pl-6 pr-6 items-center h-[20%]">
-    <input class="bg-neutral-800 text-white p-2 rounded-xl w-full'" v-model="startMessage" placeholder="Start"
+    <input class="bg-neutral-800 text-white p-2 rounded-xl w-full" v-model="startMessage" placeholder="Start"
       @focus="focused = true" @blur="focused = false" />
   </div>
 
-  <!-- Results Dropdown -->
+  <!-- Search Results Dropdown -->
   <div class="top flex">
     <div v-if="focused && startMessage && filteredList().length"
       class="fixed w-full bg-neutral-950 text-white pl-6 pr-6 pt-2 shadow-lg max-h-[40%] overflow-auto">
@@ -15,71 +17,71 @@
     </div>
   </div>
 
+  <!-- Error message when no departure data could be fetched -->
   <div v-if="errorMessage" class="text-red-500 flex w-full overflow-auto p-6 bg-neutral-900 h-[80%]">
     {{ errorMessage }}
   </div>
 
+  <!-- List of the fetched departures of the searched or clicked station -->
   <div v-if="!errorMessage" class="w-full overflow-auto bg-neutral-900 p-6 h-[80%]">
     <ul class="station-list">
-      <li v-for="item in stationData" :key="item.id" class="station-item cursor-pointer"
-        @click="handleScoreClick(item)">
+      <li v-for="item in stationDepartures" :key="item.id"
+        class="station-item cursor-pointer flex items-center justify-between p-2.5" @click="handleDepartureClick(item)">
         <div>
           <p class="font-bold">{{ item.line.name }} - {{ item.headsign }}</p>
           <p v-if="item.timeLeft > 0">In {{ item.timeLeft }} min</p>
           <p v-else>Bereits abgefahren</p>
         </div>
-        <div class="score-circle flex-grow-0" :style="{ backgroundColor: getScoreColor(item.score) }">
+        <div class="flex items-center justify-center w-10 h-10 rounded-full font-bold"
+          :style="{ backgroundColor: scoreColor(item.score) }">
           {{ item.score }}
         </div>
       </li>
     </ul>
   </div>
+
 </template>
+
 
 <script>
 import { ref, onMounted, watch } from "vue";
 import { useRouter } from "vue-router";
-import axios from "axios";
-import { getDatabase, ref as dbRef, get as dbGet } from "firebase/database";
 import stationIds from "../../../datascraping/stationData/station_ids.json";
-import { calculateScore } from "../utils/calculateLineData";
+import { getScoreColor } from '../utils/scoreColor';
+import { fetchStationData } from '../utils/fetchStationData';
+import { fetchStationDepartures } from '../utils/fetchStationDepartures';
+
 
 export default {
+
+  // ID of the station clicked on the map
   props: {
     selectedStationId: {
       type: [String, Number],
       required: true,
     },
   },
-  computed: {
-    scoreColor() {
-      return this.getScoreColor(this.item.score);
-    },
-  },
+
+  // Colors the score display
   methods: {
-    getScoreColor(score) {
-      if (score >= 90) {
-        return "#397d3b";
-      } else if (score >= 75) {
-        return "#d9ad1e";
-      } else if (score >= 50) {
-        return "#b3721d";
-      } else if (score >= 1) {
-        return "#8f2c25";
-      } else {
-        return "##ffffff";
-      }
+    scoreColor(score) {
+      return getScoreColor(score);
     },
   },
+
+  // Emits the searched station to the parent view
   emits: ["station-click"],
+
+  // Main setup of the component
   setup(props, { emit }) {
     const router = useRouter();
     const startMessage = ref("");
-    const stationData = ref([]);
-    const stations = ref();
+    const stationDepartures = ref([]);
+    const stationData = ref();
     const errorMessage = ref("");
 
-    const handleScoreClick = (item) => {
+    // When a departure is clicked routes to the corresponding score page
+    const handleDepartureClick = (item) => {
       console.log("Score circle clicked for item:", item);
 
       router.push({
@@ -93,145 +95,41 @@ export default {
       });
     };
 
-    const fetchStations = async () => {
-      const db = getDatabase();
-      const stationsRef = dbRef(db, "stations_new_score");
-
-      try {
-        const snapshot = await dbGet(stationsRef);
-        if (snapshot.exists()) {
-          const stationsData = snapshot.val();
-          stations.value = {};
-
-          for (const id in stationsData) {
-            if (stationsData.hasOwnProperty(id)) {
-              const station = stationsData[id];
-              stations.value[id] = station;
-            }
-          }
-        } else {
-          console.log("No data available");
-        }
-      } catch (error) {
-        console.error("Error fetching data from Firebase:", error);
-      }
-    };
-
+    // Get the collected data from firebase when the website is loaded
     onMounted(() => {
-      fetchStations();
+      fetchStationData(stationData);
     });
 
+    // Fetches the station departures when a station is clicked on the map
     watch(
       () => props.selectedStationId,
       (newId) => {
         if (newId) {
-          fetchStationData(newId);
+          fetchStationDeparturesData(newId);
           startMessage.value = stationIds[newId].name;
         }
       }
     );
 
-    const fetchStationData = async (id) => {
-
-      ////////////////////////////////////////////////////////////
-      // Works on development but has CORS issues on deployment //
-      ////////////////////////////////////////////////////////////
-
-      // const url = `https://thingproxy.freeboard.io/fetch/https://netzplan.swhl.de/api/v1/stationboards/hafas/${id}?v=0&limit=10`;
-
-      //////////////////////////////////////////////////
-      // Works on development aswell as on deployment //
-      //////////////////////////////////////////////////
-
-      const url = `https://api.allorigins.win/get?url=https://netzplan.swhl.de/api/v1/stationboards/hafas/${id}?v=0&limit=10`;
-
-      // API request
-
-      console.log("API Request:", url);
-      errorMessage.value = "";
-
-      try {
-        const response = await axios.get(url);
-
-        // Log the response to verify data structure
-        console.log("API Response:", response);
-
-        ////////////////////////////////////////////////////////////
-        // Works on development but has CORS issues on deployment //
-        ////////////////////////////////////////////////////////////
-
-        // Check if data is available before mapping
-        // if (
-        //   !response.data ||
-        //   !response.data.data ||
-        //   response.data.data.length === 0
-        // ) {
-        //   console.log("No data available from API");
-        //   return;
-        // }
-        // stationData.value = response.data.data || [];
-
-
-        //////////////////////////////////////////////////
-        // Works on development aswell as on deployment //
-        //////////////////////////////////////////////////
-
-        if (
-          !response.data ||
-          !response.data.contents
-        ) {
-          console.log("No data available from API");
-          return;
-        }
-        stationData.value = JSON.parse(response.data.contents).data || [];
-
-        const stationLines = stationIds[id].lines
-
-        // Now map through stationData only after data is fetched
-        stationData.value = stationData.value.map((item, index) => {
-          const departureTime = item.time * 1000;
-          const currentTime = Date.now();
-          const timeLeft = Math.max(
-            0,
-            Math.floor((departureTime - currentTime) / 60000)
-          );
-
-          const line = item.line.name;
-          if (!stationLines.includes(line)) {
-            return null;
-          }
-
-          const line_data = stations.value[id].lines[line];
-          const env_data = stations.value[id].env_data;
-          const score = calculateScore(line_data, env_data);
-
-          return {
-            ...item,
-            id,
-            score,
-            timeLeft,
-          };
-
-        }).filter(item => item !== null);
-      } catch (error) {
-        console.error("Error fetching station data:", error);
-        stationData.value = [];
-        errorMessage.value = "Keine Einträge verfügbar!";
-      }
+    // Fetch the next departures for the station with the corresponding id
+    const fetchStationDeparturesData = async (id) => {
+      const { stationDeparturesData, errorMsg } = await fetchStationDepartures(id, stationData.value);
+      stationDepartures.value = stationDeparturesData;
+      errorMessage.value = errorMsg;
     };
 
+    // Filter the stationIds.json by name and return matching stations
     const filteredList = () => {
       if (!startMessage.value.trim()) {
         return [];
       }
 
-      // Filter the stations based on the user input
       return Object.entries(stationIds)
         .filter(
           ([id, station]) =>
             station.name
               .toLowerCase()
-              .includes(startMessage.value.toLowerCase()) // Filter by name
+              .includes(startMessage.value.toLowerCase())
         )
         .map(([id, station]) => ({
           id,
@@ -239,77 +137,24 @@ export default {
         }));
     };
 
-    // Handle the click event for a station from the filtered list
+    // Fetches the departure data of the clicked station inside the seach result dropdown
     const handleStationClick = (entry) => {
       startMessage.value = entry.station.name;
       console.log("Selected station:", entry);
-      fetchStationData(entry.id);
+      fetchStationDeparturesData(entry.id);
       emit("station-click", entry);
     };
 
     return {
       startMessage,
-      stationData,
+      stationDepartures,
       filteredList,
       handleStationClick,
-      fetchStationData,
-      stations,
-      handleScoreClick,
+      fetchStationDeparturesData,
+      stationData,
+      handleDepartureClick,
       errorMessage,
     };
   },
 };
 </script>
-
-<style scoped>
-.score-circle {
-  width: 40px;
-  /* Circle width */
-  height: 40px;
-  /* Circle height */
-  border-radius: 50%;
-  /* Make it round */
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: bold;
-}
-
-.relative {
-  position: relative;
-  padding: 20px;
-}
-
-input {
-  width: 100%;
-  /* Ensure input stretches to full container width */
-  max-width: 100%;
-}
-
-/* Dropdown Results */
-.absolute {
-  z-index: 10;
-  /* Ensure the dropdown appears above other content */
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-/* Styling individual items */
-.station-item {
-  padding: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  /* Space between text and circle */
-}
-
-/* Optional Styling for Empty Data and Loading */
-p {
-  color: #ccc;
-}
-</style>
