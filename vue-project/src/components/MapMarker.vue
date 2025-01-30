@@ -2,7 +2,12 @@
 import { ref, watch } from "vue";
 import { LCircle } from "@vue-leaflet/vue-leaflet";
 
-// Define the props and emits
+// Setup
+const emit = defineEmits();
+const markerColor = ref("#2563eb");
+const marker_radius = ref(20);
+
+// Defines the prop that is send to the parent view
 const props = defineProps({
   station: {
     type: Object,
@@ -18,28 +23,22 @@ const props = defineProps({
   },
 });
 
-const emit = defineEmits(); // Use this to emit events
-
-// Local marker color, based on selection state
-const markerColor = ref("#2563eb");
-const marker_radius = ref(20);
-
-// Watch for changes in the selected prop and update marker color and radius
+// Highlights the selected station marker in color and size
 watch(
   () => props.selected,
   (newValue) => {
     if (newValue) {
-      markerColor.value = "#ff0000"; // Red for selected
-      marker_radius.value = 30; // Larger size for selected
+      markerColor.value = "#ff0000";
+      marker_radius.value = 30;
     } else {
-      markerColor.value = "#2563eb"; // Default color (blue)
-      marker_radius.value = 20; // Default size
+      markerColor.value = "#2563eb";
+      marker_radius.value = 20;
     }
   },
   { immediate: true }
 );
 
-// Emit station-click event to parent
+//Emits the station id and coordinates of the clicked station marker
 const handleClick = () => {
   emit("station-click", props.id, [
     props.station.coords.lat,
@@ -48,8 +47,8 @@ const handleClick = () => {
 };
 </script>
 
+<!-- Creates a circle on each station coordinate -->
 <template>
-  <!-- Use LCircle component from vue-leaflet to render the marker -->
   <l-circle
     :lat-lng="[props.station.coords.lat, props.station.coords.long]"
     :radius="marker_radius"

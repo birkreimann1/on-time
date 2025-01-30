@@ -42,7 +42,6 @@
 
 </template>
 
-
 <script>
 import { ref, onMounted, watch } from "vue";
 import { useRouter } from "vue-router";
@@ -50,7 +49,6 @@ import stationIds from "../../../datascraping/stationData/station_ids.json";
 import { getScoreColor } from '../utils/scoreColor';
 import { fetchStationData } from '../utils/fetchStationData';
 import { fetchStationDepartures } from '../utils/fetchStationDepartures';
-
 
 export default {
 

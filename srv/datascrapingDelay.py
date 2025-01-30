@@ -7,7 +7,7 @@ from firebase_admin import credentials
 from firebase_admin import db
 from weatherdata import readData as weather
 
-cred = credentials.Certificate('./.env/ontime-e0281-firebase-adminsdk-ytrxe-372c88d62b.json')
+cred = credentials.Certificate('./.env/ontime-e0281-firebase-adminsdk-ytrxe-54e35eba18.json')
 
 firebase_admin.initialize_app(cred, {
     'databaseURL': 'https://ontime-e0281-default-rtdb.europe-west1.firebasedatabase.app',

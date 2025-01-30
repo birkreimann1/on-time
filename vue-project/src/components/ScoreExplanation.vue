@@ -1,3 +1,5 @@
+
+<!-- UI element in which the score is explained -->
 <template>
   <div>
     <ul>
