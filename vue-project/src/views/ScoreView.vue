@@ -159,7 +159,7 @@ export default {
       traffic: "",
       weather: "",
     });
-    const toggle = ref(true);
+    const toggle = ref(false);
     let chartArr = ref([0, 0, 0, 0, 0, 0]);
 
     // Executed when the view is called
@@ -203,6 +203,9 @@ export default {
             env[key] = env_data[key];
             actual_env[key] = env_data[key];
           }
+          
+          // Set checkbox true
+          toggle.value = true
 
           // Generate average score
           scores.value.average_score = cld.calculateAverageScore(
