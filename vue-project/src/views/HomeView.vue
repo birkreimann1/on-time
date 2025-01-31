@@ -1,16 +1,20 @@
 <script setup>
-import { ref } from "vue";
+
+// External imports
 import "leaflet/dist/leaflet.css";
+import { ref } from "vue";
 import { LMap, LTileLayer } from "@vue-leaflet/vue-leaflet";
-import MapMarkerLayer from "../components/MapMarkerLayer.vue";
-import SearchBar from "../components/SearchBar.vue";
-import stationIDs from "../../../datascraping/stationData/station_ids.json";
+
+// Components
+import MapMarkerLayer from "../components/homeview/MapMarkerLayer.vue";
+import SearchBar from "../components/homeview/SearchBar.vue";
 
 // Setup
 const selectedStationId = ref(null);
 const center = ref([53.8677, 10.68601]);
 const zoom = ref(13);
 const selectedStation = ref();
+const stationIds = window.stationIds;
 
 // Gives station id to seachBar when station marker is clicked 
 // Sets center of map to station marker and sets minimum zoom 
@@ -40,6 +44,7 @@ function zoomOnMarker() {
 }
 </script>
 
+<!-- Main station selection page -->
 <template>
   <div class="flex flex-col h-screen">
     <div class="flex flex-grow w-full h-[40%]">
@@ -69,7 +74,7 @@ function zoomOnMarker() {
     <div class="flex flex-col bg-black w-full h-[60%]">
       <SearchBar
         @station-click="handleStationSearch"
-        :stationsList="stationIDs"
+        :stationsList="stationIds"
         :selectedStationId="selectedStationId"
       />
     </div>

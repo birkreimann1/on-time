@@ -1,7 +1,7 @@
 import { getDatabase, ref as dbRef, get as dbGet } from "firebase/database";
 
 // Fetch collected data for all stations from the Firebase realtime database
-export const fetchStationData = async (stationData) => {
+export const fetchAllStationData = async (stationData) => {
   const db = getDatabase();
 
   // Define the database entries to be fetched
@@ -20,6 +20,25 @@ export const fetchStationData = async (stationData) => {
           stationData.value[id] = station;
         }
       }
+    } else {
+      console.log("No data available");
+    }
+  } catch (error) {
+    console.error("Error fetching data from Firebase:", error);
+  }
+};
+
+// Fetch specific station data from the Firebase realtime database using the station id
+export const fetchStationDataById = async (stationData, id) => {
+  const db = getDatabase();
+  const stationsRef = dbRef(db, `stations_new_score/${String(id)}`);
+
+  try {
+    const snapshot = await dbGet(stationsRef);
+    if (snapshot.exists()) {
+
+      // White the fetched data into the variable stationsData
+      stationData.value = snapshot.val();
 
     } else {
       console.log("No data available");

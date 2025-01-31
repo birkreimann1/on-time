@@ -1,3 +1,4 @@
+
 // Internal and display values for every available enviromental data
 export const envValues = {
   light: {
@@ -31,6 +32,7 @@ export const envValues = {
   },
 };
 
+
 // Returns all available items of a category
 export function getAvailableItems(label) {
   return Object.keys(envValues[label] || {}).map(
@@ -38,10 +40,12 @@ export function getAvailableItems(label) {
   );
 }
 
+
 // Returns the display value of an enviroment item
 export function getDisplayValue(rawValue, label) {
   return envValues[label][rawValue] || rawValue;
 }
+
 
 // Returns the internal value of an enviroment item
 export function getRawValue(label, category) {

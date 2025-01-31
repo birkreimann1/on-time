@@ -1,7 +1,6 @@
 <script setup>
 import { ref, watch } from "vue";
 import MapMarker from "./MapMarker.vue";
-import stationIDs from "../../../datascraping/stationData/station_ids.json";
 
 // Setup
 const emit = defineEmits();
@@ -9,6 +8,7 @@ const selectedStationId = ref(null);
 const props = defineProps({
   station: Object,
 });
+const stationIds = window.stationIds;
 
 // When a station map marker is clicked emits the coordinates and the id to the parent view
 const handleStationClick = (stationId, stationCoords) => {
@@ -31,7 +31,7 @@ watch(
 <!-- Displays map markers for every station in stationIds.json -->
 <template>
   <MapMarker
-    v-for="(station, key) in stationIDs"
+    v-for="(station, key) in stationIds"
     :key="key"
     :id="key"
     :station="station"

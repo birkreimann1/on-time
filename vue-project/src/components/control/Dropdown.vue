@@ -1,3 +1,5 @@
+
+<!-- Dropdown element -->
 <template>
   <div class="relative inline-block">
 
@@ -42,7 +44,7 @@
 </template>
 
 <script>
-import { getAvailableItems, getDisplayValue } from '../utils/enviromentValues';
+import { getAvailableItems, getDisplayValue } from '../../utils/enviromentValues';
 
 export default {
 

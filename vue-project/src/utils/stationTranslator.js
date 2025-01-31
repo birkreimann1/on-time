@@ -1,11 +1,13 @@
-import stationIds from "../../../datascraping/stationData/station_ids.json";
 
+// Gives name of the station that matches the id
 export function getNameByID(stationID) {
-    return stationIds[stationID].name;
+    return window.stationIds[stationID].name;
 }
 
+
+// Gives station data corresponding to the station name
 export function getValueByName(stationName) {
-    const stationValues = Object.values(stationIds);
+    const stationValues = Object.values(window.stationIds);
     for (let element of stationValues) {
         if (element.name === stationName) {
             return element;
@@ -14,9 +16,11 @@ export function getValueByName(stationName) {
     return null;
 }
 
+
+// Gives id of the station with the given name
 export function getIDByName(stationName) {
-    for (let key of Object.keys(stationIds)) {
-        if (stationIds[key].name === stationName) {
+    for (let key of Object.keys(window.stationIds)) {
+        if (window.stationIds[key].name === stationName) {
             return key;
         }
     }

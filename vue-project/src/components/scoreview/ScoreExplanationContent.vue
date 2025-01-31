@@ -1,11 +1,15 @@
 
-<!-- UI element in which the score is explained -->
+<!-- Content of the score explanation popup-->
 <template>
   <div>
+
+    <!-- Explanation text -->
     <ul>
       <p>Diese Scores ergeben sich aus der gewichteten Verspätungsrate, wobei geringere Verspätungen das Ergebnis weniger stark beeinflussen als längere.</p>
       <p>Der Main Score wird darüber hinaus über die jeweiligen Werte aller derzeit eingestellten Umweltfaktoren gemittelt.</p>
     </ul>
+
+    <!-- Score formula -->
     <p class="font-bold text-xl pt-4 pb-2">Berechnung</p>
     <div class="bg-gray-100 p-4 rounded-lg shadow-md border border-gray-300">
       <p class="font-mono text-lg text-center text-black">

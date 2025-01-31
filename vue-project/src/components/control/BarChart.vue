@@ -1,3 +1,5 @@
+
+<!-- Bar chart element -->
 <template>
   <div id="chart">
     <apexchart type="bar" height="350" :options="chartOptions" :series="series"></apexchart>
@@ -12,28 +14,27 @@ export default {
   components: {
     apexchart: VueApexCharts,
   },
+
+  // Input array
   props: {
     numberArr: {
       type: Array,
-      default: () => [0, 0, 0, 0, 0, 0], // Important: Use a factory function for default array values
-      validator: (value) => {
-        console.log(value)
-        return value.every(Number.isFinite); // Check if all elements are numbers
-      },
-    },
-    chartTitle: {
-      type: String,
-      default: "Anteil der Verspätungstypen [%]",
-      show: true,
+      default: () => [0, 0, 0, 0, 0, 0],
+      validator: (value) => value.every(Number.isFinite),
     },
   },
+
   data() {
     return {
+
+      // Displayed array
       series: [
         {
           data: this.numberArr,
         },
       ],
+
+      // Settings for the bar chart
       chartOptions: {
         chart: {
           type: "bar",
@@ -89,7 +90,7 @@ export default {
             rotateAlways: true,
             margin: 20,
             style: {
-              colors: ['#fff', '#fff', '#fff', '#fff', '#fff', '#fff',]
+              colors: ['#fff', '#fff', '#fff', '#fff', '#fff', '#fff']
             },
           },
           axisBorder: {
@@ -100,7 +101,7 @@ export default {
           labels: {
             show: false,
             style: {
-              colors: ['#fff', '#fff', '#fff', '#fff', '#fff', '#fff',]
+              colors: ['#fff', '#fff', '#fff', '#fff', '#fff', '#fff']
             }
           }
         },
@@ -120,6 +121,7 @@ export default {
           }
         }
       }
+
     };
   },
 };

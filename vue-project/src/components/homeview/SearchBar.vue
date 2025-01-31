@@ -1,3 +1,4 @@
+<!-- Station SearchBar -->
 <template>
 
   <!-- Search Input -->
@@ -26,13 +27,14 @@
   <div v-if="!errorMessage" class="w-full overflow-auto bg-neutral-900 p-6 h-[80%]">
     <ul class="station-list">
       <li v-for="item in stationDepartures" :key="item.id"
-        class="station-item cursor-pointer flex items-center justify-between p-2.5" @click="handleDepartureClick(item)">
+        class="station-item cursor-pointer flex items-center justify-between p-2.5 mb-2 bg-[#2d2d2d] rounded-lg"
+        @click="handleDepartureClick(item)">
         <div>
-          <p class="font-bold">{{ item.line.name }} - {{ item.headsign }}</p>
-          <p v-if="item.timeLeft > 0">In {{ item.timeLeft }} min</p>
-          <p v-else>Bereits abgefahren</p>
+          <p class="font-bold text-white">{{ item.line.name }} - {{ item.headsign }}</p>
+          <p v-if="item.timeLeft > 0" class="text-white">In {{ item.timeLeft }} min</p>
+          <p v-else class="text-white">Bereits abgefahren</p>
         </div>
-        <div class="flex items-center justify-center w-10 h-10 rounded-full font-bold"
+        <div class="flex items-center justify-center w-10 h-10 rounded-full font-bold text-white"
           :style="{ backgroundColor: scoreColor(item.score) }">
           {{ item.score }}
         </div>
@@ -43,12 +45,15 @@
 </template>
 
 <script>
+
+// External imports
 import { ref, onMounted, watch } from "vue";
 import { useRouter } from "vue-router";
-import stationIds from "../../../datascraping/stationData/station_ids.json";
-import { getScoreColor } from '../utils/scoreColor';
-import { fetchStationData } from '../utils/fetchStationData';
-import { fetchStationDepartures } from '../utils/fetchStationDepartures';
+
+// Imports from project
+import { getScoreColor } from '../../utils/scoreColor';
+import { fetchAllStationData } from '../../utils/fetchDataFromFirebase';
+import { fetchStationDeparturesById } from '../../utils/fetchStationDepartures';
 
 export default {
 
@@ -95,7 +100,7 @@ export default {
 
     // Get the collected data from firebase when the website is loaded
     onMounted(() => {
-      fetchStationData(stationData);
+      fetchAllStationData(stationData);
     });
 
     // Fetches the station departures when a station is clicked on the map
@@ -111,7 +116,7 @@ export default {
 
     // Fetch the next departures for the station with the corresponding id
     const fetchStationDeparturesData = async (id) => {
-      const { stationDeparturesData, errorMsg } = await fetchStationDepartures(id, stationData.value);
+      const { stationDeparturesData, errorMsg } = await fetchStationDeparturesById(id, stationData.value);
       stationDepartures.value = stationDeparturesData;
       errorMessage.value = errorMsg;
     };
@@ -122,7 +127,7 @@ export default {
         return [];
       }
 
-      return Object.entries(stationIds)
+      return Object.entries(window.stationIds)
         .filter(
           ([id, station]) =>
             station.name

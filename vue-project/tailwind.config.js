@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       backgroundColor: {
-        default: '#000000', // Set the default background color to black
+        default: '#000000',
       },
     },
   },

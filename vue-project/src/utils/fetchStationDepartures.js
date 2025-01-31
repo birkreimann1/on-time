@@ -1,10 +1,9 @@
 import axios from "axios";
-import stationIds from "../../../datascraping/stationData/station_ids.json";
 import { calculateScore } from "../utils/calculateLineData";
 
 
 // Fetches the upcoming departures for a station
-export const fetchStationDepartures = async (id, stationData) => {
+export const fetchStationDeparturesById = async (id, stationData) => {
 
   // API Request using the allorigins api as proxy server
   const url = `https://api.allorigins.win/get?url=https://netzplan.swhl.de/api/v1/stationboards/hafas/${id}?v=0&limit=10`;
@@ -38,7 +37,7 @@ export const fetchStationDepartures = async (id, stationData) => {
     stationDeparturesData = data.data;
     
     // Get available lines of the station from stationIds.json
-    const stationLines = stationIds[id].lines;
+    const stationLines = window.window.stationIds[id].lines;
 
     // Map id, score and time left to the station data item
     stationDeparturesData = stationDeparturesData
