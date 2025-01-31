@@ -203,7 +203,7 @@ export default {
             env[key] = env_data[key];
             actual_env[key] = env_data[key];
           }
-          
+
           // Set checkbox true
           toggle.value = true
 
@@ -225,7 +225,7 @@ export default {
       // Updates changed enviroment value
       env[category] = [getRawValue(selectedValue, category)];
       console.log(`Selected ${category}:`, selectedValue);
-      
+
       // Updates all enviroment dependent displays and values
       updateScoresAndChart();
 
@@ -253,7 +253,9 @@ export default {
     // When checkbox is set to true overwrites used enviroment data with the actual values
     const toggleCheckbox = () => {
       if (!toggle.value) {
-        env.value = { ...actual_env };
+        for (const key in env) {
+          env[key] = actual_env[key];
+        }
 
         // Updates all enviroment dependent displays and values
         updateScoresAndChart();
