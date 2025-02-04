@@ -5,7 +5,7 @@ from srv.config import STATION_DATA_PATH
 import json
 from srv.srv_logging.logger import log
 
-service_account_file = "./.env/ontime-e0281-firebase-adminsdk-ytrxe-54e35eba18.json"
+service_account_file = "./.env/firebase-credentials.json"
 os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = service_account_file
 db = firestore.Client()
 

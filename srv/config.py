@@ -1,7 +1,7 @@
 import os
 
 # Configuration Paths
-STATION_DATA_PATH = os.path.join("datascraping", "station_data", "station_ids.json")
+STATION_DATA_PATH = os.path.join("station_data", "station_ids.json")
 DATA_BY_ENV_PATH = os.path.join("json_templates", "data_by_env.json")
 ENV_DATA_PATH = os.path.join("json_templates", "env_data.json")
 
