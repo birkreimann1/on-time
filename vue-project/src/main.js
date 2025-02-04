@@ -5,7 +5,7 @@ import { createApp } from "vue";
 import { VueFire } from "vuefire";
 import { initializeApp } from "firebase/app";
 import { getFirestore, collection, getDocs } from "firebase/firestore";
-import stationIds from '../../datascraping/stationData/station_ids.json';
+import stationIds from '../../datascraping/station_data/station_ids.json';
 
 // Imports from project
 import App from "./App.vue";

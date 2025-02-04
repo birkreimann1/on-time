@@ -20,7 +20,7 @@ export const fetchStationDeparturesById = async (id, stationData) => {
     // Check if the API response has the expected format
     if (!response.data || !response.data.contents) {
       console.log("No data available from API");
-      errorMsg = "Keine Einträge verfügbar!";
+      errorMsg = "Keine Daten über die API der Stadtwerke Lübeck abrufbar!";
       return { stationDeparturesData, errorMsg };
     }
 
@@ -31,7 +31,7 @@ export const fetchStationDeparturesById = async (id, stationData) => {
     // Check if the API response was parsed correctly
     if (!data || !data.data) {
       console.log("No data field found in the API response.");
-      errorMsg = "Keine Einträge verfügbar!";
+      errorMsg = "Keine Daten über die API der Stadtwerke Lübeck abrufbar!";
       return { stationDeparturesData, errorMsg };
     }
     stationDeparturesData = data.data;
@@ -78,7 +78,8 @@ export const fetchStationDeparturesById = async (id, stationData) => {
     // When no data could be fetched return an empty departure array
     console.error("Error fetching station data:", error);
     stationDeparturesData = [];
-    errorMsg = "Keine Einträge verfügbar!";
+    //errorMsg = "Keine Einträge verfügbar!";
+    errorMsg = error;
     return { stationDeparturesData, errorMsg };
   }
 };
