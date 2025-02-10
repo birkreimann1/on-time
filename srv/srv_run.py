@@ -8,7 +8,7 @@ from srv.srv_data.data_handler import get_station_data
 from srv.srv_firebase.firebase_firestore import upload_station_data_to_firebase
 
 def parse_args():
-    """Test"""
+    """Parses command-line arguments to set the log level."""
     parser = argparse.ArgumentParser(description="Run the server with specific logging options.")
     parser.add_argument(
         '--loglevel',
@@ -19,14 +19,14 @@ def parse_args():
     return parser.parse_args()
 
 def get_file_modification_time(file_path):
-    """Test"""
+    """Gets the last modification time of the specified file."""
     return os.path.getmtime(file_path)
 
 def run_srv_loop():
-    """Test"""
+    """Main server loop for fetching, checking, and uploading data periodically."""
     args = parse_args()
     set_global_log_level(args.loglevel)
-    log(f"Starting server loop with log level {args.loglevel}", category="Server", priority="INFO")
+    log(f"Starting server loop with log level {args.loglevel}", category="SERVER", priority="INFO")
     
     initialize_firebase()
     

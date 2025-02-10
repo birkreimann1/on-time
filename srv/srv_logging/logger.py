@@ -4,7 +4,7 @@ import colorlog
 GLOBAL_LOG_LEVEL = "INFO"  # Default log level. Can be updated from the main program.
 
 def create_colored_logger():
-    """Test"""
+    """Creates a logger with colored output for different log levels."""
     logger = logging.getLogger(__name__)
 
     if not logger.hasHandlers():
@@ -29,6 +29,7 @@ def create_colored_logger():
     return logger
 
 def set_global_log_level(level):
+    """Sets the global log level for filtering logs."""
     global GLOBAL_LOG_LEVEL
     valid_levels = ['DEBUG', 'INFO', 'WARNING', 'ERROR', 'CRITICAL']
     
@@ -38,6 +39,7 @@ def set_global_log_level(level):
     GLOBAL_LOG_LEVEL = level
 
 def get_global_log_level():
+    """Fetches the current global log level."""
     global GLOBAL_LOG_LEVEL
     log_levels = {
         'DEBUG': logging.DEBUG,
@@ -50,6 +52,7 @@ def get_global_log_level():
     return log_levels.get(GLOBAL_LOG_LEVEL, logging.INFO)
 
 def log_with_category_and_priority(logger, category, priority, message):
+    """Logs a message with a category and priority."""
     log_format = "%(log_color)s%(asctime)s - [%(category)s][%(levelname)s] - %(message)s"
 
     log_colors = {
@@ -85,6 +88,7 @@ def log_with_category_and_priority(logger, category, priority, message):
     logger.log(getattr(logging, priority), message, extra={"category": category})
 
 def log(message, category="SERVER", priority="INFO"):
+    """Main logging function that considers global log level and formats the log."""
     logger = create_colored_logger()
     level = get_global_log_level()  # Fetch the global log level
     

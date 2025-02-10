@@ -3,7 +3,7 @@ from srv.srv_firebase.firebase_handler import set_firebase_data, get_firebase_da
 from srv.srv_json.json_handler import load_json
 
 def process_transit_data(station_data, station_id, current_env_data, bus_lines, scraping_interval_seconds):
-    """Test"""
+    """Process transit data for each station."""
     for transit in station_data.get("data", []):
         if "time" in transit and "realtime" in transit:
             current_line = transit["line"]["name"]
@@ -31,7 +31,7 @@ def initialize_line_data(station_id, current_line):
     return data_by_env
 
 def update_env_data(env_data, delay, delay_type, current_env_data):
-    """Test"""
+    """Update environmental data for the station."""
     for factor_type, factor_data_list in current_env_data.items():
         for factor in factor_data_list:
             env_data = set_env_data(env_data, delay, delay_type, factor, factor_type)
@@ -39,7 +39,7 @@ def update_env_data(env_data, delay, delay_type, current_env_data):
 
 
 def set_env_data(env_data, delay, delay_type, factor, factor_type):
-    """Test"""
+    """Set environmental data for a specific factor."""
     if factor in env_data.get(factor_type, {}):
         if delay > 0:
             env_data[factor_type][factor]["delay_info"][delay_type] = int(env_data[factor_type][factor]["delay_info"][delay_type]) + 1

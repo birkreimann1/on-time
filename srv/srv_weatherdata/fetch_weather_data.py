@@ -5,6 +5,7 @@ from retry_requests import retry
 from srv.srv_logging.logger import log
 
 def analyseWMOCode(code):
+    """Analyzes the WMO code to classify weather conditions."""
     if code in [0, 1]:
         return "clear"
     elif code in [2, 3]:
@@ -33,6 +34,7 @@ def analyseWMOCode(code):
         return "unknown"
     
 def analyseTrafficTime(current_time, timezone='CET'):
+    """Analyzes the time of day to determine traffic conditions (work/offwork/free)."""
     date = pd.to_datetime(current_time, unit='s', utc=True).tz_convert(timezone)
     
     if date.dayofweek < 5:
@@ -47,6 +49,7 @@ def analyseTrafficTime(current_time, timezone='CET'):
             return "offwork"
 
 def analyseTemp(temp):
+    """Analyzes the temperature to classify it into categories (freezing, cool, warm, etc.)."""
     if temp <= 0:
         return "freezing"
     elif 0 < temp <= 10:
@@ -59,7 +62,6 @@ def analyseTemp(temp):
         return "hot"
 
 def getDataByCoords(lat, long):
-
 	env_data = {"weather": [], "traffic": "", "light": [], "temp": []}
 	weather = []
 	traffic = []

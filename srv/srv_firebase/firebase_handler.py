@@ -4,6 +4,7 @@ from firebase_admin import credentials, db
 firebase_ref = "/stations_test"
 
 def initialize_firebase():
+    """Initializes Firebase with credentials and database URL."""
     cred = credentials.Certificate('./.env/firebase-credentials.json')
     firebase_admin.initialize_app(cred, {
         'databaseURL': 'https://ontime-e0281-default-rtdb.europe-west1.firebasedatabase.app',

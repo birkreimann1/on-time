@@ -10,6 +10,7 @@ os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = service_account_file
 db = firestore.Client()
 
 def upload_station_data_to_firebase(file_path):
+    """Upload station data from a JSON file to Firebase Firestore."""
     with open(file_path, 'r', encoding='utf-8') as file:
         data = json.load(file)
     

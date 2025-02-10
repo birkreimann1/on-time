@@ -6,7 +6,7 @@ from srv.srv_logging.logger import log
 
 # Uses templates for bus and enviroment data to create a blank database object
 def create_setup_json(station_data, env_data_template, data_by_env_template):
-    """Test"""
+    """Creates the setup JSON structure for the Firebase database."""
     setup_json = {}
     for id, station in station_data.items():
         setup_json[id] = {
@@ -16,7 +16,7 @@ def create_setup_json(station_data, env_data_template, data_by_env_template):
     return setup_json
 
 def setup_database():
-    """Test"""
+    """Initializes Firebase and sets up the database with blank data."""
     initialize_firebase()
     log("Firebase initialised", category="Server", priority="INFO")
     

@@ -6,7 +6,7 @@ from srv.srv_weatherdata import fetch_weather_data as weather
 from srv.srv_logging.logger import log
 
 def get_station_data():
-    """Test"""
+    """Load station data from JSON and process each station"""
     station_data = load_json(STATION_DATA_PATH)
 
     for station_nr, (station_id, station) in enumerate(station_data.items(), 1):
@@ -15,7 +15,7 @@ def get_station_data():
 
 
 def process_station_data(station_id, station):
-    """Test"""
+    """Process data for a single station"""
     coords = station["coords"]
     current_env_data = weather.getDataByCoords(float(coords["lat"]), float(coords["long"]))
     station_data = fetch_station_data(station_id)
