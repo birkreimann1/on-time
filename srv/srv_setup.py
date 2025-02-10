@@ -1,40 +1,38 @@
-import firebase_admin
-from firebase_admin import credentials
 from firebase_admin import db
-import os
-import json
+from srv.srv_firebase.firebase_handler import initialize_firebase, firebase_ref
+import srv.srv_json.json_handler as json_handler
+from srv.config import ENV_DATA_PATH, DATA_BY_ENV_PATH, STATION_DATA_PATH
+from srv.srv_logging.logger import log
 
-cred = credentials.Certificate('./.env/ontime-e0281-firebase-adminsdk-ytrxe-16671a0c2b.json')
+# Uses templates for bus and enviroment data to create a blank database object
+def create_setup_json(station_data, env_data_template, data_by_env_template):
+    """Creates the setup JSON structure for the Firebase database."""
+    setup_json = {}
+    for id, station in station_data.items():
+        setup_json[id] = {
+            "lines": {line: data_by_env_template for line in station["lines"]},
+            "env_data": env_data_template
+        }
+    return setup_json
 
-firebase_admin.initialize_app(cred, {
-    'databaseURL': 'https://ontime-e0281-default-rtdb.europe-west1.firebasedatabase.app',
-    'databaseAuthVariableOverride': None
-})
+def setup_database():
+    """Initializes Firebase and sets up the database with blank data."""
+    initialize_firebase()
+    log("Firebase initialised", category="Server", priority="INFO")
+    
+    # Load static station data and database templates
+    station_data = json_handler.load_json(STATION_DATA_PATH)
+    data_by_env_template = json_handler.load_json(DATA_BY_ENV_PATH)
+    env_data_template = json_handler.load_json(ENV_DATA_PATH)
+    
+    # Create blank database object
+    setup_json = create_setup_json(station_data, env_data_template, data_by_env_template)
+    log("Empty station object created", category="Server", priority="INFO")
+    
+    # Overwrite database branch with blank slate
+    ref = db.reference(firebase_ref)
+    ref.set(setup_json)
+    log("Firebase database set up", category="Server", priority="INFO")
 
-
-station_data = {}
-file_path = os.path.join("datascraping", "stationData", "station_ids.json")
-with open(file_path, 'r', encoding="utf-8") as file:
-    station_data = json.load(file)
-
-data_by_env_template = {}
-file_path = os.path.join("json_templates", "data_by_env.json")
-with open(file_path, 'r', encoding="utf-8") as file:
-    data_by_env_template = json.load(file)
-
-env_data_template = {}
-file_path = os.path.join("json_templates", "env_data.json")
-with open(file_path, 'r', encoding="utf-8") as file:
-    env_data_template = json.load(file)
-
-setup_json = {}
-for id in station_data:
-    station = station_data[id]
-    json_data = {"lines": {}, "env_data": {}}
-    json_data["env_data"] = env_data_template
-    for line in station["lines"]:
-        json_data["lines"][line] = data_by_env_template
-    setup_json[id] = json_data
-
-ref = db.reference('/stations')
-ref.set(setup_json)
+if __name__ == "__main__":
+    setup_database()

@@ -1,0 +1,5763 @@
+{
+    "9057675": {
+        "name": "Achatweg",
+        "lines": [
+            "4"
+        ],
+        "coords": {
+            "lat": "53.867913",
+            "long": "10.740366"
+        }
+    },
+    "9057676": {
+        "name": "Adlerstraße",
+        "lines": [
+            "3",
+            "7",
+            "9",
+            "12",
+            "17",
+            "21"
+        ],
+        "coords": {
+            "lat": "53.87042",
+            "long": "10.669378"
+        }
+    },
+    "9057677": {
+        "name": "Adolfstraße",
+        "lines": [
+            "12",
+            "15",
+            "31",
+            "34"
+        ],
+        "coords": {
+            "lat": "53.880228",
+            "long": "10.697793"
+        }
+    },
+    "9088043": {
+        "name": "Ahrensböker Straße",
+        "lines": [
+            "17"
+        ],
+        "coords": {
+            "lat": "53.898098",
+            "long": "10.645916"
+        }
+    },
+    "9057678": {
+        "name": "Alexander-Fleming-Str.",
+        "lines": [
+            "1",
+            "8"
+        ],
+        "coords": {
+            "lat": "53.831812",
+            "long": "10.691275"
+        }
+    },
+    "9057679": {
+        "name": "Am Behnckenhof",
+        "lines": [
+            "3"
+        ],
+        "coords": {
+            "lat": "53.89782",
+            "long": "10.68234"
+        }
+    },
+    "9057680": {
+        "name": "Am Bertramshof",
+        "lines": [
+            "5"
+        ],
+        "coords": {
+            "lat": "53.863984",
+            "long": "10.715582"
+        }
+    },
+    "9057681": {
+        "name": "Am Dreworp",
+        "lines": [
+            "3",
+            "10"
+        ],
+        "coords": {
+            "lat": "53.890368",
+            "long": "10.678358"
+        }
+    },
+    "9057683": {
+        "name": "Am Grenzwall",
+        "lines": [
+            "12"
+        ],
+        "coords": {
+            "lat": "53.878313",
+            "long": "10.649116"
+        }
+    },
+    "9057684": {
+        "name": "Am Lotsenberg",
+        "lines": [
+            "30",
+            "34",
+            "35",
+            "50"
+        ],
+        "coords": {
+            "lat": "53.959495",
+            "long": "10.874745"
+        }
+    },
+    "9057685": {
+        "name": "Am Mailand",
+        "lines": [
+            "12"
+        ],
+        "coords": {
+            "lat": "53.876335",
+            "long": "10.640154"
+        }
+    },
+    "9057686": {
+        "name": "Am Rittbrook",
+        "lines": [
+            "10"
+        ],
+        "coords": {
+            "lat": "53.873405",
+            "long": "10.726145"
+        }
+    },
+    "9057687": {
+        "name": "Am Schwarzen Berg",
+        "lines": [
+            "3"
+        ],
+        "coords": {
+            "lat": "53.888435",
+            "long": "10.674133"
+        }
+    },
+    "9057688": {
+        "name": "Am Stau",
+        "lines": [
+            "31",
+            "34"
+        ],
+        "coords": {
+            "lat": "53.898844",
+            "long": "10.763387"
+        }
+    },
+    "9057689": {
+        "name": "Am Teufelsmoor",
+        "lines": [
+            "3"
+        ],
+        "coords": {
+            "lat": "53.840181",
+            "long": "10.744608"
+        }
+    },
+    "9057691": {
+        "name": "Amselweg",
+        "lines": [
+            "4",
+            "6",
+            "8"
+        ],
+        "coords": {
+            "lat": "53.849179",
+            "long": "10.705982"
+        }
+    },
+    "9057692": {
+        "name": "An den Schießständen",
+        "lines": [
+            "3"
+        ],
+        "coords": {
+            "lat": "53.861863",
+            "long": "10.747881"
+        }
+    },
+    "9057693": {
+        "name": "An der Falkenwiese",
+        "lines": [
+            "3",
+            "4",
+            "10",
+            "11",
+            "12",
+            "15",
+            "21",
+            "25",
+            "30",
+            "31",
+            "34",
+            "40",
+            "50"
+        ],
+        "coords": {
+            "lat": "53.869117",
+            "long": "10.699051"
+        }
+    },
+    "9057694": {
+        "name": "An der Hansehalle",
+        "lines": [
+            "3",
+            "25"
+        ],
+        "coords": {
+            "lat": "53.879931",
+            "long": "10.671598"
+        }
+    },
+    "9057695": {
+        "name": "An der Hülshorst",
+        "lines": [
+            "15"
+        ],
+        "coords": {
+            "lat": "53.894727",
+            "long": "10.706737"
+        }
+    },
+    "9057696": {
+        "name": "An der Hülshorst (Mitte)",
+        "lines": [
+            "12"
+        ],
+        "coords": {
+            "lat": "53.895159",
+            "long": "10.711825"
+        }
+    },
+    "9080662": {
+        "name": "An der Sporthalle",
+        "lines": [
+            "17"
+        ],
+        "coords": {
+            "lat": "53.900058",
+            "long": "10.649673"
+        }
+    },
+    "9057697": {
+        "name": "An der Stadtfreiheit",
+        "lines": [
+            "21"
+        ],
+        "coords": {
+            "lat": "53.870322",
+            "long": "10.665584"
+        }
+    },
+    "9057698": {
+        "name": "Andersenring",
+        "lines": [
+            "7"
+        ],
+        "coords": {
+            "lat": "53.842158",
+            "long": "10.625034"
+        }
+    },
+    "9057699": {
+        "name": "Artlenburger Straße",
+        "lines": [
+            "2"
+        ],
+        "coords": {
+            "lat": "53.873396",
+            "long": "10.659013"
+        }
+    },
+    "9057700": {
+        "name": "Aschenputtelweg",
+        "lines": [
+            "7"
+        ],
+        "coords": {
+            "lat": "53.844568",
+            "long": "10.628764"
+        }
+    },
+    "9000874": {
+        "name": "Auf dem Schild",
+        "lines": [
+            "11",
+            "31"
+        ],
+        "coords": {
+            "lat": "53.839704",
+            "long": "10.639462"
+        }
+    },
+    "9057701": {
+        "name": "Auf der Heide",
+        "lines": [
+            "6",
+            "12",
+            "16",
+            "21"
+        ],
+        "coords": {
+            "lat": "53.853197",
+            "long": "10.635614"
+        }
+    },
+    "9057702": {
+        "name": "Auf der Reihe",
+        "lines": [
+            "12"
+        ],
+        "coords": {
+            "lat": "53.877288",
+            "long": "10.645664"
+        }
+    },
+    "9057703": {
+        "name": "August-Bebel-Straße",
+        "lines": [
+            "5",
+            "7",
+            "11",
+            "12",
+            "31"
+        ],
+        "coords": {
+            "lat": "53.844181",
+            "long": "10.641628"
+        }
+    },
+    "9057704": {
+        "name": "Außenallee",
+        "lines": [
+            "30",
+            "34",
+            "35",
+            "50"
+        ],
+        "coords": {
+            "lat": "53.96185",
+            "long": "10.877739"
+        }
+    },
+    "9006091": {
+        "name": "Bad Schwartau Albert-Schweitzer-Str.",
+        "lines": [
+            "7",
+            "9"
+        ],
+        "coords": {
+            "lat": "53.911519",
+            "long": "10.675248"
+        }
+    },
+    "9080666": {
+        "name": "Bad Schwartau Am Brahmberg",
+        "lines": [
+            "17"
+        ],
+        "coords": {
+            "lat": "53.90875",
+            "long": "10.681037"
+        }
+    },
+    "9006092": {
+        "name": "Bad Schwartau Am Hochkamp",
+        "lines": [
+            "7",
+            "9",
+            "10",
+            "18"
+        ],
+        "coords": {
+            "lat": "53.920203",
+            "long": "10.692687"
+        }
+    },
+    "9006093": {
+        "name": "Bad Schwartau Am Hoppenhof",
+        "lines": [
+            "10"
+        ],
+        "coords": {
+            "lat": "53.931664",
+            "long": "10.692102"
+        }
+    },
+    "9006094": {
+        "name": "Bad Schwartau Am Kurpark",
+        "lines": [
+            "33"
+        ],
+        "coords": {
+            "lat": "53.923007",
+            "long": "10.69791"
+        }
+    },
+    "9006095": {
+        "name": "Bad Schwartau Auguststraße",
+        "lines": [
+            "1",
+            "10",
+            "17"
+        ],
+        "coords": {
+            "lat": "53.915196",
+            "long": "10.695069"
+        }
+    },
+    "9006098": {
+        "name": "Bad Schwartau Clever Landstraße",
+        "lines": [
+            "7",
+            "9"
+        ],
+        "coords": {
+            "lat": "53.904454",
+            "long": "10.6698"
+        }
+    },
+    "9006099": {
+        "name": "Bad Schwartau Cleverbrücker Straße",
+        "lines": [
+            "1",
+            "10",
+            "17"
+        ],
+        "coords": {
+            "lat": "53.907537",
+            "long": "10.691518"
+        }
+    },
+    "9006100": {
+        "name": "Bad Schwartau Cleverhofer Weg",
+        "lines": [
+            "7",
+            "9",
+            "17"
+        ],
+        "coords": {
+            "lat": "53.910207",
+            "long": "10.677477"
+        }
+    },
+    "9006101": {
+        "name": "Bad Schwartau Eutiner Ring",
+        "lines": [
+            "1",
+            "10",
+            "18",
+            "33",
+            "17"
+        ],
+        "coords": {
+            "lat": "53.919115",
+            "long": "10.695006"
+        }
+    },
+    "9006102": {
+        "name": "Bad Schwartau Gartenstraße",
+        "lines": [
+            "7",
+            "9"
+        ],
+        "coords": {
+            "lat": "53.905649",
+            "long": "10.673198"
+        }
+    },
+    "9006103": {
+        "name": "Bad Schwartau Groß Parin",
+        "lines": [
+            "10"
+        ],
+        "coords": {
+            "lat": "53.938945",
+            "long": "10.694251"
+        }
+    },
+    "9006104": {
+        "name": "Bad Schwartau Hindenburgstraße",
+        "lines": [
+            "7",
+            "9"
+        ],
+        "coords": {
+            "lat": "53.907861",
+            "long": "10.67603"
+        }
+    },
+    "9006105": {
+        "name": "Bad Schwartau Kaltenhöfer Straße",
+        "lines": [
+            "1"
+        ],
+        "coords": {
+            "lat": "53.918036",
+            "long": "10.719717"
+        }
+    },
+    "9006106": {
+        "name": "Bad Schwartau Kirchenstraße",
+        "lines": [
+            "7",
+            "9"
+        ],
+        "coords": {
+            "lat": "53.917506",
+            "long": "10.683599"
+        }
+    },
+    "9006107": {
+        "name": "Bad Schwartau Kirschblütenweg",
+        "lines": [
+            "10"
+        ],
+        "coords": {
+            "lat": "53.924805",
+            "long": "10.688021"
+        }
+    },
+    "9006108": {
+        "name": "Bad Schwartau Königsberger Straße",
+        "lines": [
+            "1"
+        ],
+        "coords": {
+            "lat": "53.91845",
+            "long": "10.713749"
+        }
+    },
+    "9006109": {
+        "name": "Bad Schwartau Leibniz-Gymnasium",
+        "lines": [
+            "1",
+            "10",
+            "17"
+        ],
+        "coords": {
+            "lat": "53.912787",
+            "long": "10.693837"
+        }
+    },
+    "9006112": {
+        "name": "Bad Schwartau Markt",
+        "lines": [
+            "1"
+        ],
+        "coords": {
+            "lat": "53.920032",
+            "long": "10.697496"
+        }
+    },
+    "9006113": {
+        "name": "Bad Schwartau Mittelstraße",
+        "lines": [
+            "7",
+            "9"
+        ],
+        "coords": {
+            "lat": "53.920122",
+            "long": "10.684659"
+        }
+    },
+    "9006114": {
+        "name": "Bad Schwartau Mittlerer Wassergang",
+        "lines": [
+            "1",
+            "10",
+            "17"
+        ],
+        "coords": {
+            "lat": "53.916751",
+            "long": "10.696534"
+        }
+    },
+    "9006115": {
+        "name": "Bad Schwartau Nikolausstraße",
+        "lines": [
+            "1"
+        ],
+        "coords": {
+            "lat": "53.919052",
+            "long": "10.709146"
+        }
+    },
+    "9006117": {
+        "name": "Bad Schwartau Pariner-/Lindenstraße",
+        "lines": [
+            "10"
+        ],
+        "coords": {
+            "lat": "53.928545",
+            "long": "10.691033"
+        }
+    },
+    "9006118": {
+        "name": "Bad Schwartau Rantzauallee",
+        "lines": [
+            "7",
+            "9",
+            "10",
+            "18"
+        ],
+        "coords": {
+            "lat": "53.920715",
+            "long": "10.689388"
+        }
+    },
+    "9006119": {
+        "name": "Bad Schwartau Rensefeld Friedhof",
+        "lines": [
+            "10"
+        ],
+        "coords": {
+            "lat": "53.92263",
+            "long": "10.685307"
+        }
+    },
+    "9006121": {
+        "name": "Bad Schwartau Riesebusch",
+        "lines": [
+            "33"
+        ],
+        "coords": {
+            "lat": "53.927493",
+            "long": "10.706117"
+        }
+    },
+    "9006122": {
+        "name": "Bad Schwartau Ringstraße",
+        "lines": [
+            "7",
+            "9"
+        ],
+        "coords": {
+            "lat": "53.902692",
+            "long": "10.672326"
+        }
+    },
+    "9006125": {
+        "name": "Bad Schwartau Stockelsdorfer Weg",
+        "lines": [
+            "7",
+            "9"
+        ],
+        "coords": {
+            "lat": "53.913793",
+            "long": "10.681145"
+        }
+    },
+    "9006126": {
+        "name": "Bad Schwartau Tremskamp",
+        "lines": [
+            "1",
+            "10"
+        ],
+        "coords": {
+            "lat": "53.903114",
+            "long": "10.68955"
+        }
+    },
+    "9006127": {
+        "name": "Bad Schwartau ZOB",
+        "lines": [
+            "1",
+            "7",
+            "9",
+            "10",
+            "17",
+            "18",
+            "33"
+        ],
+        "coords": {
+            "lat": "53.918989",
+            "long": "10.694161"
+        }
+    },
+    "9006096": {
+        "name": "Bahnhof Bad Schwartau",
+        "lines": [
+            "1"
+        ],
+        "coords": {
+            "lat": "53.916508",
+            "long": "10.702197"
+        }
+    },
+    "9058095": {
+        "name": "Bahnhof Kücknitz",
+        "lines": [
+            "30",
+            "40",
+            "34"
+        ],
+        "coords": {
+            "lat": "53.925057",
+            "long": "10.819776"
+        }
+    },
+    "9000871": {
+        "name": "Bahnhof Moisling",
+        "lines": [
+            "5",
+            "7",
+            "11",
+            "12",
+            "31"
+        ],
+        "coords": {
+            "lat": "53.836738",
+            "long": "10.628944"
+        }
+    },
+    "9057705": {
+        "name": "Bartelsholz",
+        "lines": [
+            "11"
+        ],
+        "coords": {
+            "lat": "53.820431",
+            "long": "10.5726"
+        }
+    },
+    "9057706": {
+        "name": "Bauernweg",
+        "lines": [
+            "2",
+            "12"
+        ],
+        "coords": {
+            "lat": "53.870573",
+            "long": "10.622256"
+        }
+    },
+    "9057708": {
+        "name": "Beethovenstraße",
+        "lines": [
+            "2"
+        ],
+        "coords": {
+            "lat": "53.871077",
+            "long": "10.65104"
+        }
+    },
+    "9057709": {
+        "name": "Bei der Gasanstalt",
+        "lines": [
+            "7"
+        ],
+        "coords": {
+            "lat": "53.849017",
+            "long": "10.678385"
+        }
+    },
+    "9057710": {
+        "name": "Beidendorf",
+        "lines": [
+            "26"
+        ],
+        "coords": {
+            "lat": "53.78781",
+            "long": "10.677522"
+        }
+    },
+    "9057711": {
+        "name": "Beim Meilenstein",
+        "lines": [
+            "24"
+        ],
+        "coords": {
+            "lat": "53.888021",
+            "long": "10.789842"
+        }
+    },
+    "9057712": {
+        "name": "Berliner Allee",
+        "lines": [
+            "30"
+        ],
+        "coords": {
+            "lat": "53.846123",
+            "long": "10.68412"
+        }
+    },
+    "9057713": {
+        "name": "Berliner Platz",
+        "lines": [
+            "7"
+        ],
+        "coords": {
+            "lat": "53.851633",
+            "long": "10.683554"
+        }
+    },
+    "9057714": {
+        "name": "Bessemer Straße",
+        "lines": [
+            "1",
+            "8",
+            "30"
+        ],
+        "coords": {
+            "lat": "53.834967",
+            "long": "10.696552"
+        }
+    },
+    "9057715": {
+        "name": "Blanckstraße",
+        "lines": [
+            "15",
+            "25"
+        ],
+        "coords": {
+            "lat": "53.863715",
+            "long": "10.697271"
+        }
+    },
+    "9057716": {
+        "name": "Blankenseer Dorfplatz",
+        "lines": [
+            "6"
+        ],
+        "coords": {
+            "lat": "53.796215",
+            "long": "10.714414"
+        }
+    },
+    "9057717": {
+        "name": "Bogenstraße",
+        "lines": [
+            "3",
+            "10"
+        ],
+        "coords": {
+            "lat": "53.895069",
+            "long": "10.684471"
+        }
+    },
+    "9088049": {
+        "name": "Bohnrader Weg",
+        "lines": [
+            "17"
+        ],
+        "coords": {
+            "lat": "53.896849",
+            "long": "10.638751"
+        }
+    },
+    "9006097": {
+        "name": "Bollbrüch",
+        "lines": [
+            "18"
+        ],
+        "coords": {
+            "lat": "53.922909",
+            "long": "10.676147"
+        }
+    },
+    "9057719": {
+        "name": "Bornhövedstraße",
+        "lines": [
+            "7"
+        ],
+        "coords": {
+            "lat": "53.884659",
+            "long": "10.659085"
+        }
+    },
+    "9057720": {
+        "name": "Bornkamp",
+        "lines": [
+            "8"
+        ],
+        "coords": {
+            "lat": "53.82542",
+            "long": "10.683545"
+        }
+    },
+    "9057721": {
+        "name": "Brandenbaumer Tannen",
+        "lines": [
+            "3"
+        ],
+        "coords": {
+            "lat": "53.84988",
+            "long": "10.743737"
+        }
+    },
+    "9057724": {
+        "name": "Brinkweg",
+        "lines": [
+            "11",
+            "21"
+        ],
+        "coords": {
+            "lat": "53.885963",
+            "long": "10.791065"
+        }
+    },
+    "9057725": {
+        "name": "Brodten",
+        "lines": [
+            "40"
+        ],
+        "coords": {
+            "lat": "53.987604",
+            "long": "10.862026"
+        }
+    },
+    "9057726": {
+        "name": "Brodtener Kirchsteig",
+        "lines": [
+            "34",
+            "40",
+            "50"
+        ],
+        "coords": {
+            "lat": "53.962758",
+            "long": "10.86216"
+        }
+    },
+    "9057727": {
+        "name": "Bruchweg",
+        "lines": [
+            "7"
+        ],
+        "coords": {
+            "lat": "53.8441",
+            "long": "10.634778"
+        }
+    },
+    "9057728": {
+        "name": "Brunshorster Weg",
+        "lines": [
+            "3"
+        ],
+        "coords": {
+            "lat": "53.84419",
+            "long": "10.745732"
+        }
+    },
+    "9057930": {
+        "name": "Buchenstücken",
+        "lines": [
+            "11"
+        ],
+        "coords": {
+            "lat": "53.828684",
+            "long": "10.604188"
+        }
+    },
+    "9057729": {
+        "name": "Buchenweg",
+        "lines": [
+            "12"
+        ],
+        "coords": {
+            "lat": "53.897487",
+            "long": "10.738019"
+        }
+    },
+    "9057730": {
+        "name": "Bunsenweg",
+        "lines": [
+            "12",
+            "15"
+        ],
+        "coords": {
+            "lat": "53.892768",
+            "long": "10.710827"
+        }
+    },
+    "9057731": {
+        "name": "Buntekuh",
+        "lines": [
+            "6",
+            "11",
+            "16",
+            "21",
+            "26",
+            "31"
+        ],
+        "coords": {
+            "lat": "53.855948",
+            "long": "10.640235"
+        }
+    },
+    "9057737": {
+        "name": "Burckhardt-Gymnasium",
+        "lines": [
+            "11",
+            "21",
+            "31"
+        ],
+        "coords": {
+            "lat": "53.866492",
+            "long": "10.656352"
+        }
+    },
+    "9057732": {
+        "name": "Burgtorfriedhof",
+        "lines": [
+            "12",
+            "15",
+            "31",
+            "34"
+        ],
+        "coords": {
+            "lat": "53.882916",
+            "long": "10.704049"
+        }
+    },
+    "9057733": {
+        "name": "Butenhof",
+        "lines": [
+            "16",
+            "26"
+        ],
+        "coords": {
+            "lat": "53.816845",
+            "long": "10.639992"
+        }
+    },
+    "9057734": {
+        "name": "Buurdiekstraße",
+        "lines": [
+            "31"
+        ],
+        "coords": {
+            "lat": "53.912409",
+            "long": "10.820783"
+        }
+    },
+    "9057735": {
+        "name": "Campingplatz",
+        "lines": [
+            "38"
+        ],
+        "coords": {
+            "lat": "53.95367",
+            "long": "10.889272"
+        }
+    },
+    "9057736": {
+        "name": "Carl-Gauß-Straße",
+        "lines": [
+            "30"
+        ],
+        "coords": {
+            "lat": "53.838203",
+            "long": "10.687131"
+        }
+    },
+    "9057738": {
+        "name": "CITTI-Park",
+        "lines": [
+            "12",
+            "21",
+            "26"
+        ],
+        "coords": {
+            "lat": "53.858654",
+            "long": "10.626733"
+        }
+    },
+    "9057956": {
+        "name": "Clara-Schumann-Straße",
+        "lines": [
+            "2"
+        ],
+        "coords": {
+            "lat": "53.872317",
+            "long": "10.654752"
+        }
+    },
+    "9057753": {
+        "name": "Dänemarkstraße",
+        "lines": [
+            "35"
+        ],
+        "coords": {
+            "lat": "53.965976",
+            "long": "10.865648"
+        }
+    },
+    "9058063": {
+        "name": "Diakonie Triftstraße",
+        "lines": [
+            "3",
+            "10"
+        ],
+        "coords": {
+            "lat": "53.891761",
+            "long": "10.681531"
+        }
+    },
+    "9057739": {
+        "name": "Dieselstraße",
+        "lines": [
+            "5"
+        ],
+        "coords": {
+            "lat": "53.85504",
+            "long": "10.735682"
+        }
+    },
+    "9057740": {
+        "name": "Distelkrog",
+        "lines": [
+            "30",
+            "40",
+            "34"
+        ],
+        "coords": {
+            "lat": "53.972412",
+            "long": "10.868291"
+        }
+    },
+    "9057741": {
+        "name": "Dorfstraße",
+        "lines": [
+            "2"
+        ],
+        "coords": {
+            "lat": "53.845457",
+            "long": "10.692408"
+        }
+    },
+    "9057742": {
+        "name": "Dornestraße",
+        "lines": [
+            "5",
+            "30"
+        ],
+        "coords": {
+            "lat": "53.863598",
+            "long": "10.673863"
+        }
+    },
+    "9057831": {
+        "name": "Dorothea-Erxleben-Str.",
+        "lines": [
+            "1"
+        ],
+        "coords": {
+            "lat": "53.83014",
+            "long": "10.699662"
+        }
+    },
+    "9057747": {
+        "name": "Drägerpark",
+        "lines": [
+            "4",
+            "11",
+            "21"
+        ],
+        "coords": {
+            "lat": "53.871248",
+            "long": "10.711276"
+        }
+    },
+    "9057748": {
+        "name": "Drägerwerk",
+        "lines": [
+            "5"
+        ],
+        "coords": {
+            "lat": "53.857602",
+            "long": "10.67007"
+        }
+    },
+    "9057744": {
+        "name": "Drechslerstraße",
+        "lines": [
+            "12"
+        ],
+        "coords": {
+            "lat": "53.861018",
+            "long": "10.609653"
+        }
+    },
+    "9057745": {
+        "name": "Dreeblöcken",
+        "lines": [
+            "35"
+        ],
+        "coords": {
+            "lat": "53.974435",
+            "long": "10.874287"
+        }
+    },
+    "9057746": {
+        "name": "Dreifelderweg",
+        "lines": [
+            "5"
+        ],
+        "coords": {
+            "lat": "53.859175",
+            "long": "10.731107"
+        }
+    },
+    "9057787": {
+        "name": "Dreilingsberg",
+        "lines": [
+            "35",
+            "38",
+            "50"
+        ],
+        "coords": {
+            "lat": "53.962821",
+            "long": "10.857864"
+        }
+    },
+    "9057749": {
+        "name": "Drögeneck",
+        "lines": [
+            "2"
+        ],
+        "coords": {
+            "lat": "53.879338",
+            "long": "10.619137"
+        }
+    },
+    "9057750": {
+        "name": "Drögestraße",
+        "lines": [
+            "1",
+            "10"
+        ],
+        "coords": {
+            "lat": "53.876075",
+            "long": "10.677882"
+        }
+    },
+    "9057751": {
+        "name": "Dummersdorfer Scheide",
+        "lines": [
+            "31"
+        ],
+        "coords": {
+            "lat": "53.912805",
+            "long": "10.811884"
+        }
+    },
+    "9057752": {
+        "name": "Dummersdorfer Straße",
+        "lines": [
+            "31"
+        ],
+        "coords": {
+            "lat": "53.91258",
+            "long": "10.81681"
+        }
+    },
+    "9057754": {
+        "name": "Ehrenfriedhof",
+        "lines": [
+            "12",
+            "15",
+            "25",
+            "31",
+            "34"
+        ],
+        "coords": {
+            "lat": "53.884758",
+            "long": "10.708058"
+        }
+    },
+    "9057755": {
+        "name": "Eichenweg",
+        "lines": [
+            "12"
+        ],
+        "coords": {
+            "lat": "53.900786",
+            "long": "10.74317"
+        }
+    },
+    "9057756": {
+        "name": "Eichholz",
+        "lines": [
+            "3",
+            "5"
+        ],
+        "coords": {
+            "lat": "53.84686",
+            "long": "10.74806"
+        }
+    },
+    "9057757": {
+        "name": "Eichholz Teich",
+        "lines": [
+            "5"
+        ],
+        "coords": {
+            "lat": "53.849314",
+            "long": "10.742118"
+        }
+    },
+    "9057758": {
+        "name": "Einsiedelstraße",
+        "lines": [
+            "25"
+        ],
+        "coords": {
+            "lat": "53.879688",
+            "long": "10.68403"
+        }
+    },
+    "9057759": {
+        "name": "Eisenstraße",
+        "lines": [
+            "31",
+            "33"
+        ],
+        "coords": {
+            "lat": "53.905407",
+            "long": "10.803254"
+        }
+    },
+    "9057760": {
+        "name": "Elbingstraße",
+        "lines": [
+            "34",
+            "36",
+            "50"
+        ],
+        "coords": {
+            "lat": "53.924428",
+            "long": "10.821853"
+        }
+    },
+    "9057761": {
+        "name": "Eric-Warburg-Brücke",
+        "lines": [
+            "25"
+        ],
+        "coords": {
+            "lat": "53.88323",
+            "long": "10.688839"
+        }
+    },
+    "9057762": {
+        "name": "Ernst-Deecke-Weg",
+        "lines": [
+            "12",
+            "24"
+        ],
+        "coords": {
+            "lat": "53.898728",
+            "long": "10.747098"
+        }
+    },
+    "9058051": {
+        "name": "Ernst-Ruska-Straße",
+        "lines": [
+            "8",
+            "9"
+        ],
+        "coords": {
+            "lat": "53.838716",
+            "long": "10.706719"
+        }
+    },
+    "9000885": {
+        "name": "Estlandring",
+        "lines": [
+            "2"
+        ],
+        "coords": {
+            "lat": "53.836109",
+            "long": "10.650446"
+        }
+    },
+    "9057763": {
+        "name": "Eutiner Straße",
+        "lines": [
+            "7"
+        ],
+        "coords": {
+            "lat": "53.888282",
+            "long": "10.661854"
+        }
+    },
+    "9057764": {
+        "name": "Fabrikstraße",
+        "lines": [
+            "24"
+        ],
+        "coords": {
+            "lat": "53.888102",
+            "long": "10.785752"
+        }
+    },
+    "9057766": {
+        "name": "Fackenburger Allee",
+        "lines": [
+            "1",
+            "10"
+        ],
+        "coords": {
+            "lat": "53.869827",
+            "long": "10.672182"
+        }
+    },
+    "9057767": {
+        "name": "Fahlenkampsweg",
+        "lines": [
+            "1",
+            "4",
+            "6",
+            "8",
+            "9"
+        ],
+        "coords": {
+            "lat": "53.851184",
+            "long": "10.702719"
+        }
+    },
+    "9057768": {
+        "name": "Falkendamm",
+        "lines": [
+            "15",
+            "25"
+        ],
+        "coords": {
+            "lat": "53.871994",
+            "long": "10.697703"
+        }
+    },
+    "9057769": {
+        "name": "Fasanenweg",
+        "lines": [
+            "11",
+            "31"
+        ],
+        "coords": {
+            "lat": "53.838796",
+            "long": "10.635731"
+        }
+    },
+    "9057770": {
+        "name": "Fegefeuer",
+        "lines": [
+            "1",
+            "2",
+            "4",
+            "6",
+            "7",
+            "8",
+            "9",
+            "15",
+            "16",
+            "25",
+            "26"
+        ],
+        "coords": {
+            "lat": "53.862699",
+            "long": "10.687086"
+        }
+    },
+    "9057772": {
+        "name": "Feldstraße",
+        "lines": [
+            "2",
+            "16",
+            "26"
+        ],
+        "coords": {
+            "lat": "53.844226",
+            "long": "10.681288"
+        }
+    },
+    "9057773": {
+        "name": "Fleischhauerstraße",
+        "lines": [
+            "3",
+            "4",
+            "10",
+            "11",
+            "12",
+            "21",
+            "30",
+            "31",
+            "34",
+            "40",
+            "50"
+        ],
+        "coords": {
+            "lat": "53.867346",
+            "long": "10.687662"
+        }
+    },
+    "9057774": {
+        "name": "Flughafen",
+        "lines": [
+            "6"
+        ],
+        "coords": {
+            "lat": "53.804125",
+            "long": "10.697487"
+        }
+    },
+    "9057782": {
+        "name": "Försterei",
+        "lines": [
+            "11",
+            "21"
+        ],
+        "coords": {
+            "lat": "53.873468",
+            "long": "10.755629"
+        }
+    },
+    "9057777": {
+        "name": "Forstmeisterweg",
+        "lines": [
+            "12"
+        ],
+        "coords": {
+            "lat": "53.893909",
+            "long": "10.720284"
+        }
+    },
+    "9057778": {
+        "name": "Fregattenstraße",
+        "lines": [
+            "11",
+            "21",
+            "31"
+        ],
+        "coords": {
+            "lat": "53.861009",
+            "long": "10.648622"
+        }
+    },
+    "9057779": {
+        "name": "Friedenstraße",
+        "lines": [
+            "1",
+            "10"
+        ],
+        "coords": {
+            "lat": "53.874106",
+            "long": "10.675877"
+        }
+    },
+    "9057780": {
+        "name": "Friedhof Waldhusen",
+        "lines": [
+            "30",
+            "34",
+            "40",
+            "50"
+        ],
+        "coords": {
+            "lat": "53.91356",
+            "long": "10.800872"
+        }
+    },
+    "9057781": {
+        "name": "Friedrichstraße",
+        "lines": [
+            "2"
+        ],
+        "coords": {
+            "lat": "53.846284",
+            "long": "10.685738"
+        }
+    },
+    "9057784": {
+        "name": "G.-Kerschensteiner-Str.",
+        "lines": [
+            "3",
+            "10"
+        ],
+        "coords": {
+            "lat": "53.883104",
+            "long": "10.678834"
+        }
+    },
+    "9057783": {
+        "name": "Genin",
+        "lines": [
+            "7"
+        ],
+        "coords": {
+            "lat": "53.841871",
+            "long": "10.649718"
+        }
+    },
+    "9057785": {
+        "name": "Germanenweg",
+        "lines": [
+            "12",
+            "24"
+        ],
+        "coords": {
+            "lat": "53.902943",
+            "long": "10.750748"
+        }
+    },
+    "9057786": {
+        "name": "Geschwister-Scholl-Weg",
+        "lines": [
+            "15",
+            "25"
+        ],
+        "coords": {
+            "lat": "53.882008",
+            "long": "10.70902"
+        }
+    },
+    "9057788": {
+        "name": "Ginsterweg",
+        "lines": [
+            "11",
+            "12",
+            "31"
+        ],
+        "coords": {
+            "lat": "53.853008",
+            "long": "10.640163"
+        }
+    },
+    "9057790": {
+        "name": "Gleisdreieck",
+        "lines": [
+            "10"
+        ],
+        "coords": {
+            "lat": "53.863894",
+            "long": "10.744141"
+        }
+    },
+    "9057791": {
+        "name": "Gneisenaustraße",
+        "lines": [
+            "4",
+            "11",
+            "21"
+        ],
+        "coords": {
+            "lat": "53.867265",
+            "long": "10.713892"
+        }
+    },
+    "9057792": {
+        "name": "Gneversdorf",
+        "lines": [
+            "30"
+        ],
+        "coords": {
+            "lat": "53.968906",
+            "long": "10.856138"
+        }
+    },
+    "9057793": {
+        "name": "Goebenstraße",
+        "lines": [
+            "3"
+        ],
+        "coords": {
+            "lat": "53.86802",
+            "long": "10.721461"
+        }
+    },
+    "9080665": {
+        "name": "Gorch-Fock-Straße",
+        "lines": [
+            "17"
+        ],
+        "coords": {
+            "lat": "53.9092631",
+            "long": "10.6652147"
+        }
+    },
+    "9057935": {
+        "name": "Gothmund",
+        "lines": [
+            "12",
+            "24"
+        ],
+        "coords": {
+            "lat": "53.9047278",
+            "long": "10.7517768"
+        }
+    },
+    "9057794": {
+        "name": "Grace-Hopper-Straße",
+        "lines": [
+            "30"
+        ],
+        "coords": {
+            "lat": "53.835452",
+            "long": "10.689927"
+        }
+    },
+    "9057796": {
+        "name": "Grapengießerstr. Mitte",
+        "lines": [
+            "26"
+        ],
+        "coords": {
+            "lat": "53.861009",
+            "long": "10.634859"
+        }
+    },
+    "9057795": {
+        "name": "Grapengießerstraße",
+        "lines": [
+            "26"
+        ],
+        "coords": {
+            "lat": "53.858779",
+            "long": "10.637969"
+        }
+    },
+    "9057797": {
+        "name": "Grenzweg",
+        "lines": [
+            "33"
+        ],
+        "coords": {
+            "lat": "53.913533",
+            "long": "10.738721"
+        }
+    },
+    "9057798": {
+        "name": "Grillenweg",
+        "lines": [
+            "9"
+        ],
+        "coords": {
+            "lat": "53.827488",
+            "long": "10.731934"
+        }
+    },
+    "9057803": {
+        "name": "Grönauer Baum",
+        "lines": [
+            "4",
+            "6",
+            "9"
+        ],
+        "coords": {
+            "lat": "53.834383",
+            "long": "10.714782"
+        }
+    },
+    "9057799": {
+        "name": "Grootkoppel 1",
+        "lines": [
+            "10"
+        ],
+        "coords": {
+            "lat": "53.869989",
+            "long": "10.742676"
+        }
+    },
+    "9057800": {
+        "name": "Grootkoppel 2",
+        "lines": [
+            "10"
+        ],
+        "coords": {
+            "lat": "53.866492",
+            "long": "10.743826"
+        }
+    },
+    "9385074": {
+        "name": "Groß Grönau Am Sonnenberg",
+        "lines": [
+            "4"
+        ],
+        "coords": {
+            "lat": "53.801734",
+            "long": "10.7502"
+        }
+    },
+    "9385080": {
+        "name": "Groß Grönau Am Torfmoor",
+        "lines": [
+            "4"
+        ],
+        "coords": {
+            "lat": "53.811334",
+            "long": "10.744393"
+        }
+    },
+    "9307553": {
+        "name": "Groß Grönau Am Vierth",
+        "lines": [
+            "4"
+        ],
+        "coords": {
+            "lat": "53.798327",
+            "long": "10.75375"
+        }
+    },
+    "9300215": {
+        "name": "Groß Grönau Berliner Straße",
+        "lines": [
+            "4"
+        ],
+        "coords": {
+            "lat": "53.82107",
+            "long": "10.725866"
+        }
+    },
+    "9007552": {
+        "name": "Groß Grönau Klein Grönau",
+        "lines": [
+            "4"
+        ],
+        "coords": {
+            "lat": "53.808071",
+            "long": "10.748456"
+        }
+    },
+    "9385077": {
+        "name": "Groß Grönau Rehhagen",
+        "lines": [
+            "4"
+        ],
+        "coords": {
+            "lat": "53.819074",
+            "long": "10.729785"
+        }
+    },
+    "9300217": {
+        "name": "Groß Grönau Wurzelredder",
+        "lines": [
+            "4"
+        ],
+        "coords": {
+            "lat": "53.815451",
+            "long": "10.736869"
+        }
+    },
+    "9058017": {
+        "name": "Groß Steinrade/Teich",
+        "lines": [
+            "2"
+        ],
+        "coords": {
+            "lat": "53.8809382",
+            "long": "10.6224222"
+        }
+    },
+    "9057802": {
+        "name": "Große Burgstraße",
+        "lines": [
+            "3",
+            "4",
+            "10",
+            "11",
+            "12",
+            "21",
+            "30",
+            "31",
+            "34",
+            "40",
+            "50"
+        ],
+        "coords": {
+            "lat": "53.872928",
+            "long": "10.690619"
+        }
+    },
+    "9057801": {
+        "name": "Grote Bleeken",
+        "lines": [
+            "11"
+        ],
+        "coords": {
+            "lat": "53.820584",
+            "long": "10.591333"
+        }
+    },
+    "9057804": {
+        "name": "Grüner Jäger",
+        "lines": [
+            "30",
+            "34",
+            "36",
+            "40",
+            "50"
+        ],
+        "coords": {
+            "lat": "53.941444",
+            "long": "10.84447"
+        }
+    },
+    "9057805": {
+        "name": "Guerickestraße",
+        "lines": [
+            "5"
+        ],
+        "coords": {
+            "lat": "53.851327",
+            "long": "10.738631"
+        }
+    },
+    "9057806": {
+        "name": "Gustav-Adolf-Straße",
+        "lines": [
+            "15",
+            "25"
+        ],
+        "coords": {
+            "lat": "53.877666",
+            "long": "10.708499"
+        }
+    },
+    "9057807": {
+        "name": "Gustav-Falke-Straße",
+        "lines": [
+            "4",
+            "6",
+            "8"
+        ],
+        "coords": {
+            "lat": "53.843435",
+            "long": "10.708148"
+        }
+    },
+    "9057808": {
+        "name": "Gustav-Radbruch-Platz",
+        "lines": [
+            "3",
+            "4",
+            "10",
+            "11",
+            "12",
+            "15",
+            "21",
+            "25",
+            "30",
+            "31",
+            "34",
+            "40",
+            "50"
+        ],
+        "coords": {
+            "lat": "53.876048",
+            "long": "10.69355"
+        }
+    },
+    "9057829": {
+        "name": "H. d. Kirschkaten Mitte",
+        "lines": [
+            "7"
+        ],
+        "coords": {
+            "lat": "53.845493",
+            "long": "10.673108"
+        }
+    },
+    "9058099": {
+        "name": "Hafenbahnhof",
+        "lines": [
+            "30",
+            "34",
+            "35",
+            "50"
+        ],
+        "coords": {
+            "lat": "53.958407",
+            "long": "10.865352"
+        }
+    },
+    "9057809": {
+        "name": "Hagebuttenweg",
+        "lines": [
+            "3"
+        ],
+        "coords": {
+            "lat": "53.865575",
+            "long": "10.748941"
+        }
+    },
+    "9057810": {
+        "name": "Hagelsteinstraße",
+        "lines": [
+            "35"
+        ],
+        "coords": {
+            "lat": "53.972969",
+            "long": "10.880157"
+        }
+    },
+    "9057811": {
+        "name": "Hagenstraße",
+        "lines": [
+            "9"
+        ],
+        "coords": {
+            "lat": "53.831803",
+            "long": "10.722001"
+        }
+    },
+    "9057812": {
+        "name": "Hahnenkamp",
+        "lines": [
+            "2"
+        ],
+        "coords": {
+            "lat": "53.872893",
+            "long": "10.61689"
+        }
+    },
+    "9057813": {
+        "name": "Hamburger Straße",
+        "lines": [
+            "6",
+            "16"
+        ],
+        "coords": {
+            "lat": "53.850033",
+            "long": "10.636936"
+        }
+    },
+    "9057814": {
+        "name": "Hanse Residenz",
+        "lines": [
+            "12",
+            "15",
+            "25"
+        ],
+        "coords": {
+            "lat": "53.886349",
+            "long": "10.706674"
+        }
+    },
+    "9057816": {
+        "name": "Hansering",
+        "lines": [
+            "5"
+        ],
+        "coords": {
+            "lat": "53.855543",
+            "long": "10.667508"
+        }
+    },
+    "9057817": {
+        "name": "Haselnußweg",
+        "lines": [
+            "3"
+        ],
+        "coords": {
+            "lat": "53.868488",
+            "long": "10.748824"
+        }
+    },
+    "9075866": {
+        "name": "Häven",
+        "lines": [
+            "40"
+        ],
+        "coords": {
+            "lat": "53.9791406",
+            "long": "10.8302811"
+        }
+    },
+    "9057820": {
+        "name": "Heinrichstraße",
+        "lines": [
+            "3",
+            "10"
+        ],
+        "coords": {
+            "lat": "53.874574",
+            "long": "10.712193"
+        }
+    },
+    "9057821": {
+        "name": "Heiweg",
+        "lines": [
+            "4"
+        ],
+        "coords": {
+            "lat": "53.861269",
+            "long": "10.741435"
+        }
+    },
+    "9057822": {
+        "name": "Hellkamp",
+        "lines": [
+            "11"
+        ],
+        "coords": {
+            "lat": "53.82454",
+            "long": "10.598534"
+        }
+    },
+    "9057823": {
+        "name": "Helmholtzstraße",
+        "lines": [
+            "2"
+        ],
+        "coords": {
+            "lat": "53.846257",
+            "long": "10.687833"
+        }
+    },
+    "9000558": {
+        "name": "Henry-Koch-Straße",
+        "lines": [
+            "36"
+        ],
+        "coords": {
+            "lat": "53.933138",
+            "long": "10.843894"
+        }
+    },
+    "9057824": {
+        "name": "Herbartweg",
+        "lines": [
+            "3",
+            "4",
+            "11",
+            "21"
+        ],
+        "coords": {
+            "lat": "53.865081",
+            "long": "10.728194"
+        }
+    },
+    "9057826": {
+        "name": "Herrenwyk",
+        "lines": [
+            "31",
+            "33"
+        ],
+        "coords": {
+            "lat": "53.902863",
+            "long": "10.80258"
+        }
+    },
+    "9377159": {
+        "name": "Herrnburg Ahornweg",
+        "lines": [
+            "5"
+        ],
+        "coords": {
+            "lat": "53.847327",
+            "long": "10.758326"
+        }
+    },
+    "9307163": {
+        "name": "Herrnburg Am Kamp",
+        "lines": [
+            "5"
+        ],
+        "coords": {
+            "lat": "53.845026",
+            "long": "10.755378"
+        }
+    },
+    "9307167": {
+        "name": "Herrnburg Bahnhof",
+        "lines": [
+            "5"
+        ],
+        "coords": {
+            "lat": "53.83823",
+            "long": "10.759971"
+        }
+    },
+    "9307166": {
+        "name": "Herrnburg Englisch Bahn",
+        "lines": [
+            "5"
+        ],
+        "coords": {
+            "lat": "53.842158",
+            "long": "10.764241"
+        }
+    },
+    "9307164": {
+        "name": "Herrnburg Heideweg",
+        "lines": [
+            "5"
+        ],
+        "coords": {
+            "lat": "53.848927",
+            "long": "10.761248"
+        }
+    },
+    "9307165": {
+        "name": "Herrnburg Staunsfeld",
+        "lines": [
+            "5"
+        ],
+        "coords": {
+            "lat": "53.8454949",
+            "long": "10.762273"
+        }
+    },
+    "9057827": {
+        "name": "Herrnburger Weg",
+        "lines": [
+            "3"
+        ],
+        "coords": {
+            "lat": "53.846293",
+            "long": "10.747161"
+        }
+    },
+    "9057828": {
+        "name": "Hinter den Kirschkaten",
+        "lines": [
+            "7"
+        ],
+        "coords": {
+            "lat": "53.843237",
+            "long": "10.658905"
+        }
+    },
+    "9057830": {
+        "name": "Hirtenbergweg",
+        "lines": [
+            "31"
+        ],
+        "coords": {
+            "lat": "53.911843",
+            "long": "10.823705"
+        }
+    },
+    "9057833": {
+        "name": "Hochstraße",
+        "lines": [
+            "1"
+        ],
+        "coords": {
+            "lat": "53.887086",
+            "long": "10.684453"
+        }
+    },
+    "9057834": {
+        "name": "Hofland",
+        "lines": [
+            "12"
+        ],
+        "coords": {
+            "lat": "53.868811",
+            "long": "10.618022"
+        }
+    },
+    "9057836": {
+        "name": "Holderbusch",
+        "lines": [
+            "11"
+        ],
+        "coords": {
+            "lat": "53.822211",
+            "long": "10.593922"
+        }
+    },
+    "9057837": {
+        "name": "Holstentorplatz",
+        "lines": [
+            "1",
+            "2",
+            "3",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "15",
+            "16",
+            "21",
+            "25",
+            "26",
+            "30",
+            "31",
+            "34",
+            "40",
+            "50"
+        ],
+        "coords": {
+            "lat": "53.86616",
+            "long": "10.678951"
+        }
+    },
+    "9057838": {
+        "name": "Holzkoppel",
+        "lines": [
+            "11"
+        ],
+        "coords": {
+            "lat": "53.825681",
+            "long": "10.600952"
+        }
+    },
+    "9057839": {
+        "name": "Howingsbrook",
+        "lines": [
+            "30",
+            "34"
+        ],
+        "coords": {
+            "lat": "53.969455",
+            "long": "10.858996"
+        }
+    },
+    "9057840": {
+        "name": "Hudekamp",
+        "lines": [
+            "6",
+            "12",
+            "16",
+            "21"
+        ],
+        "coords": {
+            "lat": "53.852379",
+            "long": "10.633825"
+        }
+    },
+    "9057841": {
+        "name": "Hugo-Distler-Straße",
+        "lines": [
+            "2"
+        ],
+        "coords": {
+            "lat": "53.869755",
+            "long": "10.645835"
+        }
+    },
+    "9057842": {
+        "name": "Hutmacherring",
+        "lines": [
+            "12"
+        ],
+        "coords": {
+            "lat": "53.865144",
+            "long": "10.602732"
+        }
+    },
+    "9057843": {
+        "name": "Hüxtertorallee",
+        "lines": [
+            "15",
+            "25"
+        ],
+        "coords": {
+            "lat": "53.861216",
+            "long": "10.69417"
+        }
+    },
+    "9057844": {
+        "name": "IKEA LUV Shopping",
+        "lines": [
+            "1",
+            "33"
+        ],
+        "coords": {
+            "lat": "53.914099",
+            "long": "10.735026"
+        }
+    },
+    "9057845": {
+        "name": "Ilsebillweg",
+        "lines": [
+            "5"
+        ],
+        "coords": {
+            "lat": "53.8425",
+            "long": "10.633268"
+        }
+    },
+    "9057846": {
+        "name": "Im Block",
+        "lines": [
+            "11"
+        ],
+        "coords": {
+            "lat": "53.83218",
+            "long": "10.609707"
+        }
+    },
+    "9057847": {
+        "name": "Im Gleisdreieck",
+        "lines": [
+            "3",
+            "11",
+            "21"
+        ],
+        "coords": {
+            "lat": "53.872021",
+            "long": "10.742811"
+        }
+    },
+    "9057848": {
+        "name": "Im Schlag",
+        "lines": [
+            "11"
+        ],
+        "coords": {
+            "lat": "53.83619",
+            "long": "10.614894"
+        }
+    },
+    "9057849": {
+        "name": "Israelsdorf",
+        "lines": [
+            "31",
+            "34"
+        ],
+        "coords": {
+            "lat": "53.893469",
+            "long": "10.736896"
+        }
+    },
+    "9057850": {
+        "name": "Ivendorfer Landstraße",
+        "lines": [
+            "30",
+            "34",
+            "36",
+            "40",
+            "50"
+        ],
+        "coords": {
+            "lat": "53.933938",
+            "long": "10.836712"
+        }
+    },
+    "9057851": {
+        "name": "Josephinenstraße",
+        "lines": [
+            "1"
+        ],
+        "coords": {
+            "lat": "53.884039",
+            "long": "10.6811"
+        }
+    },
+    "9057852": {
+        "name": "Jungborn",
+        "lines": [
+            "30",
+            "31",
+            "34",
+            "40",
+            "50"
+        ],
+        "coords": {
+            "lat": "53.890278",
+            "long": "10.726208"
+        }
+    },
+    "9057853": {
+        "name": "Kahlhorststraße",
+        "lines": [
+            "1",
+            "9"
+        ],
+        "coords": {
+            "lat": "53.850231",
+            "long": "10.699447"
+        }
+    },
+    "9057854": {
+        "name": "Kalkbrennerstraße",
+        "lines": [
+            "1",
+            "9"
+        ],
+        "coords": {
+            "lat": "53.847804",
+            "long": "10.698925"
+        }
+    },
+    "9057855": {
+        "name": "Kalkhorster Weg",
+        "lines": [
+            "3"
+        ],
+        "coords": {
+            "lat": "53.842788",
+            "long": "10.744689"
+        }
+    },
+    "9057856": {
+        "name": "Karavellenstraße",
+        "lines": [
+            "6",
+            "16",
+            "26"
+        ],
+        "coords": {
+            "lat": "53.854788",
+            "long": "10.648801"
+        }
+    },
+    "9057857": {
+        "name": "Karlstraße",
+        "lines": [
+            "1",
+            "3",
+            "10",
+            "25"
+        ],
+        "coords": {
+            "lat": "53.880012",
+            "long": "10.678052"
+        }
+    },
+    "9057858": {
+        "name": "Kastanienallee",
+        "lines": [
+            "1",
+            "9"
+        ],
+        "coords": {
+            "lat": "53.844136",
+            "long": "10.699968"
+        }
+    },
+    "9057859": {
+        "name": "Katharineum",
+        "lines": [
+            "3",
+            "4",
+            "10",
+            "11",
+            "12",
+            "21",
+            "30",
+            "31",
+            "34",
+            "40",
+            "50"
+        ],
+        "coords": {
+            "lat": "53.869144",
+            "long": "10.688965"
+        }
+    },
+    "9057860": {
+        "name": "Kaufhof",
+        "lines": [
+            "4",
+            "5",
+            "11",
+            "21"
+        ],
+        "coords": {
+            "lat": "53.864272",
+            "long": "10.719825"
+        }
+    },
+    "9057861": {
+        "name": "Kieselgrund",
+        "lines": [
+            "30",
+            "31",
+            "33",
+            "34"
+        ],
+        "coords": {
+            "lat": "53.905451",
+            "long": "10.780188"
+        }
+    },
+    "9057863": {
+        "name": "Kirchplatz",
+        "lines": [
+            "31"
+        ],
+        "coords": {
+            "lat": "53.913443",
+            "long": "10.805519"
+        }
+    },
+    "9057864": {
+        "name": "Kirchweg",
+        "lines": [
+            "33"
+        ],
+        "coords": {
+            "lat": "53.907959",
+            "long": "10.770731"
+        }
+    },
+    "9057865": {
+        "name": "Kirschenallee",
+        "lines": [
+            "3",
+            "11",
+            "21"
+        ],
+        "coords": {
+            "lat": "53.872524",
+            "long": "10.747332"
+        }
+    },
+    "9080161": {
+        "name": "Kl. Wesenberg, Heideweg",
+        "lines": [
+            "11"
+        ],
+        "coords": {
+            "lat": "53.814148",
+            "long": "10.55463"
+        }
+    },
+    "9080162": {
+        "name": "Kl.Wesenberg, Sportplatz",
+        "lines": [
+            "11"
+        ],
+        "coords": {
+            "lat": "53.811271",
+            "long": "10.546226"
+        }
+    },
+    "9080663": {
+        "name": "Klaus-Groth-Straße",
+        "lines": [
+            "17"
+        ],
+        "coords": {
+            "lat": "53.9030083",
+            "long": "10.6557388"
+        }
+    },
+    "9057866": {
+        "name": "Koberg",
+        "lines": [
+            "3",
+            "4",
+            "10",
+            "11",
+            "12",
+            "21",
+            "30",
+            "31",
+            "34",
+            "40",
+            "50"
+        ],
+        "coords": {
+            "lat": "53.870852",
+            "long": "10.689585"
+        }
+    },
+    "9057867": {
+        "name": "Kohlmarkt",
+        "lines": [
+            "1",
+            "2",
+            "3",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "15",
+            "16",
+            "21",
+            "25",
+            "26",
+            "30",
+            "31",
+            "34",
+            "40",
+            "50"
+        ],
+        "coords": {
+            "lat": "53.866214",
+            "long": "10.684408"
+        }
+    },
+    "9057868": {
+        "name": "Kolberger Platz",
+        "lines": [
+            "6",
+            "16",
+            "26"
+        ],
+        "coords": {
+            "lat": "53.855579",
+            "long": "10.660703"
+        }
+    },
+    "9057881": {
+        "name": "Königsberg",
+        "lines": [
+            "24"
+        ],
+        "coords": {
+            "lat": "53.888669",
+            "long": "10.77803"
+        }
+    },
+    "9057882": {
+        "name": "Königstraße",
+        "lines": [
+            "1",
+            "2",
+            "4",
+            "6",
+            "7",
+            "8",
+            "9",
+            "15",
+            "16",
+            "25",
+            "26",
+            "10",
+            "5",
+            "34",
+            "11"
+        ],
+        "coords": {
+            "lat": "53.864569",
+            "long": "10.686493"
+        }
+    },
+    "9057869": {
+        "name": "Kornweg",
+        "lines": [
+            "33",
+            "34",
+            "50"
+        ],
+        "coords": {
+            "lat": "53.915106",
+            "long": "10.811093"
+        }
+    },
+    "9057870": {
+        "name": "Korvettenstraße",
+        "lines": [
+            "6",
+            "16",
+            "26"
+        ],
+        "coords": {
+            "lat": "53.853997",
+            "long": "10.653557"
+        }
+    },
+    "9057871": {
+        "name": "Kowitzberg",
+        "lines": [
+            "35"
+        ],
+        "coords": {
+            "lat": "53.974839",
+            "long": "10.877892"
+        }
+    },
+    "9057877": {
+        "name": "Krähenstraße",
+        "lines": [
+            "5"
+        ],
+        "coords": {
+            "lat": "53.864506",
+            "long": "10.691195"
+        }
+    },
+    "9057878": {
+        "name": "Krämerwende",
+        "lines": [
+            "12"
+        ],
+        "coords": {
+            "lat": "53.866897",
+            "long": "10.606606"
+        }
+    },
+    "9057873": {
+        "name": "Kreuzwegbrücke",
+        "lines": [
+            "24",
+            "30",
+            "31",
+            "34",
+            "40",
+            "50"
+        ],
+        "coords": {
+            "lat": "53.897011",
+            "long": "10.749436"
+        }
+    },
+    "9007477": {
+        "name": "Krummesse Küsterkoppel",
+        "lines": [
+            "16",
+            "26"
+        ],
+        "coords": {
+            "lat": "53.777697",
+            "long": "10.645332"
+        }
+    },
+    "9007475": {
+        "name": "Krummesse Moorweg",
+        "lines": [
+            "16",
+            "26"
+        ],
+        "coords": {
+            "lat": "53.78398",
+            "long": "10.640765"
+        }
+    },
+    "9007444": {
+        "name": "Krummesse Preußenkoppel",
+        "lines": [
+            "16",
+            "26"
+        ],
+        "coords": {
+            "lat": "53.7758",
+            "long": "10.651013"
+        }
+    },
+    "9007476": {
+        "name": "Krummesse Raiffeisenstr.",
+        "lines": [
+            "16",
+            "26"
+        ],
+        "coords": {
+            "lat": "53.779396",
+            "long": "10.643264"
+        }
+    },
+    "9007474": {
+        "name": "Krummesse Ruschweg",
+        "lines": [
+            "16",
+            "26"
+        ],
+        "coords": {
+            "lat": "53.787432",
+            "long": "10.640388"
+        }
+    },
+    "9051708": {
+        "name": "Krummesse Sportshuus",
+        "lines": [
+            "26"
+        ],
+        "coords": {
+            "lat": "53.780376",
+            "long": "10.650267"
+        }
+    },
+    "9000445": {
+        "name": "Krummesse Tannenweg",
+        "lines": [
+            "16",
+            "26"
+        ],
+        "coords": {
+            "lat": "53.774973",
+            "long": "10.65379"
+        }
+    },
+    "9057875": {
+        "name": "Krummesser Baum",
+        "lines": [
+            "16",
+            "26"
+        ],
+        "coords": {
+            "lat": "53.806723",
+            "long": "10.635866"
+        }
+    },
+    "9057876": {
+        "name": "Kruppstraße",
+        "lines": [
+            "7"
+        ],
+        "coords": {
+            "lat": "53.842572",
+            "long": "10.667148"
+        }
+    },
+    "9057883": {
+        "name": "Kücknitzer Scheide",
+        "lines": [
+            "30",
+            "34",
+            "40",
+            "50"
+        ],
+        "coords": {
+            "lat": "53.911501",
+            "long": "10.791343"
+        }
+    },
+    "9057879": {
+        "name": "Kurgartenstraße",
+        "lines": [
+            "30",
+            "34",
+            "35",
+            "50"
+        ],
+        "coords": {
+            "lat": "53.958308",
+            "long": "10.870592"
+        }
+    },
+    "9057880": {
+        "name": "Kurzer Weg",
+        "lines": [
+            "7",
+            "9",
+            "12",
+            "17"
+        ],
+        "coords": {
+            "lat": "53.880228",
+            "long": "10.659004"
+        }
+    },
+    "9057884": {
+        "name": "Labradorweg",
+        "lines": [
+            "35"
+        ],
+        "coords": {
+            "lat": "53.96709",
+            "long": "10.860596"
+        }
+    },
+    "9057885": {
+        "name": "Lachswehrallee",
+        "lines": [
+            "5",
+            "30"
+        ],
+        "coords": {
+            "lat": "53.860757",
+            "long": "10.67247"
+        }
+    },
+    "9057886": {
+        "name": "Langenreem",
+        "lines": [
+            "33"
+        ],
+        "coords": {
+            "lat": "53.912238",
+            "long": "10.748761"
+        }
+    },
+    "9057887": {
+        "name": "Langer Bogen",
+        "lines": [
+            "35"
+        ],
+        "coords": {
+            "lat": "53.958461",
+            "long": "10.845755"
+        }
+    },
+    "9057888": {
+        "name": "Lauerhofstraße",
+        "lines": [
+            "3",
+            "10"
+        ],
+        "coords": {
+            "lat": "53.874421",
+            "long": "10.717182"
+        }
+    },
+    "9057889": {
+        "name": "Leegerwall",
+        "lines": [
+            "35"
+        ],
+        "coords": {
+            "lat": "53.9695",
+            "long": "10.874871"
+        }
+    },
+    "9057890": {
+        "name": "Lehmannkai",
+        "lines": [
+            "33"
+        ],
+        "coords": {
+            "lat": "53.909101",
+            "long": "10.76745"
+        }
+    },
+    "9057891": {
+        "name": "Leinweberstraße",
+        "lines": [
+            "26"
+        ],
+        "coords": {
+            "lat": "53.862402",
+            "long": "10.631785"
+        }
+    },
+    "9057892": {
+        "name": "Lembkestraße",
+        "lines": [
+            "35"
+        ],
+        "coords": {
+            "lat": "53.971244",
+            "long": "10.879851"
+        }
+    },
+    "9057894": {
+        "name": "Libellenweg",
+        "lines": [
+            "9"
+        ],
+        "coords": {
+            "lat": "53.830562",
+            "long": "10.725039"
+        }
+    },
+    "9057895": {
+        "name": "LindenArcaden",
+        "lines": [
+            "1",
+            "3",
+            "7",
+            "9",
+            "10",
+            "12",
+            "17",
+            "21"
+        ],
+        "coords": {
+            "lat": "53.867337",
+            "long": "10.672362"
+        }
+    },
+    "9057896": {
+        "name": "Lohgerberstraße",
+        "lines": [
+            "26"
+        ],
+        "coords": {
+            "lat": "53.861548",
+            "long": "10.629277"
+        }
+    },
+    "9057897": {
+        "name": "Lohmühlenplatz",
+        "lines": [
+            "3"
+        ],
+        "coords": {
+            "lat": "53.877783",
+            "long": "10.668551"
+        }
+    },
+    "9057900": {
+        "name": "Lübecker Nachrichten",
+        "lines": [
+            "12",
+            "21"
+        ],
+        "coords": {
+            "lat": "53.854878",
+            "long": "10.63058"
+        }
+    },
+    "9057898": {
+        "name": "Luisenstraße",
+        "lines": [
+            "12",
+            "15"
+        ],
+        "coords": {
+            "lat": "53.88759",
+            "long": "10.707645"
+        }
+    },
+    "9057899": {
+        "name": "Lutherkirche",
+        "lines": [
+            "5",
+            "6",
+            "16",
+            "26"
+        ],
+        "coords": {
+            "lat": "53.853575",
+            "long": "10.662771"
+        }
+    },
+    "9057901": {
+        "name": "Malmöstraße",
+        "lines": [
+            "2",
+            "16",
+            "26"
+        ],
+        "coords": {
+            "lat": "53.83708",
+            "long": "10.668632"
+        }
+    },
+    "9057902": {
+        "name": "Maria-Goeppert-Straße",
+        "lines": [
+            "1",
+            "8",
+            "30"
+        ],
+        "coords": {
+            "lat": "53.834014",
+            "long": "10.693667"
+        }
+    },
+    "9057919": {
+        "name": "Märkische Straße",
+        "lines": [
+            "6",
+            "16",
+            "26"
+        ],
+        "coords": {
+            "lat": "53.85886",
+            "long": "10.658968"
+        }
+    },
+    "9057903": {
+        "name": "Marliring",
+        "lines": [
+            "3",
+            "4",
+            "11",
+            "21"
+        ],
+        "coords": {
+            "lat": "53.864955",
+            "long": "10.723682"
+        }
+    },
+    "9057904": {
+        "name": "Max-Reger-Straße",
+        "lines": [
+            "11",
+            "21",
+            "31"
+        ],
+        "coords": {
+            "lat": "53.863733",
+            "long": "10.653611"
+        }
+    },
+    "9057905": {
+        "name": "Mecklenburger Landstraße",
+        "lines": [
+            "38"
+        ],
+        "coords": {
+            "lat": "53.953697",
+            "long": "10.885802"
+        }
+    },
+    "9057906": {
+        "name": "Mecklenburger Straße",
+        "lines": [
+            "11",
+            "21"
+        ],
+        "coords": {
+            "lat": "53.887491",
+            "long": "10.795254"
+        }
+    },
+    "9057907": {
+        "name": "Medenbreite",
+        "lines": [
+            "12"
+        ],
+        "coords": {
+            "lat": "53.87256",
+            "long": "10.625663"
+        }
+    },
+    "9057908": {
+        "name": "Meesenring",
+        "lines": [
+            "4",
+            "11",
+            "21"
+        ],
+        "coords": {
+            "lat": "53.865674",
+            "long": "10.716688"
+        }
+    },
+    "9057909": {
+        "name": "Meierstraße",
+        "lines": [
+            "2",
+            "5",
+            "6",
+            "11",
+            "16",
+            "26",
+            "30",
+            "31"
+        ],
+        "coords": {
+            "lat": "53.864155",
+            "long": "10.668263"
+        }
+    },
+    "9057910": {
+        "name": "Mittschiffs",
+        "lines": [
+            "35"
+        ],
+        "coords": {
+            "lat": "53.968376",
+            "long": "10.876408"
+        }
+    },
+    "9057911": {
+        "name": "Moislinger Baum",
+        "lines": [
+            "5",
+            "11",
+            "12",
+            "31"
+        ],
+        "coords": {
+            "lat": "53.850186",
+            "long": "10.642374"
+        }
+    },
+    "9057920": {
+        "name": "Möllerung",
+        "lines": [
+            "33"
+        ],
+        "coords": {
+            "lat": "53.901631",
+            "long": "10.803793"
+        }
+    },
+    "9057912": {
+        "name": "Mollwostraße",
+        "lines": [
+            "35"
+        ],
+        "coords": {
+            "lat": "53.958128",
+            "long": "10.850501"
+        }
+    },
+    "9057913": {
+        "name": "Moltkeplatz",
+        "lines": [
+            "5"
+        ],
+        "coords": {
+            "lat": "53.863112",
+            "long": "10.706692"
+        }
+    },
+    "9057914": {
+        "name": "Moltkestraße",
+        "lines": [
+            "5"
+        ],
+        "coords": {
+            "lat": "53.863085",
+            "long": "10.698305"
+        }
+    },
+    "9057915": {
+        "name": "Moorgarten",
+        "lines": [
+            "11"
+        ],
+        "coords": {
+            "lat": "53.809662",
+            "long": "10.577068"
+        }
+    },
+    "9057916": {
+        "name": "Morier Straße",
+        "lines": [
+            "2"
+        ],
+        "coords": {
+            "lat": "53.882556",
+            "long": "10.627946"
+        }
+    },
+    "9057917": {
+        "name": "Morierhof",
+        "lines": [
+            "2"
+        ],
+        "coords": {
+            "lat": "53.883005",
+            "long": "10.632747"
+        }
+    },
+    "9057918": {
+        "name": "Mozartstraße",
+        "lines": [
+            "11",
+            "21",
+            "31"
+        ],
+        "coords": {
+            "lat": "53.868425",
+            "long": "10.660568"
+        }
+    },
+    "9057921": {
+        "name": "Mühlenberg",
+        "lines": [
+            "34",
+            "38",
+            "40"
+        ],
+        "coords": {
+            "lat": "53.960007",
+            "long": "10.861217"
+        }
+    },
+    "9057922": {
+        "name": "Mühlenweg",
+        "lines": [
+            "12"
+        ],
+        "coords": {
+            "lat": "53.842078",
+            "long": "10.638985"
+        }
+    },
+    "9057923": {
+        "name": "Neptunstraße",
+        "lines": [
+            "4",
+            "6"
+        ],
+        "coords": {
+            "lat": "53.831281",
+            "long": "10.717398"
+        }
+    },
+    "9057924": {
+        "name": "Neue Hafenstraße",
+        "lines": [
+            "25"
+        ],
+        "coords": {
+            "lat": "53.8835",
+            "long": "10.695123"
+        }
+    },
+    "9000888": {
+        "name": "Neue Mitte Moisling",
+        "lines": [
+            "11",
+            "31"
+        ],
+        "coords": {
+            "lat": "53.838841",
+            "long": "10.631542"
+        }
+    },
+    "9057925": {
+        "name": "Neuer Faulenhoop",
+        "lines": [
+            "12"
+        ],
+        "coords": {
+            "lat": "53.894341",
+            "long": "10.726468"
+        }
+    },
+    "9057926": {
+        "name": "Niels-Bohr-Ring 1",
+        "lines": [
+            "15"
+        ],
+        "coords": {
+            "lat": "53.89968",
+            "long": "10.706809"
+        }
+    },
+    "9057927": {
+        "name": "Niels-Bohr-Ring 2",
+        "lines": [
+            "12",
+            "15"
+        ],
+        "coords": {
+            "lat": "53.896597",
+            "long": "10.7092"
+        }
+    },
+    "9057928": {
+        "name": "Niels-Bohr-Ring 3",
+        "lines": [
+            "12",
+            "15"
+        ],
+        "coords": {
+            "lat": "53.896669",
+            "long": "10.706638"
+        }
+    },
+    "9057929": {
+        "name": "Niemarker Weg",
+        "lines": [
+            "16",
+            "26"
+        ],
+        "coords": {
+            "lat": "53.801509",
+            "long": "10.635902"
+        }
+    },
+    "9090911": {
+        "name": "Niendorf Apotheke",
+        "lines": [
+            "40"
+        ],
+        "coords": {
+            "lat": "53.993141",
+            "long": "10.825152"
+        }
+    },
+    "9090912": {
+        "name": "Niendorf Brodtener Str.",
+        "lines": [
+            "40"
+        ],
+        "coords": {
+            "lat": "53.988197",
+            "long": "10.841323"
+        }
+    },
+    "9090913": {
+        "name": "Niendorf Forstweg",
+        "lines": [
+            "40"
+        ],
+        "coords": {
+            "lat": "53.989851",
+            "long": "10.806041"
+        }
+    },
+    "9090915": {
+        "name": "Niendorf Hafen",
+        "lines": [
+            "40"
+        ],
+        "coords": {
+            "lat": "53.992934",
+            "long": "10.816468"
+        }
+    },
+    "9090916": {
+        "name": "Niendorf Pamirstraße",
+        "lines": [
+            "40"
+        ],
+        "coords": {
+            "lat": "53.99004",
+            "long": "10.833584"
+        }
+    },
+    "9090917": {
+        "name": "Niendorf Schwimmhalle",
+        "lines": [
+            "40"
+        ],
+        "coords": {
+            "lat": "53.991883",
+            "long": "10.832226"
+        }
+    },
+    "9090918": {
+        "name": "Niendorf Siedlung",
+        "lines": [
+            "40"
+        ],
+        "coords": {
+            "lat": "53.986741",
+            "long": "10.83335"
+        }
+    },
+    "9057931": {
+        "name": "Nienhüsen",
+        "lines": [
+            "11"
+        ],
+        "coords": {
+            "lat": "53.815424",
+            "long": "10.588745"
+        }
+    },
+    "9057932": {
+        "name": "Norderneystraße",
+        "lines": [
+            "10"
+        ],
+        "coords": {
+            "lat": "53.887221",
+            "long": "10.678574"
+        }
+    },
+    "9057933": {
+        "name": "Nordlandring",
+        "lines": [
+            "34",
+            "35",
+            "40",
+            "50"
+        ],
+        "coords": {
+            "lat": "53.965158",
+            "long": "10.869478"
+        }
+    },
+    "9057934": {
+        "name": "Nordmeerstraße",
+        "lines": [
+            "30",
+            "35",
+            "34"
+        ],
+        "coords": {
+            "lat": "53.968825",
+            "long": "10.864605"
+        }
+    },
+    "9057936": {
+        "name": "Norwegenstraße",
+        "lines": [
+            "35"
+        ],
+        "coords": {
+            "lat": "53.96692",
+            "long": "10.869127"
+        }
+    },
+    "9057937": {
+        "name": "Nuelsenstraße",
+        "lines": [
+            "12"
+        ],
+        "coords": {
+            "lat": "53.874187",
+            "long": "10.631308"
+        }
+    },
+    "9057938": {
+        "name": "Oberbüssauer Weg",
+        "lines": [
+            "5",
+            "7",
+            "11",
+            "12"
+        ],
+        "coords": {
+            "lat": "53.83992",
+            "long": "10.631003"
+        }
+    },
+    "9057939": {
+        "name": "Obstgut",
+        "lines": [
+            "16",
+            "26"
+        ],
+        "coords": {
+            "lat": "53.822364",
+            "long": "10.646536"
+        }
+    },
+    "9057940": {
+        "name": "Oderstraße",
+        "lines": [
+            "1"
+        ],
+        "coords": {
+            "lat": "53.891293",
+            "long": "10.686952"
+        }
+    },
+    "9057941": {
+        "name": "Orkneyweg",
+        "lines": [
+            "35"
+        ],
+        "coords": {
+            "lat": "53.963747",
+            "long": "10.860857"
+        }
+    },
+    "9057942": {
+        "name": "Ostpreußenring",
+        "lines": [
+            "33",
+            "34",
+            "50"
+        ],
+        "coords": {
+            "lat": "53.916877",
+            "long": "10.813268"
+        }
+    },
+    "9057943": {
+        "name": "Ostseestraße",
+        "lines": [
+            "50"
+        ],
+        "coords": {
+            "lat": "53.948321",
+            "long": "10.851688"
+        }
+    },
+    "9057944": {
+        "name": "Ovendorfer Straße",
+        "lines": [
+            "30",
+            "34",
+            "36",
+            "40",
+            "50"
+        ],
+        "coords": {
+            "lat": "53.938289",
+            "long": "10.842348"
+        }
+    },
+    "9057945": {
+        "name": "Overbeckstraße",
+        "lines": [
+            "2",
+            "16",
+            "26"
+        ],
+        "coords": {
+            "lat": "53.852433",
+            "long": "10.687922"
+        }
+    },
+    "9057948": {
+        "name": "Palinger Weg",
+        "lines": [
+            "11",
+            "21"
+        ],
+        "coords": {
+            "lat": "53.883383",
+            "long": "10.799425"
+        }
+    },
+    "9057950": {
+        "name": "Passathafen",
+        "lines": [
+            "38"
+        ],
+        "coords": {
+            "lat": "53.954083",
+            "long": "10.876975"
+        }
+    },
+    "9057951": {
+        "name": "Paul-Brümmer-Straße",
+        "lines": [
+            "30",
+            "34",
+            "35",
+            "50"
+        ],
+        "coords": {
+            "lat": "53.959459",
+            "long": "10.86999"
+        }
+    },
+    "9057743": {
+        "name": "Paul-Ehrlich-Straße",
+        "lines": [
+            "1"
+        ],
+        "coords": {
+            "lat": "53.831722",
+            "long": "10.695716"
+        }
+    },
+    "9057952": {
+        "name": "Peenestieg",
+        "lines": [
+            "1"
+        ],
+        "coords": {
+            "lat": "53.893595",
+            "long": "10.688408"
+        }
+    },
+    "9057953": {
+        "name": "Pennmoor",
+        "lines": [
+            "11"
+        ],
+        "coords": {
+            "lat": "53.838653",
+            "long": "10.623793"
+        }
+    },
+    "9057954": {
+        "name": "Pensebusch",
+        "lines": [
+            "5"
+        ],
+        "coords": {
+            "lat": "53.860793",
+            "long": "10.727376"
+        }
+    },
+    "9057955": {
+        "name": "Percevalstraße",
+        "lines": [
+            "15",
+            "25"
+        ],
+        "coords": {
+            "lat": "53.867247",
+            "long": "10.698871"
+        }
+    },
+    "9057957": {
+        "name": "Pommernring",
+        "lines": [
+            "33",
+            "34",
+            "50"
+        ],
+        "coords": {
+            "lat": "53.918",
+            "long": "10.821206"
+        }
+    },
+    "9057958": {
+        "name": "Pommernzentrum",
+        "lines": [
+            "50"
+        ],
+        "coords": {
+            "lat": "53.95002",
+            "long": "10.84989"
+        }
+    },
+    "9057959": {
+        "name": "Postillionweg",
+        "lines": [
+            "12"
+        ],
+        "coords": {
+            "lat": "53.880668",
+            "long": "10.654285"
+        }
+    },
+    "9057961": {
+        "name": "Pötenitzer Weg",
+        "lines": [
+            "38"
+        ],
+        "coords": {
+            "lat": "53.953526",
+            "long": "10.881253"
+        }
+    },
+    "9057960": {
+        "name": "Prassekstraße",
+        "lines": [
+            "10"
+        ],
+        "coords": {
+            "lat": "53.872587",
+            "long": "10.730972"
+        }
+    },
+    "9058096": {
+        "name": "Priwall/Priwallfähre",
+        "lines": [
+            "38"
+        ],
+        "coords": {
+            "lat": "53.954757",
+            "long": "10.871338"
+        }
+    },
+    "9057963": {
+        "name": "Rapsacker",
+        "lines": [
+            "2"
+        ],
+        "coords": {
+            "lat": "53.869459",
+            "long": "10.633475"
+        }
+    },
+    "9057964": {
+        "name": "Rastattstraße",
+        "lines": [
+            "11",
+            "21"
+        ],
+        "coords": {
+            "lat": "53.882044",
+            "long": "10.781698"
+        }
+    },
+    "9057965": {
+        "name": "Ratekauer Weg",
+        "lines": [
+            "7"
+        ],
+        "coords": {
+            "lat": "53.897999",
+            "long": "10.675356"
+        }
+    },
+    "9057966": {
+        "name": "Rehsprung",
+        "lines": [
+            "31",
+            "33"
+        ],
+        "coords": {
+            "lat": "53.91089",
+            "long": "10.804315"
+        }
+    },
+    "9057967": {
+        "name": "Reinsbeker Straße",
+        "lines": [
+            "9",
+            "17"
+        ],
+        "coords": {
+            "lat": "53.885397",
+            "long": "10.65317"
+        }
+    },
+    "9006120": {
+        "name": "Rensefeld Kirche",
+        "lines": [
+            "18"
+        ],
+        "coords": {
+            "lat": "53.921308",
+            "long": "10.680776"
+        }
+    },
+    "9057968": {
+        "name": "Reußkamp",
+        "lines": [
+            "11"
+        ],
+        "coords": {
+            "lat": "53.837637",
+            "long": "10.617959"
+        }
+    },
+    "9057969": {
+        "name": "Revalstraße",
+        "lines": [
+            "2"
+        ],
+        "coords": {
+            "lat": "53.840999",
+            "long": "10.659867"
+        }
+    },
+    "9057970": {
+        "name": "Richard-Wagner-Straße",
+        "lines": [
+            "2"
+        ],
+        "coords": {
+            "lat": "53.870178",
+            "long": "10.662231"
+        }
+    },
+    "9057971": {
+        "name": "Rigastraße",
+        "lines": [
+            "2"
+        ],
+        "coords": {
+            "lat": "53.8385",
+            "long": "10.665674"
+        }
+    },
+    "9057972": {
+        "name": "Ringstedtenweg",
+        "lines": [
+            "2",
+            "16",
+            "26"
+        ],
+        "coords": {
+            "lat": "53.839453",
+            "long": "10.674313"
+        }
+    },
+    "9057973": {
+        "name": "Ritterspornweg",
+        "lines": [
+            "3"
+        ],
+        "coords": {
+            "lat": "53.859445",
+            "long": "10.747206"
+        }
+    },
+    "9057974": {
+        "name": "Roeckstraße",
+        "lines": [
+            "3",
+            "4",
+            "10",
+            "11",
+            "15",
+            "21",
+            "25"
+        ],
+        "coords": {
+            "lat": "53.874951",
+            "long": "10.704858"
+        }
+    },
+    "9057975": {
+        "name": "Roggenhorster Straße",
+        "lines": [
+            "12"
+        ],
+        "coords": {
+            "lat": "53.862501",
+            "long": "10.607415"
+        }
+    },
+    "9080664": {
+        "name": "Roggenkamp",
+        "lines": [
+            "17"
+        ],
+        "coords": {
+            "lat": "53.9086755",
+            "long": "10.6620117"
+        }
+    },
+    "9006123": {
+        "name": "Rönkweg",
+        "lines": [
+            "18"
+        ],
+        "coords": {
+            "lat": "53.9207817",
+            "long": "10.6760694"
+        }
+    },
+    "9057980": {
+        "name": "Rönnauer Ring",
+        "lines": [
+            "30",
+            "34",
+            "36",
+            "40",
+            "50"
+        ],
+        "coords": {
+            "lat": "53.954694",
+            "long": "10.853809"
+        }
+    },
+    "9057981": {
+        "name": "Rönnauer Weg",
+        "lines": [
+            "30",
+            "34",
+            "36",
+            "40",
+            "50"
+        ],
+        "coords": {
+            "lat": "53.952159",
+            "long": "10.853207"
+        }
+    },
+    "9057893": {
+        "name": "Rosalind-Franklin-Weg",
+        "lines": [
+            "15"
+        ],
+        "coords": {
+            "lat": "53.896975",
+            "long": "10.706081"
+        }
+    },
+    "9057976": {
+        "name": "Rose",
+        "lines": [
+            "34",
+            "40",
+            "50"
+        ],
+        "coords": {
+            "lat": "53.96354",
+            "long": "10.864534"
+        }
+    },
+    "9057977": {
+        "name": "Rotenhauser Feld",
+        "lines": [
+            "11",
+            "21",
+            "31"
+        ],
+        "coords": {
+            "lat": "53.858878",
+            "long": "10.644891"
+        }
+    },
+    "9057978": {
+        "name": "Roter Hahn",
+        "lines": [
+            "33",
+            "34",
+            "36",
+            "50"
+        ],
+        "coords": {
+            "lat": "53.923106",
+            "long": "10.819704"
+        }
+    },
+    "9057979": {
+        "name": "Roter Löwe",
+        "lines": [
+            "5",
+            "6",
+            "16",
+            "26"
+        ],
+        "coords": {
+            "lat": "53.851211",
+            "long": "10.659139"
+        }
+    },
+    "9057872": {
+        "name": "Sana Kliniken",
+        "lines": [
+            "2",
+            "16",
+            "26",
+            "30"
+        ],
+        "coords": {
+            "lat": "53.84908",
+            "long": "10.68625"
+        }
+    },
+    "9057982": {
+        "name": "Sandstraße",
+        "lines": [
+            "1",
+            "2",
+            "4",
+            "6",
+            "7",
+            "8",
+            "9",
+            "15",
+            "16",
+            "25",
+            "26"
+        ],
+        "coords": {
+            "lat": "53.865333",
+            "long": "10.685082"
+        }
+    },
+    "9057983": {
+        "name": "Schaluppenweg",
+        "lines": [
+            "5"
+        ],
+        "coords": {
+            "lat": "53.850132",
+            "long": "10.647516"
+        }
+    },
+    "9057984": {
+        "name": "Schanzenbergweg",
+        "lines": [
+            "6"
+        ],
+        "coords": {
+            "lat": "53.794318",
+            "long": "10.701559"
+        }
+    },
+    "9080960": {
+        "name": "Scharb. HH Ring/Seestr.",
+        "lines": [
+            "40"
+        ],
+        "coords": {
+            "lat": "54.022239",
+            "long": "10.751305"
+        }
+    },
+    "9080969": {
+        "name": "Scharb. Wolfsschlucht",
+        "lines": [
+            "40"
+        ],
+        "coords": {
+            "lat": "54.016432",
+            "long": "10.765185"
+        }
+    },
+    "9080954": {
+        "name": "Scharbeutz Bahnhof",
+        "lines": [
+            "40"
+        ],
+        "coords": {
+            "lat": "54.01992",
+            "long": "10.745579"
+        }
+    },
+    "9080953": {
+        "name": "Scharbeutz Bürgerhaus",
+        "lines": [
+            "40"
+        ],
+        "coords": {
+            "lat": "54.021277",
+            "long": "10.749472"
+        }
+    },
+    "9080964": {
+        "name": "Scharbeutz Lindenallee",
+        "lines": [
+            "40"
+        ],
+        "coords": {
+            "lat": "54.020621",
+            "long": "10.760951"
+        }
+    },
+    "9057993": {
+        "name": "Schärenweg",
+        "lines": [
+            "8"
+        ],
+        "coords": {
+            "lat": "53.828944",
+            "long": "10.686898"
+        }
+    },
+    "9057985": {
+        "name": "Schenkendorfstraße",
+        "lines": [
+            "3"
+        ],
+        "coords": {
+            "lat": "53.871553",
+            "long": "10.720113"
+        }
+    },
+    "9057986": {
+        "name": "Schiereichenkoppel",
+        "lines": [
+            "16",
+            "26"
+        ],
+        "coords": {
+            "lat": "53.830383",
+            "long": "10.659364"
+        }
+    },
+    "9057987": {
+        "name": "Schildfarneck",
+        "lines": [
+            "3"
+        ],
+        "coords": {
+            "lat": "53.856829",
+            "long": "10.746442"
+        }
+    },
+    "9057988": {
+        "name": "Schleusenstraße",
+        "lines": [
+            "16",
+            "26"
+        ],
+        "coords": {
+            "lat": "53.812719",
+            "long": "10.637035"
+        }
+    },
+    "9058097": {
+        "name": "Schlutup Markt",
+        "lines": [
+            "11",
+            "21",
+            "24"
+        ],
+        "coords": {
+            "lat": "53.887671",
+            "long": "10.799793"
+        }
+    },
+    "9057989": {
+        "name": "Schlutuper Tannen",
+        "lines": [
+            "11",
+            "21"
+        ],
+        "coords": {
+            "lat": "53.879446",
+            "long": "10.775981"
+        }
+    },
+    "9057990": {
+        "name": "Schneidemühlstraße",
+        "lines": [
+            "33",
+            "34",
+            "50"
+        ],
+        "coords": {
+            "lat": "53.917191",
+            "long": "10.817844"
+        }
+    },
+    "9057994": {
+        "name": "Schönböckener Hauptstr.",
+        "lines": [
+            "2"
+        ],
+        "coords": {
+            "lat": "53.869423",
+            "long": "10.62952"
+        }
+    },
+    "9057995": {
+        "name": "Schönböckener Straße",
+        "lines": [
+            "2"
+        ],
+        "coords": {
+            "lat": "53.869432",
+            "long": "10.642383"
+        }
+    },
+    "9057991": {
+        "name": "Schulstraße",
+        "lines": [
+            "3",
+            "4",
+            "10",
+            "11",
+            "15",
+            "21",
+            "25"
+        ],
+        "coords": {
+            "lat": "53.875715",
+            "long": "10.699303"
+        }
+    },
+    "9057992": {
+        "name": "Schulzentrum",
+        "lines": [
+            "31",
+            "33"
+        ],
+        "coords": {
+            "lat": "53.908004",
+            "long": "10.803668"
+        }
+    },
+    "9057997": {
+        "name": "Sedanstraße",
+        "lines": [
+            "7",
+            "9",
+            "12",
+            "17"
+        ],
+        "coords": {
+            "lat": "53.877738",
+            "long": "10.661845"
+        }
+    },
+    "9000268": {
+        "name": "Seekamp",
+        "lines": [
+            "6"
+        ],
+        "coords": {
+            "lat": "53.801428",
+            "long": "10.724104"
+        }
+    },
+    "9057998": {
+        "name": "Seelandstraße",
+        "lines": [
+            "31",
+            "33"
+        ],
+        "coords": {
+            "lat": "53.900813",
+            "long": "10.787307"
+        }
+    },
+    "9088065": {
+        "name": "Segeberger Straße",
+        "lines": [
+            "17"
+        ],
+        "coords": {
+            "lat": "53.8915754",
+            "long": "10.6324483"
+        }
+    },
+    "9307425": {
+        "name": "Selmsdorf An der Trave",
+        "lines": [
+            "24"
+        ],
+        "coords": {
+            "lat": "53.883635",
+            "long": "10.81307"
+        }
+    },
+    "9084253": {
+        "name": "Sereetz Am Rugenberg",
+        "lines": [
+            "1"
+        ],
+        "coords": {
+            "lat": "53.922207",
+            "long": "10.756735"
+        }
+    },
+    "9084254": {
+        "name": "Sereetz Bruhnstraße",
+        "lines": [
+            "1"
+        ],
+        "coords": {
+            "lat": "53.921272",
+            "long": "10.747305"
+        }
+    },
+    "9084255": {
+        "name": "Sereetz Dänischburg",
+        "lines": [
+            "1"
+        ],
+        "coords": {
+            "lat": "53.917057",
+            "long": "10.734388"
+        }
+    },
+    "9084256": {
+        "name": "Sereetz Hamburger Str.",
+        "lines": [
+            "33"
+        ],
+        "coords": {
+            "lat": "53.921992",
+            "long": "10.728176"
+        }
+    },
+    "9084257": {
+        "name": "Sereetz Mühlenstraße",
+        "lines": [
+            "1",
+            "33"
+        ],
+        "coords": {
+            "lat": "53.920329",
+            "long": "10.733318"
+        }
+    },
+    "9084258": {
+        "name": "Sereetz Rodenkathen",
+        "lines": [
+            "33"
+        ],
+        "coords": {
+            "lat": "53.925983",
+            "long": "10.720886"
+        }
+    },
+    "9084259": {
+        "name": "Sereetz Schulstraße",
+        "lines": [
+            "1"
+        ],
+        "coords": {
+            "lat": "53.922135",
+            "long": "10.737049"
+        }
+    },
+    "9084260": {
+        "name": "Sereetz Schwartauer Straße",
+        "lines": [
+            "33"
+        ],
+        "coords": {
+            "lat": "53.92387",
+            "long": "10.722998"
+        }
+    },
+    "9084261": {
+        "name": "Sereetz Sereetzer Tannen",
+        "lines": [
+            "1"
+        ],
+        "coords": {
+            "lat": "53.921704",
+            "long": "10.750191"
+        }
+    },
+    "9057999": {
+        "name": "Sereetzer Weg",
+        "lines": [
+            "3",
+            "7",
+            "9"
+        ],
+        "coords": {
+            "lat": "53.900373",
+            "long": "10.67701"
+        }
+    },
+    "9058000": {
+        "name": "Siebenberg",
+        "lines": [
+            "35"
+        ],
+        "coords": {
+            "lat": "53.95856",
+            "long": "10.843454"
+        }
+    },
+    "9058001": {
+        "name": "Siemensstraße",
+        "lines": [
+            "7"
+        ],
+        "coords": {
+            "lat": "53.843929",
+            "long": "10.670277"
+        }
+    },
+    "9058002": {
+        "name": "Siems",
+        "lines": [
+            "30",
+            "31",
+            "33",
+            "34"
+        ],
+        "coords": {
+            "lat": "53.904472",
+            "long": "10.77821"
+        }
+    },
+    "9058003": {
+        "name": "Siemser Landstraße",
+        "lines": [
+            "33"
+        ],
+        "coords": {
+            "lat": "53.911258",
+            "long": "10.757041"
+        }
+    },
+    "9058004": {
+        "name": "Silberstraße",
+        "lines": [
+            "31"
+        ],
+        "coords": {
+            "lat": "53.904912",
+            "long": "10.81005"
+        }
+    },
+    "9058005": {
+        "name": "Skandinavienkai Terminal",
+        "lines": [
+            "36"
+        ],
+        "coords": {
+            "lat": "53.940518",
+            "long": "10.852146"
+        }
+    },
+    "9058027": {
+        "name": "Söllbrock",
+        "lines": [
+            "6"
+        ],
+        "coords": {
+            "lat": "53.795271",
+            "long": "10.70991"
+        }
+    },
+    "9058006": {
+        "name": "Solmitzstraße",
+        "lines": [
+            "30",
+            "33",
+            "34",
+            "40",
+            "50"
+        ],
+        "coords": {
+            "lat": "53.91454",
+            "long": "10.804845"
+        }
+    },
+    "9058007": {
+        "name": "Spenglerstraße",
+        "lines": [
+            "12"
+        ],
+        "coords": {
+            "lat": "53.855543",
+            "long": "10.599262"
+        }
+    },
+    "9058009": {
+        "name": "St. Hubertus",
+        "lines": [
+            "4",
+            "6"
+        ],
+        "coords": {
+            "lat": "53.824881",
+            "long": "10.721246"
+        }
+    },
+    "9058010": {
+        "name": "Stadthalle",
+        "lines": [
+            "1",
+            "2",
+            "4",
+            "6",
+            "7",
+            "8",
+            "9",
+            "15",
+            "16",
+            "25",
+            "26"
+        ],
+        "coords": {
+            "lat": "53.86002",
+            "long": "10.690332"
+        }
+    },
+    "9058012": {
+        "name": "Stadtweide",
+        "lines": [
+            "1",
+            "9"
+        ],
+        "coords": {
+            "lat": "53.840406",
+            "long": "10.701128"
+        }
+    },
+    "9058013": {
+        "name": "Stadtwerke",
+        "lines": [
+            "7"
+        ],
+        "coords": {
+            "lat": "53.848217",
+            "long": "10.673486"
+        }
+    },
+    "9058014": {
+        "name": "Steenkamp",
+        "lines": [
+            "30",
+            "40",
+            "34"
+        ],
+        "coords": {
+            "lat": "53.968825",
+            "long": "10.870709"
+        }
+    },
+    "9058015": {
+        "name": "Steinmetzstraße",
+        "lines": [
+            "12"
+        ],
+        "coords": {
+            "lat": "53.863499",
+            "long": "10.616737"
+        }
+    },
+    "9058016": {
+        "name": "Steinrader Damm",
+        "lines": [
+            "2"
+        ],
+        "coords": {
+            "lat": "53.876263",
+            "long": "10.614903"
+        }
+    },
+    "9058018": {
+        "name": "Stellmacherstraße",
+        "lines": [
+            "12"
+        ],
+        "coords": {
+            "lat": "53.85966",
+            "long": "10.605851"
+        }
+    },
+    "9058019": {
+        "name": "Stephensonstraße",
+        "lines": [
+            "8",
+            "9",
+            "30"
+        ],
+        "coords": {
+            "lat": "53.83627",
+            "long": "10.699366"
+        }
+    },
+    "9058020": {
+        "name": "Sterntalerweg",
+        "lines": [
+            "5"
+        ],
+        "coords": {
+            "lat": "53.841358",
+            "long": "10.629529"
+        }
+    },
+    "9088047": {
+        "name": "Stockelsdorf Bei den Tannen",
+        "lines": [
+            "2"
+        ],
+        "coords": {
+            "lat": "53.883113",
+            "long": "10.637115"
+        }
+    },
+    "9088048": {
+        "name": "Stockelsdorf Bergstraße",
+        "lines": [
+            "9"
+        ],
+        "coords": {
+            "lat": "53.899096",
+            "long": "10.656676"
+        }
+    },
+    "9080661": {
+        "name": "Stockelsdorf Flurstraße",
+        "lines": [
+            "9"
+        ],
+        "coords": {
+            "lat": "53.892705",
+            "long": "10.651121"
+        }
+    },
+    "9105776": {
+        "name": "Stockelsdorf Hohlweg",
+        "lines": [
+            "9"
+        ],
+        "coords": {
+            "lat": "53.895869",
+            "long": "10.651166"
+        }
+    },
+    "9088058": {
+        "name": "Stockelsdorf Kolberger Straße",
+        "lines": [
+            "9"
+        ],
+        "coords": {
+            "lat": "53.90146",
+            "long": "10.660847"
+        }
+    },
+    "9088059": {
+        "name": "Stockelsdorf Konradstraße",
+        "lines": [
+            "2"
+        ],
+        "coords": {
+            "lat": "53.885504",
+            "long": "10.645745"
+        }
+    },
+    "9088060": {
+        "name": "Stockelsdorf Marienburgstraße",
+        "lines": [
+            "9",
+            "17"
+        ],
+        "coords": {
+            "lat": "53.889001",
+            "long": "10.647291"
+        }
+    },
+    "9088061": {
+        "name": "Stockelsdorf Max-Hamerich-Straße",
+        "lines": [
+            "2"
+        ],
+        "coords": {
+            "lat": "53.884749",
+            "long": "10.641916"
+        }
+    },
+    "9088062": {
+        "name": "Stockelsdorf Rathausmarkt",
+        "lines": [
+            "2",
+            "9",
+            "17"
+        ],
+        "coords": {
+            "lat": "53.886817",
+            "long": "10.648496"
+        }
+    },
+    "9088063": {
+        "name": "Stockelsdorf Ravensbusch",
+        "lines": [
+            "2"
+        ],
+        "coords": {
+            "lat": "53.889657",
+            "long": "10.641988"
+        }
+    },
+    "9088064": {
+        "name": "Stockelsdorf Schulweg",
+        "lines": [
+            "2",
+            "17"
+        ],
+        "coords": {
+            "lat": "53.88857",
+            "long": "10.641367"
+        }
+    },
+    "9088066": {
+        "name": "Stockelsdorf Tannenbergstraße",
+        "lines": [
+            "9"
+        ],
+        "coords": {
+            "lat": "53.903132",
+            "long": "10.663975"
+        }
+    },
+    "9088044": {
+        "name": "Stockelsdorf/Altenheim",
+        "lines": [
+            "17"
+        ],
+        "coords": {
+            "lat": "53.89497",
+            "long": "10.635974"
+        }
+    },
+    "9058021": {
+        "name": "Strecknitzer Tannen",
+        "lines": [
+            "6"
+        ],
+        "coords": {
+            "lat": "53.818867",
+            "long": "10.71667"
+        }
+    },
+    "9058022": {
+        "name": "Stresemannstraße",
+        "lines": [
+            "1",
+            "4",
+            "6",
+            "8",
+            "9"
+        ],
+        "coords": {
+            "lat": "53.857917",
+            "long": "10.692992"
+        }
+    },
+    "9058028": {
+        "name": "Süderstraße",
+        "lines": [
+            "3"
+        ],
+        "coords": {
+            "lat": "53.885855",
+            "long": "10.674466"
+        }
+    },
+    "9058023": {
+        "name": "Sudetenstraße",
+        "lines": [
+            "2"
+        ],
+        "coords": {
+            "lat": "53.84339",
+            "long": "10.692336"
+        }
+    },
+    "9058024": {
+        "name": "Sundweg",
+        "lines": [
+            "8"
+        ],
+        "coords": {
+            "lat": "53.827991",
+            "long": "10.682619"
+        }
+    },
+    "9058025": {
+        "name": "Surenfeld",
+        "lines": [
+            "30",
+            "34",
+            "36",
+            "40",
+            "50"
+        ],
+        "coords": {
+            "lat": "53.929516",
+            "long": "10.828154"
+        }
+    },
+    "9058029": {
+        "name": "Talweg",
+        "lines": [
+            "5",
+            "6",
+            "16",
+            "26"
+        ],
+        "coords": {
+            "lat": "53.85033",
+            "long": "10.653224"
+        }
+    },
+    "9058030": {
+        "name": "Tannenschlag",
+        "lines": [
+            "11",
+            "21"
+        ],
+        "coords": {
+            "lat": "53.880938",
+            "long": "10.797906"
+        }
+    },
+    "9058031": {
+        "name": "Taschenmacherstraße",
+        "lines": [
+            "12"
+        ],
+        "coords": {
+            "lat": "53.867418",
+            "long": "10.611748"
+        }
+    },
+    "9090893": {
+        "name": "Tdf. Bahnhof",
+        "lines": [
+            "40"
+        ],
+        "coords": {
+            "lat": "53.9945581",
+            "long": "10.7627065"
+        }
+    },
+    "9090898": {
+        "name": "Tdf. Bahnhofstr. Redder",
+        "lines": [
+            "40"
+        ],
+        "coords": {
+            "lat": "53.995293",
+            "long": "10.766307"
+        }
+    },
+    "9090894": {
+        "name": "Tdf. Bahnhofstraße",
+        "lines": [
+            "40"
+        ],
+        "coords": {
+            "lat": "53.995733",
+            "long": "10.7695302"
+        }
+    },
+    "9090895": {
+        "name": "Tdf. Birkenallee",
+        "lines": [
+            "40"
+        ],
+        "coords": {
+            "lat": "53.993105",
+            "long": "10.789006"
+        }
+    },
+    "9090896": {
+        "name": "Tdf. Bugenhagenwerk",
+        "lines": [
+            "40"
+        ],
+        "coords": {
+            "lat": "54.00854",
+            "long": "10.771217"
+        }
+    },
+    "9090900": {
+        "name": "Tdf. Hotel Atlantis",
+        "lines": [
+            "40"
+        ],
+        "coords": {
+            "lat": "54.002517",
+            "long": "10.777356"
+        }
+    },
+    "9090901": {
+        "name": "Tdf. Kastanienallee",
+        "lines": [
+            "40"
+        ],
+        "coords": {
+            "lat": "53.989653",
+            "long": "10.79751"
+        }
+    },
+    "9090902": {
+        "name": "Tdf. Rathaus",
+        "lines": [
+            "40"
+        ],
+        "coords": {
+            "lat": "54.0060138",
+            "long": "10.7739527"
+        }
+    },
+    "9090904": {
+        "name": "Tdf. Rodenbergstraße",
+        "lines": [
+            "40"
+        ],
+        "coords": {
+            "lat": "53.991316",
+            "long": "10.798085"
+        }
+    },
+    "9090905": {
+        "name": "Tdf. Seeschlößchen",
+        "lines": [
+            "40"
+        ],
+        "coords": {
+            "lat": "53.993968",
+            "long": "10.791577"
+        }
+    },
+    "9090906": {
+        "name": "Tdf. Seniorenheim",
+        "lines": [
+            "40"
+        ],
+        "coords": {
+            "lat": "53.999227",
+            "long": "10.771226"
+        }
+    },
+    "9057765": {
+        "name": "Technische Hochschule",
+        "lines": [
+            "1",
+            "9"
+        ],
+        "coords": {
+            "lat": "53.837951",
+            "long": "10.700337"
+        }
+    },
+    "9058032": {
+        "name": "Teutenbrink",
+        "lines": [
+            "35"
+        ],
+        "coords": {
+            "lat": "53.95749",
+            "long": "10.855212"
+        }
+    },
+    "9057718": {
+        "name": "Teutendorf Bollbrügg",
+        "lines": [
+            "35"
+        ],
+        "coords": {
+            "lat": "53.9632101",
+            "long": "10.8383122"
+        }
+    },
+    "9057962": {
+        "name": "Teutendorf Raiffeisen",
+        "lines": [
+            "35"
+        ],
+        "coords": {
+            "lat": "53.9679767",
+            "long": "10.8415044"
+        }
+    },
+    "9058033": {
+        "name": "Teutendorf Teich",
+        "lines": [
+            "35"
+        ],
+        "coords": {
+            "lat": "53.964996",
+            "long": "10.838537"
+        }
+    },
+    "9058034": {
+        "name": "Teutendorfer Weg",
+        "lines": [
+            "30",
+            "34",
+            "35",
+            "36",
+            "38",
+            "40",
+            "50"
+        ],
+        "coords": {
+            "lat": "53.957068",
+            "long": "10.859041"
+        }
+    },
+    "9058035": {
+        "name": "Theodor-Heuss-Straße",
+        "lines": [
+            "7"
+        ],
+        "coords": {
+            "lat": "53.853548",
+            "long": "10.686457"
+        }
+    },
+    "9058036": {
+        "name": "Tilsitstraße",
+        "lines": [
+            "33",
+            "34",
+            "50"
+        ],
+        "coords": {
+            "lat": "53.921057",
+            "long": "10.823884"
+        }
+    },
+    "9090907": {
+        "name": "Timmendorf ZOB",
+        "lines": [
+            "40"
+        ],
+        "coords": {
+            "lat": "53.994858",
+            "long": "10.781788"
+        }
+    },
+    "9058047": {
+        "name": "Töpferweg",
+        "lines": [
+            "6",
+            "16",
+            "26"
+        ],
+        "coords": {
+            "lat": "53.862492",
+            "long": "10.664982"
+        }
+    },
+    "9058037": {
+        "name": "Torneiweg",
+        "lines": [
+            "12",
+            "15"
+        ],
+        "coords": {
+            "lat": "53.890305",
+            "long": "10.711474"
+        }
+    },
+    "9058038": {
+        "name": "Torstraße",
+        "lines": [
+            "30",
+            "34",
+            "35",
+            "36",
+            "50"
+        ],
+        "coords": {
+            "lat": "53.957068",
+            "long": "10.86439"
+        }
+    },
+    "9058039": {
+        "name": "Trave-Park",
+        "lines": [
+            "24"
+        ],
+        "coords": {
+            "lat": "53.884812",
+            "long": "10.804207"
+        }
+    },
+    "9058040": {
+        "name": "Travehaus",
+        "lines": [
+            "24"
+        ],
+        "coords": {
+            "lat": "53.889217",
+            "long": "10.774632"
+        }
+    },
+    "9058100": {
+        "name": "Travemünde Priwallfähre",
+        "lines": [
+            "30",
+            "34",
+            "35",
+            "36",
+            "38",
+            "50"
+        ],
+        "coords": {
+            "lat": "53.95589",
+            "long": "10.866385"
+        }
+    },
+    "9058105": {
+        "name": "Travemünde Strandbahnhof",
+        "lines": [
+            "30",
+            "34",
+            "35",
+            "40",
+            "50"
+        ],
+        "coords": {
+            "lat": "53.964538",
+            "long": "10.877307"
+        }
+    },
+    "9058041": {
+        "name": "Travemünder Landstraße",
+        "lines": [
+            "36"
+        ],
+        "coords": {
+            "lat": "53.937093",
+            "long": "10.847751"
+        }
+    },
+    "9058042": {
+        "name": "Traveweg",
+        "lines": [
+            "33"
+        ],
+        "coords": {
+            "lat": "53.898754",
+            "long": "10.79618"
+        }
+    },
+    "9058043": {
+        "name": "Trelleborgallee",
+        "lines": [
+            "30",
+            "34",
+            "35",
+            "50"
+        ],
+        "coords": {
+            "lat": "53.960771",
+            "long": "10.878781"
+        }
+    },
+    "9058044": {
+        "name": "Tremser Teich",
+        "lines": [
+            "1",
+            "10"
+        ],
+        "coords": {
+            "lat": "53.898737",
+            "long": "10.690008"
+        }
+    },
+    "9058045": {
+        "name": "Trendelenburgstraße",
+        "lines": [
+            "2"
+        ],
+        "coords": {
+            "lat": "53.847165",
+            "long": "10.686089"
+        }
+    },
+    "9058046": {
+        "name": "Triftstraße",
+        "lines": [
+            "3",
+            "10"
+        ],
+        "coords": {
+            "lat": "53.884875",
+            "long": "10.679086"
+        }
+    },
+    "9058048": {
+        "name": "Türkisweg",
+        "lines": [
+            "4"
+        ],
+        "coords": {
+            "lat": "53.865171",
+            "long": "10.741894"
+        }
+    },
+    "9058049": {
+        "name": "Uhlenhörn",
+        "lines": [
+            "12"
+        ],
+        "coords": {
+            "lat": "53.87549",
+            "long": "10.637008"
+        }
+    },
+    "9058054": {
+        "name": "UKSH (Haupteingang)",
+        "lines": [
+            "8",
+            "9"
+        ],
+        "coords": {
+            "lat": "53.836612",
+            "long": "10.709524"
+        }
+    },
+    "9058055": {
+        "name": "UKSH (West)",
+        "lines": [
+            "8",
+            "9"
+        ],
+        "coords": {
+            "lat": "53.835776",
+            "long": "10.705523"
+        }
+    },
+    "9058050": {
+        "name": "Ulmenweg",
+        "lines": [
+            "31"
+        ],
+        "coords": {
+            "lat": "53.905442",
+            "long": "10.805915"
+        }
+    },
+    "9058053": {
+        "name": "Universität",
+        "lines": [
+            "8",
+            "9"
+        ],
+        "coords": {
+            "lat": "53.837889",
+            "long": "10.70253"
+        }
+    },
+    "9058052": {
+        "name": "Universitätsstraße",
+        "lines": [
+            "4",
+            "6",
+            "8"
+        ],
+        "coords": {
+            "lat": "53.839219",
+            "long": "10.709389"
+        }
+    },
+    "9058057": {
+        "name": "Utechter Weg",
+        "lines": [
+            "3"
+        ],
+        "coords": {
+            "lat": "53.842149",
+            "long": "10.746298"
+        }
+    },
+    "9058058": {
+        "name": "Verbindungsstraße",
+        "lines": [
+            "12"
+        ],
+        "coords": {
+            "lat": "53.857036",
+            "long": "10.603064"
+        }
+    },
+    "9058059": {
+        "name": "Verwaltungsz. Mühlentor",
+        "lines": [
+            "2",
+            "7",
+            "16",
+            "26"
+        ],
+        "coords": {
+            "lat": "53.856173",
+            "long": "10.689361"
+        }
+    },
+    "9058060": {
+        "name": "Virchowstraße",
+        "lines": [
+            "2"
+        ],
+        "coords": {
+            "lat": "53.84321",
+            "long": "10.688003"
+        }
+    },
+    "9058061": {
+        "name": "Vorrade",
+        "lines": [
+            "26"
+        ],
+        "coords": {
+            "lat": "53.815694",
+            "long": "10.675383"
+        }
+    },
+    "9058062": {
+        "name": "Vorrader Straße",
+        "lines": [
+            "2",
+            "16",
+            "26"
+        ],
+        "coords": {
+            "lat": "53.84179",
+            "long": "10.678592"
+        }
+    },
+    "9058064": {
+        "name": "Vorwerker Friedhof/E 1",
+        "lines": [
+            "7"
+        ],
+        "coords": {
+            "lat": "53.890754",
+            "long": "10.662861"
+        }
+    },
+    "9058065": {
+        "name": "Vorwerker Friedhof/E 2",
+        "lines": [
+            "7"
+        ],
+        "coords": {
+            "lat": "53.89239",
+            "long": "10.664398"
+        }
+    },
+    "9058066": {
+        "name": "Vorwerker Friedhof/E 3",
+        "lines": [
+            "7"
+        ],
+        "coords": {
+            "lat": "53.893631",
+            "long": "10.668686"
+        }
+    },
+    "9058067": {
+        "name": "Wahmstraße",
+        "lines": [
+            "3",
+            "5",
+            "10",
+            "11",
+            "12",
+            "21",
+            "30",
+            "31",
+            "34",
+            "40",
+            "50",
+            "25"
+        ],
+        "coords": {
+            "lat": "53.865521",
+            "long": "10.686206"
+        }
+    },
+    "9058068": {
+        "name": "Waisenhofstraße",
+        "lines": [
+            "3",
+            "7",
+            "9",
+            "12",
+            "17"
+        ],
+        "coords": {
+            "lat": "53.873935",
+            "long": "10.665719"
+        }
+    },
+    "9058069": {
+        "name": "Waldstraße",
+        "lines": [
+            "12"
+        ],
+        "coords": {
+            "lat": "53.900966",
+            "long": "10.738855"
+        }
+    },
+    "9075872": {
+        "name": "Warnsdorf",
+        "lines": [
+            "35",
+            "40"
+        ],
+        "coords": {
+            "lat": "53.967340899999996",
+            "long": "10.8211212"
+        }
+    },
+    "9058070": {
+        "name": "Wasserkunst",
+        "lines": [
+            "1",
+            "4",
+            "6",
+            "8",
+            "9"
+        ],
+        "coords": {
+            "lat": "53.855193",
+            "long": "10.697334"
+        }
+    },
+    "9088067": {
+        "name": "Weidenweg",
+        "lines": [
+            "17"
+        ],
+        "coords": {
+            "lat": "53.8900679",
+            "long": "10.6356541"
+        }
+    },
+    "9058071": {
+        "name": "Weinbergstraße",
+        "lines": [
+            "4",
+            "6",
+            "8"
+        ],
+        "coords": {
+            "lat": "53.84641",
+            "long": "10.708103"
+        }
+    },
+    "9058072": {
+        "name": "Wellenschlag",
+        "lines": [
+            "38"
+        ],
+        "coords": {
+            "lat": "53.953939",
+            "long": "10.89703"
+        }
+    },
+    "9058073": {
+        "name": "Welsbachstraße",
+        "lines": [
+            "30"
+        ],
+        "coords": {
+            "lat": "53.85335",
+            "long": "10.68181"
+        }
+    },
+    "9058074": {
+        "name": "Wendische Straße",
+        "lines": [
+            "6",
+            "16",
+            "26"
+        ],
+        "coords": {
+            "lat": "53.861512",
+            "long": "10.662771"
+        }
+    },
+    "9058075": {
+        "name": "Werkstraße",
+        "lines": [
+            "31"
+        ],
+        "coords": {
+            "lat": "53.899788",
+            "long": "10.796431"
+        }
+    },
+    "9058076": {
+        "name": "Wesloer Brücke",
+        "lines": [
+            "3",
+            "4",
+            "10",
+            "11",
+            "21"
+        ],
+        "coords": {
+            "lat": "53.871131",
+            "long": "10.737399"
+        }
+    },
+    "9058077": {
+        "name": "Wesloer Straße",
+        "lines": [
+            "24"
+        ],
+        "coords": {
+            "lat": "53.887931",
+            "long": "10.795164"
+        }
+    },
+    "9058078": {
+        "name": "Westphalstraße",
+        "lines": [
+            "11",
+            "21"
+        ],
+        "coords": {
+            "lat": "53.884605",
+            "long": "10.787361"
+        }
+    },
+    "9058079": {
+        "name": "Wickedestraße",
+        "lines": [
+            "1",
+            "10"
+        ],
+        "coords": {
+            "lat": "53.87211",
+            "long": "10.673899"
+        }
+    },
+    "9058080": {
+        "name": "Wiekstraße",
+        "lines": [
+            "38"
+        ],
+        "coords": {
+            "lat": "53.952025",
+            "long": "10.883294"
+        }
+    },
+    "9058081": {
+        "name": "Wielandstraße",
+        "lines": [
+            "30"
+        ],
+        "coords": {
+            "lat": "53.859795",
+            "long": "10.674924"
+        }
+    },
+    "9058082": {
+        "name": "Wilhelm-Wisser-Weg",
+        "lines": [
+            "12",
+            "24"
+        ],
+        "coords": {
+            "lat": "53.900858",
+            "long": "10.749481"
+        }
+    },
+    "9058083": {
+        "name": "Wisbystraße",
+        "lines": [
+            "2",
+            "11",
+            "31"
+        ],
+        "coords": {
+            "lat": "53.867742",
+            "long": "10.663831"
+        }
+    },
+    "9058084": {
+        "name": "Wulfsdorf",
+        "lines": [
+            "26"
+        ],
+        "coords": {
+            "lat": "53.809186",
+            "long": "10.682817"
+        }
+    },
+    "9058086": {
+        "name": "Zarnewenzweg",
+        "lines": [
+            "11",
+            "21"
+        ],
+        "coords": {
+            "lat": "53.878349",
+            "long": "10.79324"
+        }
+    },
+    "9058087": {
+        "name": "Zeißstraße",
+        "lines": [
+            "7"
+        ],
+        "coords": {
+            "lat": "53.847336",
+            "long": "10.670519"
+        }
+    },
+    "9058088": {
+        "name": "Zeppelinstraße",
+        "lines": [
+            "31",
+            "34"
+        ],
+        "coords": {
+            "lat": "53.887302",
+            "long": "10.716607"
+        }
+    },
+    "9058090": {
+        "name": "Zinngießerstraße",
+        "lines": [
+            "12"
+        ],
+        "coords": {
+            "lat": "53.862609",
+            "long": "10.602633"
+        }
+    },
+    "9058085": {
+        "name": "ZOB/Hauptbahnhof",
+        "lines": [
+            "1",
+            "2",
+            "3",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "15",
+            "16",
+            "17",
+            "21",
+            "25",
+            "26",
+            "30",
+            "31",
+            "34",
+            "40",
+            "50"
+        ],
+        "coords": {
+            "lat": "53.86598",
+            "long": "10.670789"
+        }
+    }
+}
